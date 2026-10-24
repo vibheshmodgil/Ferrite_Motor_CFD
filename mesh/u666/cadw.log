@@ -1,0 +1,33 @@
+brep loaded                      53 s
+visibility set                   54 s
+written                          56 s
+brep loaded 4 s
+stack data                        4 s
+magnet section 1                  4 s
+magnet section 2                  4 s
+magnet section 3                  4 s
+magnet section 4                  4 s
+magnet section 5                  4 s
+magnet section 6                  5 s
+magnet section 7                  5 s
+magnet section 8                  5 s
+magnet section 9                  5 s
+magnet section 10                 5 s
+magnet section 11                 6 s
+magnet section 12                 6 s
+magnet section 13                 6 s
+magnet section 14                 6 s
+magnet section 15                 6 s
+magnet section 16                 6 s
+magnet section 17                 6 s
+magnet section 18                 7 s
+start remove                      7 s
+removed                         336 s
+stacks/drops removed            349 s
+extrusions                      351 s
+slot area                       374 s
+cad_w_slot                      386 s
+cad_w_front                     388 s
+cad_w_rear                      398 s
+cad_w_lead                      400 s
+winding analysed                683 s

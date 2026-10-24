@@ -1,0 +1,45 @@
++ cd /c/Users/vibhe/Downloads/OUTPUT/CFD
++ PY=.venv/Scripts/python
++ PV='/c/Program Files/ParaView 6.2.0/bin/pvpython.exe'
++ S18=results/continuous/slices_18000
++ S40=results/continuous/slices_18000_z-0.040
++ .venv/Scripts/python -I scripts/animate_flow.py results/air/air_z.vtk z results/anim/air_z.mp4 'Air around motor_65, radial mid-plane (z = 5 mm)' 1 0.45 --solids results/continuous/slices_18000
+wrote results/anim/air_z.mp4 200 frames
++ .venv/Scripts/python -I scripts/animate_flow.py results/air/air_x.vtk x results/anim/air_x.mp4 'Air around motor_65, axial mid-plane (rear left, drive end right)' 1 0.45 --solids results/continuous/slices_18000
+wrote results/anim/air_x.mp4 200 frames
++ .venv/Scripts/python -I scripts/animate_flow.py results/air/air_z.vtk z - 'Air around motor_65, radial mid-plane (z = 5 mm)' 1 0.45 --solids results/continuous/slices_18000 --still results/figs/flow_ext_z.png
+wrote results/figs/flow_ext_z.png
++ .venv/Scripts/python -I scripts/animate_flow.py results/air/air_x.vtk x - 'Air around motor_65, axial mid-plane (rear left, drive end right)' 1 0.45 --solids results/continuous/slices_18000 --still results/figs/flow_ext_x.png
+wrote results/figs/flow_ext_x.png
++ .venv/Scripts/python -I scripts/animate_flow.py results/inair_continuous/inair_z.vtk z results/anim/inair_z.mp4 'Air inside motor_65 at 3000 rpm: drive-end space, radial plane z = -40 mm' 0.025 --solids results/continuous/slices_18000_z-0.040
+Traceback (most recent call last):
+  File "C:\Users\vibhe\Downloads\OUTPUT\CFD\scripts\animate_flow.py", line 41, in <module>
+    VMAX = float(args[5]) if len(args) > 5 else None
+ValueError: could not convert string to float: 'results/continuous/slices_18000_z-0.040'
++ .venv/Scripts/python -I scripts/animate_flow.py results/inair_continuous/inair_x.vtk x results/anim/inair_x.mp4 'Air inside motor_65 at 3000 rpm: axial mid-plane (rear left, drive end right)' 0.025 --solids results/continuous/slices_18000
+Traceback (most recent call last):
+  File "C:\Users\vibhe\Downloads\OUTPUT\CFD\scripts\animate_flow.py", line 41, in <module>
+    VMAX = float(args[5]) if len(args) > 5 else None
+ValueError: could not convert string to float: 'results/continuous/slices_18000'
++ .venv/Scripts/python -I scripts/animate_flow.py results/inair_continuous/inair_z.vtk z - 'Air inside motor_65 at 3000 rpm: drive-end space, radial plane z = -40 mm' 0.025 --solids results/continuous/slices_18000_z-0.040 --still results/figs/flow_int_z.png
+Traceback (most recent call last):
+  File "C:\Users\vibhe\Downloads\OUTPUT\CFD\scripts\animate_flow.py", line 41, in <module>
+    VMAX = float(args[5]) if len(args) > 5 else None
+ValueError: could not convert string to float: 'results/continuous/slices_18000_z-0.040'
++ .venv/Scripts/python -I scripts/animate_flow.py results/inair_continuous/inair_x.vtk x - 'Air inside motor_65 at 3000 rpm: axial mid-plane (rear left, drive end right)' 0.025 --solids results/continuous/slices_18000 --still results/figs/flow_int_x.png
+Traceback (most recent call last):
+  File "C:\Users\vibhe\Downloads\OUTPUT\CFD\scripts\animate_flow.py", line 41, in <module>
+    VMAX = float(args[5]) if len(args) > 5 else None
+ValueError: could not convert string to float: 'results/continuous/slices_18000'
++ INAIR=results/vtk3d/inair_continuous/internal.vtk
++ '/c/Program Files/ParaView 6.2.0/bin/pvpython.exe' --force-offscreen-rendering scripts/render3d.py results/vtk3d/continuous_18000 results/figs/3d_continuous_inside 'Continuous 24 N·m @ 3000 rpm at 5 h: inside the motor — parts (quarter cut away) and the end-space air swirl' --inair results/vtk3d/inair_continuous/internal.vtk --range 85 135 --dist 0.42 --turntable 72
+wrote results/figs/3d_continuous_inside.png
+wrote 72 frames
++ '/c/Program Files/ParaView 6.2.0/bin/pvpython.exe' --force-offscreen-rendering scripts/render3d.py results/vtk3d/continuous_18000 results/figs/3d_continuous_ext 'Continuous 24 N·m @ 3000 rpm at 5 h: motor (quarter cut away) and the air plume around it' --air results/vtk3d/air/internal.vtk --range 40 135 --dist 1.0
+wrote results/figs/3d_continuous_ext.png
++ .venv/Scripts/python -I scripts/frames2mp4.py results/anim/3d_turntable.mp4 20 1 0 results/figs/3d_continuous_inside_frames/f0000.png results/figs/3d_continuous_inside_frames/f0001.png results/figs/3d_continuous_inside_frames/f0002.png results/figs/3d_continuous_inside_frames/f0003.png results/figs/3d_continuous_inside_frames/f0004.png results/figs/3d_continuous_inside_frames/f0005.png results/figs/3d_continuous_inside_frames/f0006.png results/figs/3d_continuous_inside_frames/f0007.png results/figs/3d_continuous_inside_frames/f0008.png results/figs/3d_continuous_inside_frames/f0009.png results/figs/3d_continuous_inside_frames/f0010.png results/figs/3d_continuous_inside_frames/f0011.png results/figs/3d_continuous_inside_frames/f0012.png results/figs/3d_continuous_inside_frames/f0013.png results/figs/3d_continuous_inside_frames/f0014.png results/figs/3d_continuous_inside_frames/f0015.png results/figs/3d_continuous_inside_frames/f0016.png results/figs/3d_continuous_inside_frames/f0017.png results/figs/3d_continuous_inside_frames/f0018.png results/figs/3d_continuous_inside_frames/f0019.png results/figs/3d_continuous_inside_frames/f0020.png results/figs/3d_continuous_inside_frames/f0021.png results/figs/3d_continuous_inside_frames/f0022.png results/figs/3d_continuous_inside_frames/f0023.png results/figs/3d_continuous_inside_frames/f0024.png results/figs/3d_continuous_inside_frames/f0025.png results/figs/3d_continuous_inside_frames/f0026.png results/figs/3d_continuous_inside_frames/f0027.png results/figs/3d_continuous_inside_frames/f0028.png results/figs/3d_continuous_inside_frames/f0029.png results/figs/3d_continuous_inside_frames/f0030.png results/figs/3d_continuous_inside_frames/f0031.png results/figs/3d_continuous_inside_frames/f0032.png results/figs/3d_continuous_inside_frames/f0033.png results/figs/3d_continuous_inside_frames/f0034.png results/figs/3d_continuous_inside_frames/f0035.png results/figs/3d_continuous_inside_frames/f0036.png results/figs/3d_continuous_inside_frames/f0037.png results/figs/3d_continuous_inside_frames/f0038.png results/figs/3d_continuous_inside_frames/f0039.png results/figs/3d_continuous_inside_frames/f0040.png results/figs/3d_continuous_inside_frames/f0041.png results/figs/3d_continuous_inside_frames/f0042.png results/figs/3d_continuous_inside_frames/f0043.png results/figs/3d_continuous_inside_frames/f0044.png results/figs/3d_continuous_inside_frames/f0045.png results/figs/3d_continuous_inside_frames/f0046.png results/figs/3d_continuous_inside_frames/f0047.png results/figs/3d_continuous_inside_frames/f0048.png results/figs/3d_continuous_inside_frames/f0049.png results/figs/3d_continuous_inside_frames/f0050.png results/figs/3d_continuous_inside_frames/f0051.png results/figs/3d_continuous_inside_frames/f0052.png results/figs/3d_continuous_inside_frames/f0053.png results/figs/3d_continuous_inside_frames/f0054.png results/figs/3d_continuous_inside_frames/f0055.png results/figs/3d_continuous_inside_frames/f0056.png results/figs/3d_continuous_inside_frames/f0057.png results/figs/3d_continuous_inside_frames/f0058.png results/figs/3d_continuous_inside_frames/f0059.png results/figs/3d_continuous_inside_frames/f0060.png results/figs/3d_continuous_inside_frames/f0061.png results/figs/3d_continuous_inside_frames/f0062.png results/figs/3d_continuous_inside_frames/f0063.png results/figs/3d_continuous_inside_frames/f0064.png results/figs/3d_continuous_inside_frames/f0065.png results/figs/3d_continuous_inside_frames/f0066.png results/figs/3d_continuous_inside_frames/f0067.png results/figs/3d_continuous_inside_frames/f0068.png results/figs/3d_continuous_inside_frames/f0069.png results/figs/3d_continuous_inside_frames/f0070.png results/figs/3d_continuous_inside_frames/f0071.png
+wrote results/anim/3d_turntable.mp4 72 frames
++ .venv/Scripts/python -I scripts/make_report.py
+wrote C:\Users\vibhe\Downloads\OUTPUT\CFD\scripts\..\Report\Motor65_Thermal_CFD_Report.html  (25.1 MB)
++ echo FINAL_VISUALS_DONE
+FINAL_VISUALS_DONE

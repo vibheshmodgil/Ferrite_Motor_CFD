@@ -1,0 +1,54 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  12
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    format          ascii;
+    class           dictionary;
+    object          x;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+application     foamRun;
+
+solver          fluid;
+
+startFrom       latestTime;
+
+startTime       0;
+
+stopAt          endTime;
+
+endTime 450;
+
+deltaT          1;
+
+writeControl    timeStep;
+
+writeInterval   25;
+
+purgeWrite      3;
+
+writeFormat     ascii;
+
+timeFormat      general;
+
+runTimeModifiable yes;
+
+functions
+{
+    heat
+    {
+        type            wallHeatFlux;
+        libs            ( "libfieldFunctionObjects.so" );
+        patches         ( motor );
+        writeControl    writeTime;
+    }
+}
+
+
+// ************************************************************************* //

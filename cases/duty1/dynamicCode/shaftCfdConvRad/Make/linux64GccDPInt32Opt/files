@@ -1,0 +1,6 @@
+# dynamicCode:
+# SHA1 = b9c3df4e8e2037d92987f1a65a3fa249dda83f75
+
+SOURCE += codedMixedFvPatchFieldTemplate.C
+
+LIB = $(PWD)/../platforms/$(WM_OPTIONS)/lib/libshaftCfdConvRad_b9c3df4e8e2037d92987f1a65a3fa249dda83f75

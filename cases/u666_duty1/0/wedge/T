@@ -1,0 +1,47 @@
+FoamFile
+{
+    format      ascii;
+    class       volScalarField;
+    object      T;
+}
+dimensions [0 0 0 1 0 0 0];
+internalField uniform 313.15;
+boundaryField
+{
+    wedge_to_housing
+    {
+        type coupledTemperatureNC;
+        value $internalField;
+    }
+    wedge_to_inair
+    {
+        type coupledTemperatureNC;
+        value $internalField;
+    }
+    wedge_to_shaft
+    {
+        type coupledTemperatureNC;
+        value $internalField;
+    }
+    defaultFaces
+    {
+        type zeroGradient;
+    }
+    wedge_to_winding
+    {
+        type coupledTemperatureNC;
+        value $internalField;
+    }
+    wedge_to_rotor
+    {
+        type coupledTemperatureNC;
+        thicknessLayers (0.00065);
+        kappaLayers (0.03);
+        value $internalField;
+    }
+    wedge_to_stator
+    {
+        type coupledTemperatureNC;
+        value $internalField;
+    }
+}

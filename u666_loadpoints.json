@@ -1,0 +1,22 @@
+{
+ "etest": {
+  "_note": "dummy losses for the adiabatic energy test (u666_energy_test.sh); NOT a duty point",
+  "Q": {
+   "winding_dc": 100.0,
+   "winding_ac": 0.0,
+   "stator": 20.0,
+   "rotor": 0.0,
+   "magnets": 5.0,
+   "inair": 0.0,
+   "bearing_f": 2.0,
+   "bearing_r": 1.0
+  },
+  "T_ref": 373.15,
+  "k_gap": 0.03,
+  "k_inair": 0.47,
+  "gap": 0.00065,
+  "end_time": 300,
+  "dt": 10,
+  "write": 300
+ }
+}

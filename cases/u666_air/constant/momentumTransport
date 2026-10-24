@@ -1,0 +1,2 @@
+FoamFile { format ascii; class dictionary; object x; }
+simulationType laminar;     // Ra ~ 5e7 on the 188 mm fin diameter: laminar natural convection

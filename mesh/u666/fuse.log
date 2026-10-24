@@ -1,0 +1,29 @@
+shaft      10 ->    1 pieces     27 s
+bearings    2 ->    2 pieces     27 s
+inair      37 ->   16 pieces     56 s
+seal        2 ->    1 pieces     59 s
+stator    110 ->    1 pieces     77 s
+endw        4 ->    2 pieces     80 s
+slot      108 ->  108 pieces    105 s
+wedge      73 ->    1 pieces    136 s
+rpocket     8 ->    8 pieces    137 s
+rotor       3 ->    1 pieces    151 s
+magnets    36 ->   18 pieces    153 s
+refragment 1224 s
+air      pieces    3   356179.96 cm3 (was  356179.96)
+shaft    pieces    1       89.38 cm3 (was      89.38)
+bearings pieces    2       32.16 cm3 (was      32.16)
+inair    pieces   16     1400.07 cm3 (was    1402.71)
+housing  pieces  113     1109.84 cm3 (was    1109.84)
+seal     pieces    1        2.88 cm3 (was       2.88)
+stator   pieces    1      477.33 cm3 (was     477.33)
+endw     pieces    2      107.97 cm3 (was     107.97)
+slot     pieces  108      221.58 cm3 (was     221.58)
+endcaps  pieces   49       36.77 cm3 (was      36.77)
+wedge    pieces    1        9.52 cm3 (was       9.52)
+rpocket  pieces    8       48.55 cm3 (was      48.55)
+rotor    pieces    1      244.84 cm3 (was     244.84)
+magnets  pieces   18       36.55 cm3 (was      36.55)
+inair-air contact area mm2: 0.0
+done 1239 s
+single-volume faces (dangling inside a region, or skin after the air is removed): 3

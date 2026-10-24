@@ -1,0 +1,2 @@
+FoamFile { format ascii; class dictionary; object x; }
+numberOfSubdomains 4; method scotch;

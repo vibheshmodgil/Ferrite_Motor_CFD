@@ -1,0 +1,71 @@
+FoamFile
+{
+    format      ascii;
+    class       dictionary;
+    object      fvModels;
+}
+
+copperJoule
+{
+    type            coded;
+    select          all;
+    field           e;
+    codeAddRhoSup
+    #{
+        const scalarField& T = mesh().lookupObject<volScalarField>("T").primitiveField();
+        const scalarField& V = mesh().V();
+        scalarField& S = eqn.source();
+        {
+            const labelList& cells = mesh().cellZones()["coil"];
+            scalar Vz = 0;
+            forAll(cells, i) Vz += V[cells[i]];
+            reduce(Vz, sumOp<scalar>());
+            const scalar qref = 579.5503/Vz;
+            const scalar qac = 30.2351/Vz;
+            forAll(cells, i)
+            {
+                const label c = cells[i];
+                S[c] -= V[c]*(qac + qref*(1.0 + 0.00393*(T[c] - 373.15)));
+            }
+        }
+        {
+            const labelList& cells = mesh().cellZones()["strap"];
+            scalar Vz = 0;
+            forAll(cells, i) Vz += V[cells[i]];
+            reduce(Vz, sumOp<scalar>());
+            const scalar qref = 1.72e-08*sqr(9.40572e+06);
+            const scalar qac = 0.0000/Vz;
+            forAll(cells, i)
+            {
+                const label c = cells[i];
+                S[c] -= V[c]*(qac + qref*(1.0 + 0.00393*(T[c] - 293.15)));
+            }
+        }
+        {
+            const labelList& cells = mesh().cellZones()["busbar"];
+            scalar Vz = 0;
+            forAll(cells, i) Vz += V[cells[i]];
+            reduce(Vz, sumOp<scalar>());
+            const scalar qref = 18.7129/Vz;
+            const scalar qac = 0.0000/Vz;
+            forAll(cells, i)
+            {
+                const label c = cells[i];
+                S[c] -= V[c]*(qac + qref*(1.0 + 0.00393*(T[c] - 293.15)));
+            }
+        }
+        {
+            const labelList& cells = mesh().cellZones()["tbar"];
+            scalar Vz = 0;
+            forAll(cells, i) Vz += V[cells[i]];
+            reduce(Vz, sumOp<scalar>());
+            const scalar qref = 1.72e-08*sqr(9.77471e+06);
+            const scalar qac = 0.0000/Vz;
+            forAll(cells, i)
+            {
+                const label c = cells[i];
+                S[c] -= V[c]*(qac + qref*(1.0 + 0.00393*(T[c] - 293.15)));
+            }
+        }
+    #};
+}

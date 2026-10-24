@@ -1,0 +1,41 @@
+{
+ "rhocv": {
+  "bearings": 3611000,
+  "endcaps": 3218600,
+  "housing": 2412000,
+  "inair": 7180.0,
+  "magnets": 3300000,
+  "rotor": {
+   "rotor": 3519000,
+   "rpocket": 1208.3999999999999
+  },
+  "shaft": 3611000,
+  "stator": 3519000,
+  "wedge": 2025000,
+  "winding": {
+   "slot": 2193181.644859813,
+   "endw": 2606230
+  }
+ },
+ "Q": {
+  "winding_dc": 1133,
+  "winding_ac": 6.408,
+  "stator": 37.624,
+  "rotor": 9.405999999999999,
+  "magnets": 0.2857,
+  "inair": 4.256,
+  "bearing_f": 4.964,
+  "bearing_r": 4.964
+ },
+ "T_ref": 373.15,
+ "tc": 0.00393,
+ "T0": 313.15,
+ "fill": {
+  "slot": 0.4670408263649779,
+  "endw": 0.528
+ },
+ "skin": [
+  "housing",
+  "shaft"
+ ]
+}

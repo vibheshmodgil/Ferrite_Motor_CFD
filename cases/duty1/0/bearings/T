@@ -1,0 +1,30 @@
+FoamFile
+{
+    format      ascii;
+    class       volScalarField;
+    object      T;
+}
+dimensions [0 0 0 1 0 0 0];
+internalField uniform 313.15;
+boundaryField
+{
+    defaultFaces
+    {
+        type zeroGradient;
+    }
+    bearings_to_inair
+    {
+        type coupledTemperature;
+        value $internalField;
+    }
+    bearings_to_shaft
+    {
+        type coupledTemperature;
+        value $internalField;
+    }
+    bearings_to_housing
+    {
+        type coupledTemperature;
+        value $internalField;
+    }
+}

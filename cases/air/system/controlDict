@@ -1,0 +1,9 @@
+FoamFile { format ascii; class dictionary; object x; }
+application foamRun; solver fluid;
+startFrom latestTime; startTime 0; stopAt endTime; endTime 3000; deltaT 1;
+writeControl timeStep; writeInterval 200; purgeWrite 2; writeFormat ascii; timeFormat general;
+runTimeModifiable yes;
+functions
+{
+    heat { type wallHeatFlux; libs ("libfieldFunctionObjects.so"); patches (motor); writeControl writeTime; }
+}

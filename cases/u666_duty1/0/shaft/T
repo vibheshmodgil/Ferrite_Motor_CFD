@@ -1,0 +1,67 @@
+FoamFile
+{
+    format      ascii;
+    class       volScalarField;
+    object      T;
+}
+dimensions [0 0 0 1 0 0 0];
+internalField uniform 313.15;
+boundaryField
+{
+    defaultFaces
+    {
+        type            codedMixed;
+        name            shaftCfdConvRad;
+        refValue        uniform 313.15;
+        refGradient     uniform 0;
+        valueFraction   uniform 0;
+        value           $internalField;
+        code
+        #{
+            const fvMesh& m = patch().boundaryMesh().mesh();
+            if (!m.foundObject<volScalarField>("hExt"))
+            {
+                volScalarField* hp = new volScalarField
+                (
+                    IOobject("hExt", "0", m, IOobject::MUST_READ, IOobject::NO_WRITE),
+                    m
+                );
+                hp->store();
+            }
+            const scalarField& h =
+                m.lookupObject<volScalarField>("hExt").boundaryField()[patch().index()];
+            const scalarField Tw(*this);
+            const scalar Ta = 313.15, sigma = 5.670374e-8, eps = 0.1;
+            const scalarField hr(eps*sigma*(sqr(Tw) + sqr(Ta))*(Tw + Ta));
+            const scalarField kd(45*patch().deltaCoeffs());
+            this->refValue() = Ta;
+            this->refGrad() = 0;
+            this->valueFraction() = (h + hr)/(h + hr + kd);
+        #};
+    }
+    shaft_to_bearings
+    {
+        type coupledTemperatureNC;
+        value $internalField;
+    }
+    shaft_to_inair
+    {
+        type coupledTemperatureNC;
+        value $internalField;
+    }
+    shaft_to_endcaps
+    {
+        type coupledTemperatureNC;
+        value $internalField;
+    }
+    shaft_to_wedge
+    {
+        type coupledTemperatureNC;
+        value $internalField;
+    }
+    shaft_to_rotor
+    {
+        type coupledTemperatureNC;
+        value $internalField;
+    }
+}

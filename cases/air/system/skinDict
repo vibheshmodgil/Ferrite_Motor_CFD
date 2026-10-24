@@ -1,0 +1,8 @@
+FoamFile { format ascii; class dictionary; object skinDict; }
+heat { type wallHeatFlux; libs ("libfieldFunctionObjects.so"); patches (motor); }
+    skin
+    {
+        type surfaces; libs ("libsampling.so"); surfaceFormat vtk; interpolationScheme cellPoint;
+        fields (wallHeatFlux);
+        surfaces ( motor { type patch; patches (motor); interpolate false; } );
+    }

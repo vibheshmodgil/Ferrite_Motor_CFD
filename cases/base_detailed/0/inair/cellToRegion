@@ -1,0 +1,65 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  12
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    format      ascii;
+    class       volScalarField;
+    location    "0/inair";
+    object      cellToRegion;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [];
+
+internalField   uniform 8;
+
+boundaryField
+{
+    defaultFaces
+    {
+        type            zeroGradient;
+    }
+    inair_to_copper
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    inair_to_resin
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    inair_to_bearings
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    inair_to_stator
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    inair_to_shaft
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    inair_to_housing
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    inair_to_rotor
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+}
+
+
+// ************************************************************************* //

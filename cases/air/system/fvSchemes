@@ -1,0 +1,14 @@
+FoamFile { format ascii; class dictionary; object x; }
+ddtSchemes { default steadyState; }     // SIMPLE, as OpenFOAM's validated buoyantCavity tutorial
+gradSchemes { default Gauss linear; limited cellLimited Gauss linear 1; grad(U) $limited; }
+divSchemes
+{
+    default none;
+    div(phi,U) bounded Gauss limitedLinear 0.2;
+    div(phi,h) bounded Gauss limitedLinear 0.2;
+    div(phi,K) bounded Gauss limitedLinear 0.2;
+    div(((rho*nuEff)*dev2(T(grad(U))))) Gauss linear;
+}
+laplacianSchemes { default Gauss linear limited corrected 0.5; }
+interpolationSchemes { default linear; }
+snGradSchemes { default limited corrected 0.5; }

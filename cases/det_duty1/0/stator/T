@@ -1,0 +1,40 @@
+FoamFile
+{
+    format      ascii;
+    class       volScalarField;
+    object      T;
+}
+dimensions [0 0 0 1 0 0 0];
+internalField uniform 313.15;
+boundaryField
+{
+    stator_to_resin
+    {
+        type coupledTemperature;
+        value $internalField;
+    }
+    stator_to_housing
+    {
+        type coupledTemperature;
+        thicknessLayers (2e-05);
+        kappaLayers (0.026);
+        value $internalField;
+    }
+    stator_to_rotor
+    {
+        type coupledTemperature;
+        thicknessLayers (0.0005);
+        kappaLayers (0.03);
+        value $internalField;
+    }
+    stator_to_inair
+    {
+        type coupledTemperature;
+        value $internalField;
+    }
+    stator_to_bobbin
+    {
+        type coupledTemperature;
+        value $internalField;
+    }
+}

@@ -1,0 +1,138 @@
+{
+ "t_end_s": 60.0,
+ "generation_kJ": 72.05446199999987,
+ "outflow_kJ": 0.0,
+ "storage_kJ": 65.77582206674498,
+ "error_pct": -8.713742020938136,
+ "volumes_cm3": {
+  "bearings": 32.158390547660865,
+  "endcaps": 36.793166214274315,
+  "housing": 1048.4834743733034,
+  "inair": 939.610729682261,
+  "magnets": 36.48535845441482,
+  "rotor": 245.50308159029225,
+  "rpocket": 53.229410825482994,
+  "shaft": 89.38502315184417,
+  "stator": 478.24397253712283,
+  "wedge": 14.522762254510617,
+  "slot": 220.64295066262176,
+  "endw": 107.95589972856459
+ },
+ "iface_W": {
+  "bearings|housing": {
+   "bearings_to_housing": -0.1963744,
+   "housing_to_bearings": -0.4018504,
+   "sum": -0.5982248
+  },
+  "bearings|inair": {
+   "bearings_to_inair": -0.8142188,
+   "inair_to_bearings": 0.6863074,
+   "sum": -0.1279114
+  },
+  "bearings|shaft": {
+   "bearings_to_shaft": -3.941154,
+   "shaft_to_bearings": 3.766817,
+   "sum": -0.17433699999999996
+  },
+  "endcaps|inair": {
+   "inair_to_endcaps": -15.15274,
+   "endcaps_to_inair": 14.61818,
+   "sum": -0.534559999999999
+  },
+  "endcaps|magnets": {
+   "magnets_to_endcaps": 2.449814,
+   "endcaps_to_magnets": -2.32953,
+   "sum": 0.12028399999999984
+  },
+  "endcaps|rotor": {
+   "rotor_to_endcaps": 3.553629,
+   "endcaps_to_rotor": -3.66518,
+   "sum": -0.11155099999999996
+  },
+  "endcaps|shaft": {
+   "endcaps_to_shaft": -1.299019,
+   "shaft_to_endcaps": 0.705868,
+   "sum": -0.5931509999999999
+  },
+  "housing|inair": {
+   "housing_to_inair": 77.15899,
+   "inair_to_housing": -77.26623,
+   "sum": -0.10723999999999023
+  },
+  "housing|stator": {
+   "housing_to_stator": 171.8662,
+   "stator_to_housing": -171.7537,
+   "sum": 0.11249999999998295
+  },
+  "housing|wedge": {
+   "wedge_to_housing": 0.1816596,
+   "housing_to_wedge": -0.1813356,
+   "sum": 0.00032399999999999096
+  },
+  "inair|magnets": {
+   "magnets_to_inair": 0.1279473,
+   "inair_to_magnets": -0.1374128,
+   "sum": -0.009465499999999988
+  },
+  "inair|rotor": {
+   "inair_to_rotor": -2.548058,
+   "rotor_to_inair": 2.219353,
+   "sum": -0.32870500000000025
+  },
+  "inair|shaft": {
+   "inair_to_shaft": -1.09857,
+   "shaft_to_inair": 0.9696641,
+   "sum": -0.12890590000000002
+  },
+  "inair|stator": {
+   "inair_to_stator": -9.660065,
+   "stator_to_inair": 10.01789,
+   "sum": 0.35782500000000006
+  },
+  "inair|wedge": {
+   "wedge_to_inair": -0.1376776,
+   "inair_to_wedge": 0.1366342,
+   "sum": -0.0010433999999999999
+  },
+  "inair|winding": {
+   "inair_to_winding": 102.249,
+   "winding_to_inair": -103.8354,
+   "sum": -1.5864000000000118
+  },
+  "magnets|rotor": {
+   "magnets_to_rotor": 0.327627,
+   "rotor_to_magnets": -0.572602,
+   "sum": -0.24497500000000005
+  },
+  "rotor|shaft": {
+   "rotor_to_shaft": -0.9118674,
+   "shaft_to_rotor": 0.9933549,
+   "sum": 0.08148750000000005
+  },
+  "rotor|wedge": {
+   "wedge_to_rotor": -11.92213,
+   "rotor_to_wedge": 11.92124,
+   "sum": -0.0008900000000000574
+  },
+  "shaft|wedge": {
+   "wedge_to_shaft": 0.0339862,
+   "shaft_to_wedge": -0.03405041,
+   "sum": -6.421000000000204e-05
+  },
+  "stator|wedge": {
+   "wedge_to_stator": -8.938061,
+   "stator_to_wedge": 8.925211,
+   "sum": -0.01285000000000025
+  },
+  "stator|winding": {
+   "winding_to_stator": -687.3064,
+   "stator_to_winding": 686.4251,
+   "sum": -0.8813000000000102
+  },
+  "wedge|winding": {
+   "wedge_to_winding": 27.81446,
+   "winding_to_wedge": -36.93892,
+   "sum": -9.124460000000003
+  }
+ }
+}

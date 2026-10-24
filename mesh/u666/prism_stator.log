@@ -1,0 +1,7 @@
+degenerate skin faces: []
+Warning : Intersection - BOPAlgo_AlertFaceBuilderUnusedEdges BOPAlgo_AlertFaceBuilderUnusedEdges 
+Warning : Intersection - BOPAlgo_AlertFaceBuilderUnusedEdges BOPAlgo_AlertFaceBuilderUnusedEdges 
+Warning : Intersection - BOPAlgo_AlertFaceBuilderUnusedEdges BOPAlgo_AlertFaceBuilderUnusedEdges 
+prism route stator volumes 110 section faces 110 bands [-0.35, 60.2]
+patch area mm2 (prism | CAD): {'stator_to_winding': (104632, 105074), 'stator_to_housing': (28228, 28264), 'stator_to_inair': (14883, 14730), 'stator_to_wedge': (17100, 17161)}
+prisms: 143304 volumes cm3 {'stator': np.float64(478.24)} patches {np.str_('stator_to_inair'): 10892, np.str_('stator_to_housing'): 5794, np.str_('stator_to_winding'): 27008, np.str_('stator_to_wedge'): 12960}

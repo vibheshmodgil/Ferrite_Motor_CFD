@@ -1,0 +1,6 @@
+# dynamicCode:
+# SHA1 = 801610e9e92f990850ea4e7040613fe45fc3c7c9
+
+SOURCE += codedMixedFvPatchFieldTemplate.C
+
+LIB = $(PWD)/../platforms/$(WM_OPTIONS)/lib/libhousingCfdConvRad_801610e9e92f990850ea4e7040613fe45fc3c7c9

@@ -1,0 +1,13 @@
+FoamFile
+{
+    format      ascii;
+    class       dictionary;
+    object      fvModels;
+}
+
+loss
+{
+    type    heatSource;
+    select  all;
+    Q       37.6240;
+}

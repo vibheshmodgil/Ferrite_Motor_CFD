@@ -1,0 +1,259 @@
+{
+ "peak_torque": {
+  "torque": 45.0,
+  "rpm": 2000,
+  "P_shaft_kW": 9.42,
+  "loss_W": {
+   "winding_100C": 850.2,
+   "stator": 59.7,
+   "rotor": 6.0,
+   "bearings": 8.0,
+   "inair": 0.9
+  },
+  "winding_max_end_C": 186.9,
+  "winding_rate_end_K_per_min": null,
+  "time_to_winding_limit_s": 182.6,
+  "magnets_max_end_C": 63.3,
+  "magnets_rate_end_K_per_min": null,
+  "time_to_magnets_limit_s": null,
+  "t_end_s": 250.0,
+  "run_time_s": 182.6,
+  "limited_by": "winding"
+ },
+ "peak_power": {
+  "torque": 16.0,
+  "rpm": 6000,
+  "P_shaft_kW": 10.05,
+  "loss_W": {
+   "winding_100C": 184.6,
+   "stator": 82.4,
+   "rotor": 8.2,
+   "bearings": 24.0,
+   "inair": 7.9
+  },
+  "winding_max_end_C": 135.8,
+  "winding_rate_end_K_per_min": 0.081,
+  "time_to_winding_limit_s": null,
+  "magnets_max_end_C": 109.5,
+  "magnets_rate_end_K_per_min": 0.079,
+  "time_to_magnets_limit_s": 36214.6,
+  "t_end_s": 43200.0,
+  "run_time_s": 36214.6,
+  "limited_by": "magnets"
+ },
+ "continuous": {
+  "torque": 24.0,
+  "rpm": 3000,
+  "P_shaft_kW": 7.54,
+  "loss_W": {
+   "winding_100C": 213.5,
+   "stator": 65.7,
+   "rotor": 6.6,
+   "bearings": 12.0,
+   "inair": 2.0
+  },
+  "winding_max_end_C": 175.6,
+  "winding_rate_end_K_per_min": 0.071,
+  "time_to_winding_limit_s": 27657.7,
+  "magnets_max_end_C": 136.1,
+  "magnets_rate_end_K_per_min": 0.07,
+  "time_to_magnets_limit_s": 17507.0,
+  "t_end_s": 43200.0,
+  "run_time_s": 17507.0,
+  "limited_by": "magnets"
+ },
+ "cruise": {
+  "torque": 8.0,
+  "rpm": 6000,
+  "P_shaft_kW": 5.03,
+  "loss_W": {
+   "winding_100C": 62.1,
+   "stator": 83.9,
+   "rotor": 8.4,
+   "bearings": 24.0,
+   "inair": 7.9
+  },
+  "winding_max_end_C": 88.5,
+  "winding_rate_end_K_per_min": 0.043,
+  "time_to_winding_limit_s": null,
+  "magnets_max_end_C": 80.6,
+  "magnets_rate_end_K_per_min": 0.044,
+  "time_to_magnets_limit_s": null,
+  "t_end_s": 43200.0,
+  "run_time_s": null,
+  "limited_by": null
+ },
+ "max_speed": {
+  "torque": 8.0,
+  "rpm": 12000,
+  "P_shaft_kW": 10.05,
+  "loss_W": {
+   "winding_100C": 244.7,
+   "stator": 67.6,
+   "rotor": 6.8,
+   "bearings": 48.0,
+   "inair": 31.7
+  },
+  "winding_max_end_C": 154.1,
+  "winding_rate_end_K_per_min": 0.102,
+  "time_to_winding_limit_s": null,
+  "magnets_max_end_C": 124.1,
+  "magnets_rate_end_K_per_min": 0.097,
+  "time_to_magnets_limit_s": 29094.5,
+  "t_end_s": 43200.0,
+  "run_time_s": 29094.5,
+  "limited_by": "magnets"
+ },
+ "grade12": {
+  "torque": 37.0,
+  "rpm": 1782,
+  "P_shaft_kW": 6.9,
+  "loss_W": {
+   "winding_100C": 532.6,
+   "stator": 43.3,
+   "rotor": 4.3,
+   "bearings": 7.1,
+   "inair": 0.7
+  },
+  "winding_max_end_C": 40.0,
+  "winding_rate_end_K_per_min": null,
+  "time_to_winding_limit_s": null,
+  "magnets_max_end_C": 40.0,
+  "magnets_rate_end_K_per_min": null,
+  "time_to_magnets_limit_s": null,
+  "t_end_s": 0.0,
+  "run_time_s": null,
+  "limited_by": null
+ },
+ "flat60": {
+  "torque": 3.24,
+  "rpm": 9339,
+  "P_shaft_kW": 3.17,
+  "loss_W": {
+   "winding_100C": 116.8,
+   "stator": 73.7,
+   "rotor": 7.4,
+   "bearings": 37.4,
+   "inair": 19.2
+  },
+  "winding_max_end_C": 58.6,
+  "winding_rate_end_K_per_min": 0.195,
+  "time_to_winding_limit_s": null,
+  "magnets_max_end_C": 46.9,
+  "magnets_rate_end_K_per_min": 0.171,
+  "time_to_magnets_limit_s": null,
+  "t_end_s": 2220.0,
+  "run_time_s": null,
+  "limited_by": null
+ },
+ "duty1": {
+  "torque": 37.0,
+  "rpm": 1782,
+  "P_shaft_kW": 6.9,
+  "loss_W": {
+   "winding_100C": 579.6,
+   "winding_ac": 30.2,
+   "stator": 63.3,
+   "rotor": 17.5,
+   "bearings": 12.7,
+   "inair": 5.4
+  },
+  "winding_max_end_C": 190.2,
+  "winding_rate_end_K_per_min": null,
+  "time_to_winding_limit_s": 316.4,
+  "magnets_max_end_C": 77.5,
+  "magnets_rate_end_K_per_min": null,
+  "time_to_magnets_limit_s": null,
+  "t_end_s": 477.0,
+  "run_time_s": 316.4,
+  "limited_by": "winding"
+ },
+ "duty2": {
+  "torque": 26.3,
+  "rpm": 2550,
+  "P_shaft_kW": 7.02,
+  "loss_W": {
+   "winding_100C": 284.9,
+   "winding_ac": 32.0,
+   "stator": 84.1,
+   "rotor": 21.8,
+   "bearings": 20.2,
+   "inair": 8.7
+  },
+  "winding_max_end_C": 167.8,
+  "winding_rate_end_K_per_min": 3.903,
+  "time_to_winding_limit_s": 1142.8,
+  "magnets_max_end_C": 109.7,
+  "magnets_rate_end_K_per_min": 3.209,
+  "time_to_magnets_limit_s": 1166.2,
+  "t_end_s": 1350.0,
+  "run_time_s": 1142.8,
+  "limited_by": "winding"
+ },
+ "duty3": {
+  "torque": 20.0,
+  "rpm": 3637,
+  "P_shaft_kW": 7.62,
+  "loss_W": {
+   "winding_100C": 166.4,
+   "winding_ac": 39.1,
+   "stator": 114.9,
+   "rotor": 28.0,
+   "bearings": 32.1,
+   "inair": 13.8
+  },
+  "winding_max_end_C": 181.3,
+  "winding_rate_end_K_per_min": 1.966,
+  "time_to_winding_limit_s": 1920.4,
+  "magnets_max_end_C": 148.9,
+  "magnets_rate_end_K_per_min": 1.934,
+  "time_to_magnets_limit_s": 1338.3,
+  "t_end_s": 2700.0,
+  "run_time_s": 1338.3,
+  "limited_by": "magnets"
+ },
+ "duty4": {
+  "torque": 3.24,
+  "rpm": 9339,
+  "P_shaft_kW": 3.17,
+  "loss_W": {
+   "winding_100C": 97.1,
+   "winding_ac": 148.7,
+   "stator": 154.0,
+   "rotor": 31.4,
+   "bearings": 109.3,
+   "inair": 46.9
+  },
+  "winding_max_end_C": 223.8,
+  "winding_rate_end_K_per_min": 2.311,
+  "time_to_winding_limit_s": 1224.1,
+  "magnets_max_end_C": 197.9,
+  "magnets_rate_end_K_per_min": 2.382,
+  "time_to_magnets_limit_s": 799.8,
+  "t_end_s": 2700.0,
+  "run_time_s": 799.8,
+  "limited_by": "magnets"
+ },
+ "duty5": {
+  "torque": 12.43,
+  "rpm": 1612,
+  "P_shaft_kW": 2.1,
+  "loss_W": {
+   "winding_100C": 65.9,
+   "winding_ac": 3.2,
+   "stator": 32.4,
+   "rotor": 5.6,
+   "bearings": 11.1,
+   "inair": 4.8
+  },
+  "winding_max_end_C": 91.0,
+  "winding_rate_end_K_per_min": 0.393,
+  "time_to_winding_limit_s": null,
+  "magnets_max_end_C": 80.7,
+  "magnets_rate_end_K_per_min": 0.409,
+  "time_to_magnets_limit_s": null,
+  "t_end_s": 4020.0,
+  "run_time_s": null,
+  "limited_by": null
+ }
+}

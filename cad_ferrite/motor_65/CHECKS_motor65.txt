@@ -1,0 +1,83 @@
+V7 MOTOR variant 65: stator 65 mm, rotor 66 mm (0.5 mm overhang each side), terminals inside the housing, radial wall glands
+INTERFERENCE (volume of overlap, mm3; every pair of solids whose bounding boxes meet)
+  housing#1 x oring_cover_2.5#1                                261.206  OK O-ring squeeze (designed)
+  rear_cover#1 x oring_cover_2.5#1                              92.496  OK O-ring squeeze (designed)
+  355 pairs with touching boxes checked, 0 overlapping (excluding designed O-ring squeeze); stator-to-stator pairs: exact 1 mm stretch of the checked variant-B stator (../single_plane_B/CHECKS_spb.txt)
+CLEARANCE (true minimum distance, mm)
+  air gap: rotor lamination x stator teeth                       0.500  OK 
+  rotor overhang beyond the stator, front                        0.500  OK 
+  rotor overhang beyond the stator, rear                         0.500  OK 
+  terminal bar L1 x busbar plate L2                              5.604  OK bar over the other nets, insulated
+  terminal bar L1 x terminal bar L2                              4.781  OK 
+  terminal bar L1 x busbar plate L3                             10.000  OK bar over the other nets, insulated
+  terminal bar L1 x terminal bar L3                             20.049  OK 
+  terminal bar L1 x straps                                      13.558  OK 
+  terminal bar L1 x housing                                     10.000  OK 
+  terminal bar L1 x rear cover                                  10.000  OK 
+  terminal bar L2 x busbar plate L1                              8.644  OK bar over the other nets, insulated
+  terminal bar L2 x terminal bar L1                              4.781  OK 
+  terminal bar L2 x busbar plate L3                              4.000  OK bar over the other nets, insulated
+  terminal bar L2 x terminal bar L3                              5.040  OK 
+  terminal bar L2 x straps                                       4.750  OK 
+  terminal bar L2 x housing                                      4.862  OK 
+  terminal bar L2 x rear cover                                   4.924  OK 
+  terminal bar L3 x busbar plate L1                             10.000  OK bar over the other nets, insulated
+  terminal bar L3 x terminal bar L1                             20.049  OK 
+  terminal bar L3 x busbar plate L2                              5.700  OK bar over the other nets, insulated
+  terminal bar L3 x terminal bar L2                              5.040  OK 
+  terminal bar L3 x straps                                      10.753  OK 
+  terminal bar L3 x housing                                     17.315  OK 
+  terminal bar L3 x rear cover                                  10.000  OK 
+  busbar plate L1 x housing                                     12.574  OK 
+  busbar plate L1 x rear_cover                                  23.326  OK 
+  busbar plate L2 x housing                                      4.274  OK 
+  busbar plate L2 x rear_cover                                  34.426  OK 
+  busbar plate L3 x housing                                      4.274  OK 
+  busbar plate L3 x rear_cover                                  23.326  OK 
+  straps x housing                                               5.750  OK 
+  lugs / studs / nuts x housing (live parts to the housing)      3.521  OK 52 V: IEC 60664-1 needs ~0.2
+  lugs / studs / nuts x rear cover                               1.750  OK 
+  cable lug 1 x busbar plates (any net)                          2.250  OK 
+  cable lug 1 x terminal bars of other phases                    5.709  OK own bar: palm sits on it
+  cable lug 2 x busbar plates (any net)                          2.250  OK 
+  cable lug 2 x terminal bars of other phases                    7.010  OK own bar: palm sits on it
+  cable lug 3 x busbar plates (any net)                          2.250  OK 
+  cable lug 3 x terminal bars of other phases                    3.040  OK own bar: palm sits on it
+  cable lug x cable lug (different phases)                       5.010  OK 
+  rotor end plate x front bearing boss (axial)                   2.500  OK 
+  rotor end plate x rear bearing boss (axial)                    3.500  OK 
+  encoder magnet x encoder PCB (sensor air gap)                  0.600  OK 
+  rotor x housing                                                4.500  OK 
+COIL WIRE (centreline r 1.5) x new parts, worst over the 12 coils
+  coil lead flat end faces (plate top) x terminal bars (other nets)     4.000  OK weld bead must stay under 0.8 mm
+  coil wire x rotor_lamination_stack                             2.543  OK 
+  coil wire x rotor_end_plate                                    3.370  OK 
+  coil wire x shaft                                              8.500  OK 
+  coil wire x bearing_52x30x15                                   8.500  OK 
+  coil wire x terminal_bar_L1                                    5.029  OK F-lead tips are flush with the plate top; weld bead <= 0.8 mm
+  coil wire x terminal_bar_L2                                    4.383  OK F-lead tips are flush with the plate top; weld bead <= 0.8 mm
+  coil wire x terminal_bar_L3                                    4.915  OK F-lead tips are flush with the plate top; weld bead <= 0.8 mm
+  coil wire x housing                                            2.226  OK 
+  coil wire x rear_cover                                         8.500  OK 
+  coil wire x cable_lug_35mm2_M8                                 3.491  OK 
+SIZE
+  body length (drive-end hub face z -63.1 to rear cover z 78.5): 141.6 mm; output shaft 45.0 mm beyond
+  housing face to face (z -52.2 to 78.5): 130.7 mm; fin diameter 188 mm; gland seats at r 92, gland domes to r 114
+  terminal studs, lugs and nuts are inside the housing; cables leave radially through the wall glands
+MASS (g, all instances; stator parts from their own volumes)
+  steel laminations                                 5206
+  aluminium (housing, cover, cap, end plates)       2110
+  copper (12 coils)                                 1445
+  ferrite magnets                                   1315
+  steel (shaft, bearings, hardware)                 1007
+  copper (busbar, straps, terminals, lugs)           284
+  plastics / rubber / PCB                            151
+  TOTAL                                            11518   (cables outside the glands excluded)
+IP67 SEALING (every path from outside to inside)
+  - drive-end shaft: radial lip seal 30x47x7 (NBR / FKM for > 100 C), runs on the ground shaft, outboard of the locating bearing
+  - rear: cover spigot in the housing bore, radial O-ring 2.5 cord (squeeze checked above), 5 x M5; no shaft exit (closed end)
+  - phase cables: 3 x M20 IP68 glands screwed into flat bosses on the housing wall (O-ring under the gland body); terminals stay inside
+  - encoder cable: 1 x M16 IP68 gland in a wall boss
+  - castings: housing and cover in AlSi10Mg, impregnated (vacuum) against porosity; validate with 1 m / 30 min immersion test (IEC 60529)
+  - breathing: add a PTFE vent membrane (M12, IP68) in the cap if the motor sees fast temperature cycles in water
+VERDICT: ALL OK   (380 s)

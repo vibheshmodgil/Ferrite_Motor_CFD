@@ -1,0 +1,31 @@
+FoamFile
+{
+    format      ascii;
+    class       volScalarField;
+    object      T;
+}
+dimensions [0 0 0 1 0 0 0];
+internalField uniform 313.15;
+boundaryField
+{
+    resin_to_bobbin
+    {
+        type coupledTemperature;
+        value $internalField;
+    }
+    resin_to_copper
+    {
+        type coupledTemperature;
+        value $internalField;
+    }
+    resin_to_inair
+    {
+        type coupledTemperature;
+        value $internalField;
+    }
+    resin_to_stator
+    {
+        type coupledTemperature;
+        value $internalField;
+    }
+}

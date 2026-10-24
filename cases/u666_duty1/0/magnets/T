@@ -1,0 +1,28 @@
+FoamFile
+{
+    format      ascii;
+    class       volScalarField;
+    object      T;
+}
+dimensions [0 0 0 1 0 0 0];
+internalField uniform 313.15;
+boundaryField
+{
+    magnets_to_endcaps
+    {
+        type coupledTemperatureNC;
+        value $internalField;
+    }
+    magnets_to_rotor
+    {
+        type coupledTemperatureNC;
+        thicknessLayers (0.0001);
+        kappaLayers (0.2);
+        value $internalField;
+    }
+    magnets_to_inair
+    {
+        type coupledTemperatureNC;
+        value $internalField;
+    }
+}

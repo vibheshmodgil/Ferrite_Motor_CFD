@@ -1,0 +1,516 @@
+FoamFile
+{
+    format      ascii;
+    class       dictionary;
+    object      controlDict;
+}
+
+application     foamMultiRun;
+libs            ("libcoupledTemperatureNC.so");
+regionSolvers
+{
+    winding    solid;
+    bearings   solid;
+    endcaps    solid;
+    housing    solid;
+    inair      solid;
+    magnets    solid;
+    rotor      solid;
+    shaft      solid;
+    stator     solid;
+    wedge      solid;
+}   // winding (fastest-rising T) solved first: smaller coupling lag
+startFrom       startTime;
+startTime       0;
+stopAt          endTime;
+endTime 300;
+deltaT 1;
+adjustTimeStep  no;
+writeControl    adjustableRunTime;
+writeInterval 30;
+purgeWrite      0;
+writeFormat     binary;
+timeFormat      general;
+timePrecision   8;
+runTimeModifiable yes;
+functions
+{
+    T_bearings
+    {
+        type volFieldValue; libs ("libfieldFunctionObjects.so"); region bearings; select all;
+        fields (T); operation max; writeFields false; writeControl timeStep; writeInterval 5; log false;
+    }
+    T_endcaps
+    {
+        type volFieldValue; libs ("libfieldFunctionObjects.so"); region endcaps; select all;
+        fields (T); operation max; writeFields false; writeControl timeStep; writeInterval 5; log false;
+    }
+    T_housing
+    {
+        type volFieldValue; libs ("libfieldFunctionObjects.so"); region housing; select all;
+        fields (T); operation max; writeFields false; writeControl timeStep; writeInterval 5; log false;
+    }
+    T_inair
+    {
+        type volFieldValue; libs ("libfieldFunctionObjects.so"); region inair; select all;
+        fields (T); operation max; writeFields false; writeControl timeStep; writeInterval 5; log false;
+    }
+    T_magnets
+    {
+        type volFieldValue; libs ("libfieldFunctionObjects.so"); region magnets; select all;
+        fields (T); operation max; writeFields false; writeControl timeStep; writeInterval 5; log false;
+    }
+    T_rotor
+    {
+        type volFieldValue; libs ("libfieldFunctionObjects.so"); region rotor; select all;
+        fields (T); operation max; writeFields false; writeControl timeStep; writeInterval 5; log false;
+    }
+    T_shaft
+    {
+        type volFieldValue; libs ("libfieldFunctionObjects.so"); region shaft; select all;
+        fields (T); operation max; writeFields false; writeControl timeStep; writeInterval 5; log false;
+    }
+    T_stator
+    {
+        type volFieldValue; libs ("libfieldFunctionObjects.so"); region stator; select all;
+        fields (T); operation max; writeFields false; writeControl timeStep; writeInterval 5; log false;
+    }
+    T_wedge
+    {
+        type volFieldValue; libs ("libfieldFunctionObjects.so"); region wedge; select all;
+        fields (T); operation max; writeFields false; writeControl timeStep; writeInterval 5; log false;
+    }
+    T_winding
+    {
+        type volFieldValue; libs ("libfieldFunctionObjects.so"); region winding; select all;
+        fields (T); operation max; writeFields false; writeControl timeStep; writeInterval 5; log false;
+    }
+    Tmin_bearings
+    {
+        type volFieldValue; libs ("libfieldFunctionObjects.so"); region bearings; select all;
+        fields (T); operation min; writeFields false; writeControl timeStep; writeInterval 5; log false;
+    }
+    Tmin_endcaps
+    {
+        type volFieldValue; libs ("libfieldFunctionObjects.so"); region endcaps; select all;
+        fields (T); operation min; writeFields false; writeControl timeStep; writeInterval 5; log false;
+    }
+    Tmin_housing
+    {
+        type volFieldValue; libs ("libfieldFunctionObjects.so"); region housing; select all;
+        fields (T); operation min; writeFields false; writeControl timeStep; writeInterval 5; log false;
+    }
+    Tmin_inair
+    {
+        type volFieldValue; libs ("libfieldFunctionObjects.so"); region inair; select all;
+        fields (T); operation min; writeFields false; writeControl timeStep; writeInterval 5; log false;
+    }
+    Tmin_magnets
+    {
+        type volFieldValue; libs ("libfieldFunctionObjects.so"); region magnets; select all;
+        fields (T); operation min; writeFields false; writeControl timeStep; writeInterval 5; log false;
+    }
+    Tmin_rotor
+    {
+        type volFieldValue; libs ("libfieldFunctionObjects.so"); region rotor; select all;
+        fields (T); operation min; writeFields false; writeControl timeStep; writeInterval 5; log false;
+    }
+    Tmin_shaft
+    {
+        type volFieldValue; libs ("libfieldFunctionObjects.so"); region shaft; select all;
+        fields (T); operation min; writeFields false; writeControl timeStep; writeInterval 5; log false;
+    }
+    Tmin_stator
+    {
+        type volFieldValue; libs ("libfieldFunctionObjects.so"); region stator; select all;
+        fields (T); operation min; writeFields false; writeControl timeStep; writeInterval 5; log false;
+    }
+    Tmin_wedge
+    {
+        type volFieldValue; libs ("libfieldFunctionObjects.so"); region wedge; select all;
+        fields (T); operation min; writeFields false; writeControl timeStep; writeInterval 5; log false;
+    }
+    Tmin_winding
+    {
+        type volFieldValue; libs ("libfieldFunctionObjects.so"); region winding; select all;
+        fields (T); operation min; writeFields false; writeControl timeStep; writeInterval 5; log false;
+    }
+    S_axial_y0_bearings
+    {
+        type surfaces; libs ("libsampling.so"); region bearings; writeControl timeStep; writeInterval 10; log false;
+        surfaceFormat vtk; interpolationScheme cell; fields (T);
+        surfaces ( axial_y0 { type cutPlane; planeType pointAndNormal; interpolate false; point (0 0 0); normal (0 1 0); } );
+    }
+    S_axial_y0_endcaps
+    {
+        type surfaces; libs ("libsampling.so"); region endcaps; writeControl timeStep; writeInterval 10; log false;
+        surfaceFormat vtk; interpolationScheme cell; fields (T);
+        surfaces ( axial_y0 { type cutPlane; planeType pointAndNormal; interpolate false; point (0 0 0); normal (0 1 0); } );
+    }
+    S_axial_y0_housing
+    {
+        type surfaces; libs ("libsampling.so"); region housing; writeControl timeStep; writeInterval 10; log false;
+        surfaceFormat vtk; interpolationScheme cell; fields (T);
+        surfaces ( axial_y0 { type cutPlane; planeType pointAndNormal; interpolate false; point (0 0 0); normal (0 1 0); } );
+    }
+    S_axial_y0_inair
+    {
+        type surfaces; libs ("libsampling.so"); region inair; writeControl timeStep; writeInterval 10; log false;
+        surfaceFormat vtk; interpolationScheme cell; fields (T);
+        surfaces ( axial_y0 { type cutPlane; planeType pointAndNormal; interpolate false; point (0 0 0); normal (0 1 0); } );
+    }
+    S_axial_y0_magnets
+    {
+        type surfaces; libs ("libsampling.so"); region magnets; writeControl timeStep; writeInterval 10; log false;
+        surfaceFormat vtk; interpolationScheme cell; fields (T);
+        surfaces ( axial_y0 { type cutPlane; planeType pointAndNormal; interpolate false; point (0 0 0); normal (0 1 0); } );
+    }
+    S_axial_y0_rotor
+    {
+        type surfaces; libs ("libsampling.so"); region rotor; writeControl timeStep; writeInterval 10; log false;
+        surfaceFormat vtk; interpolationScheme cell; fields (T);
+        surfaces ( axial_y0 { type cutPlane; planeType pointAndNormal; interpolate false; point (0 0 0); normal (0 1 0); } );
+    }
+    S_axial_y0_shaft
+    {
+        type surfaces; libs ("libsampling.so"); region shaft; writeControl timeStep; writeInterval 10; log false;
+        surfaceFormat vtk; interpolationScheme cell; fields (T);
+        surfaces ( axial_y0 { type cutPlane; planeType pointAndNormal; interpolate false; point (0 0 0); normal (0 1 0); } );
+    }
+    S_axial_y0_stator
+    {
+        type surfaces; libs ("libsampling.so"); region stator; writeControl timeStep; writeInterval 10; log false;
+        surfaceFormat vtk; interpolationScheme cell; fields (T);
+        surfaces ( axial_y0 { type cutPlane; planeType pointAndNormal; interpolate false; point (0 0 0); normal (0 1 0); } );
+    }
+    S_axial_y0_wedge
+    {
+        type surfaces; libs ("libsampling.so"); region wedge; writeControl timeStep; writeInterval 10; log false;
+        surfaceFormat vtk; interpolationScheme cell; fields (T);
+        surfaces ( axial_y0 { type cutPlane; planeType pointAndNormal; interpolate false; point (0 0 0); normal (0 1 0); } );
+    }
+    S_axial_y0_winding
+    {
+        type surfaces; libs ("libsampling.so"); region winding; writeControl timeStep; writeInterval 10; log false;
+        surfaceFormat vtk; interpolationScheme cell; fields (T);
+        surfaces ( axial_y0 { type cutPlane; planeType pointAndNormal; interpolate false; point (0 0 0); normal (0 1 0); } );
+    }
+    S_radial_stack_housing
+    {
+        type surfaces; libs ("libsampling.so"); region housing; writeControl timeStep; writeInterval 10; log false;
+        surfaceFormat vtk; interpolationScheme cell; fields (T);
+        surfaces ( radial_stack { type cutPlane; planeType pointAndNormal; interpolate false; point (0 0 29.9); normal (0 0 1); } );
+    }
+    S_radial_stack_inair
+    {
+        type surfaces; libs ("libsampling.so"); region inair; writeControl timeStep; writeInterval 10; log false;
+        surfaceFormat vtk; interpolationScheme cell; fields (T);
+        surfaces ( radial_stack { type cutPlane; planeType pointAndNormal; interpolate false; point (0 0 29.9); normal (0 0 1); } );
+    }
+    S_radial_stack_magnets
+    {
+        type surfaces; libs ("libsampling.so"); region magnets; writeControl timeStep; writeInterval 10; log false;
+        surfaceFormat vtk; interpolationScheme cell; fields (T);
+        surfaces ( radial_stack { type cutPlane; planeType pointAndNormal; interpolate false; point (0 0 29.9); normal (0 0 1); } );
+    }
+    S_radial_stack_rotor
+    {
+        type surfaces; libs ("libsampling.so"); region rotor; writeControl timeStep; writeInterval 10; log false;
+        surfaceFormat vtk; interpolationScheme cell; fields (T);
+        surfaces ( radial_stack { type cutPlane; planeType pointAndNormal; interpolate false; point (0 0 29.9); normal (0 0 1); } );
+    }
+    S_radial_stack_shaft
+    {
+        type surfaces; libs ("libsampling.so"); region shaft; writeControl timeStep; writeInterval 10; log false;
+        surfaceFormat vtk; interpolationScheme cell; fields (T);
+        surfaces ( radial_stack { type cutPlane; planeType pointAndNormal; interpolate false; point (0 0 29.9); normal (0 0 1); } );
+    }
+    S_radial_stack_stator
+    {
+        type surfaces; libs ("libsampling.so"); region stator; writeControl timeStep; writeInterval 10; log false;
+        surfaceFormat vtk; interpolationScheme cell; fields (T);
+        surfaces ( radial_stack { type cutPlane; planeType pointAndNormal; interpolate false; point (0 0 29.9); normal (0 0 1); } );
+    }
+    S_radial_stack_wedge
+    {
+        type surfaces; libs ("libsampling.so"); region wedge; writeControl timeStep; writeInterval 10; log false;
+        surfaceFormat vtk; interpolationScheme cell; fields (T);
+        surfaces ( radial_stack { type cutPlane; planeType pointAndNormal; interpolate false; point (0 0 29.9); normal (0 0 1); } );
+    }
+    S_radial_stack_winding
+    {
+        type surfaces; libs ("libsampling.so"); region winding; writeControl timeStep; writeInterval 10; log false;
+        surfaceFormat vtk; interpolationScheme cell; fields (T);
+        surfaces ( radial_stack { type cutPlane; planeType pointAndNormal; interpolate false; point (0 0 29.9); normal (0 0 1); } );
+    }
+    S_radial_ew_front_endcaps
+    {
+        type surfaces; libs ("libsampling.so"); region endcaps; writeControl timeStep; writeInterval 10; log false;
+        surfaceFormat vtk; interpolationScheme cell; fields (T);
+        surfaces ( radial_ew_front { type cutPlane; planeType pointAndNormal; interpolate false; point (0 0 75.0); normal (0 0 1); } );
+    }
+    S_radial_ew_front_housing
+    {
+        type surfaces; libs ("libsampling.so"); region housing; writeControl timeStep; writeInterval 10; log false;
+        surfaceFormat vtk; interpolationScheme cell; fields (T);
+        surfaces ( radial_ew_front { type cutPlane; planeType pointAndNormal; interpolate false; point (0 0 75.0); normal (0 0 1); } );
+    }
+    S_radial_ew_front_inair
+    {
+        type surfaces; libs ("libsampling.so"); region inair; writeControl timeStep; writeInterval 10; log false;
+        surfaceFormat vtk; interpolationScheme cell; fields (T);
+        surfaces ( radial_ew_front { type cutPlane; planeType pointAndNormal; interpolate false; point (0 0 75.0); normal (0 0 1); } );
+    }
+    S_radial_ew_front_shaft
+    {
+        type surfaces; libs ("libsampling.so"); region shaft; writeControl timeStep; writeInterval 10; log false;
+        surfaceFormat vtk; interpolationScheme cell; fields (T);
+        surfaces ( radial_ew_front { type cutPlane; planeType pointAndNormal; interpolate false; point (0 0 75.0); normal (0 0 1); } );
+    }
+    S_radial_ew_front_winding
+    {
+        type surfaces; libs ("libsampling.so"); region winding; writeControl timeStep; writeInterval 10; log false;
+        surfaceFormat vtk; interpolationScheme cell; fields (T);
+        surfaces ( radial_ew_front { type cutPlane; planeType pointAndNormal; interpolate false; point (0 0 75.0); normal (0 0 1); } );
+    }
+    S_radial_ew_rear_endcaps
+    {
+        type surfaces; libs ("libsampling.so"); region endcaps; writeControl timeStep; writeInterval 10; log false;
+        surfaceFormat vtk; interpolationScheme cell; fields (T);
+        surfaces ( radial_ew_rear { type cutPlane; planeType pointAndNormal; interpolate false; point (0 0 -15.3); normal (0 0 1); } );
+    }
+    S_radial_ew_rear_housing
+    {
+        type surfaces; libs ("libsampling.so"); region housing; writeControl timeStep; writeInterval 10; log false;
+        surfaceFormat vtk; interpolationScheme cell; fields (T);
+        surfaces ( radial_ew_rear { type cutPlane; planeType pointAndNormal; interpolate false; point (0 0 -15.3); normal (0 0 1); } );
+    }
+    S_radial_ew_rear_inair
+    {
+        type surfaces; libs ("libsampling.so"); region inair; writeControl timeStep; writeInterval 10; log false;
+        surfaceFormat vtk; interpolationScheme cell; fields (T);
+        surfaces ( radial_ew_rear { type cutPlane; planeType pointAndNormal; interpolate false; point (0 0 -15.3); normal (0 0 1); } );
+    }
+    S_radial_ew_rear_shaft
+    {
+        type surfaces; libs ("libsampling.so"); region shaft; writeControl timeStep; writeInterval 10; log false;
+        surfaceFormat vtk; interpolationScheme cell; fields (T);
+        surfaces ( radial_ew_rear { type cutPlane; planeType pointAndNormal; interpolate false; point (0 0 -15.3); normal (0 0 1); } );
+    }
+    S_radial_ew_rear_winding
+    {
+        type surfaces; libs ("libsampling.so"); region winding; writeControl timeStep; writeInterval 10; log false;
+        surfaceFormat vtk; interpolationScheme cell; fields (T);
+        surfaces ( radial_ew_rear { type cutPlane; planeType pointAndNormal; interpolate false; point (0 0 -15.3); normal (0 0 1); } );
+    }
+    Tavg_bearings
+    {
+        type volFieldValue; libs ("libfieldFunctionObjects.so"); region bearings; select all;
+        fields (T); operation volAverage; writeFields false; writeControl timeStep; writeInterval 5; log false;
+    }
+    Tavg_endcaps
+    {
+        type volFieldValue; libs ("libfieldFunctionObjects.so"); region endcaps; select all;
+        fields (T); operation volAverage; writeFields false; writeControl timeStep; writeInterval 5; log false;
+    }
+    Tavg_housing
+    {
+        type volFieldValue; libs ("libfieldFunctionObjects.so"); region housing; select all;
+        fields (T); operation volAverage; writeFields false; writeControl timeStep; writeInterval 5; log false;
+    }
+    Tavg_inair
+    {
+        type volFieldValue; libs ("libfieldFunctionObjects.so"); region inair; select all;
+        fields (T); operation volAverage; writeFields false; writeControl timeStep; writeInterval 5; log false;
+    }
+    Tavg_magnets
+    {
+        type volFieldValue; libs ("libfieldFunctionObjects.so"); region magnets; select all;
+        fields (T); operation volAverage; writeFields false; writeControl timeStep; writeInterval 5; log false;
+    }
+    Tavg_rotor
+    {
+        type volFieldValue; libs ("libfieldFunctionObjects.so"); region rotor; select all;
+        fields (T); operation volAverage; writeFields false; writeControl timeStep; writeInterval 5; log false;
+    }
+    Tavg_shaft
+    {
+        type volFieldValue; libs ("libfieldFunctionObjects.so"); region shaft; select all;
+        fields (T); operation volAverage; writeFields false; writeControl timeStep; writeInterval 5; log false;
+    }
+    Tavg_stator
+    {
+        type volFieldValue; libs ("libfieldFunctionObjects.so"); region stator; select all;
+        fields (T); operation volAverage; writeFields false; writeControl timeStep; writeInterval 5; log false;
+    }
+    Tavg_wedge
+    {
+        type volFieldValue; libs ("libfieldFunctionObjects.so"); region wedge; select all;
+        fields (T); operation volAverage; writeFields false; writeControl timeStep; writeInterval 5; log false;
+    }
+    Tavg_winding
+    {
+        type volFieldValue; libs ("libfieldFunctionObjects.so"); region winding; select all;
+        fields (T); operation volAverage; writeFields false; writeControl timeStep; writeInterval 5; log false;
+    }
+    Tint_bearings
+    {
+        type volFieldValue; libs ("libfieldFunctionObjects.so"); region bearings; select all;
+        fields (T); operation volIntegrate; writeFields false; writeControl timeStep; writeInterval 5; log false;
+    }
+    Tint_endcaps
+    {
+        type volFieldValue; libs ("libfieldFunctionObjects.so"); region endcaps; select all;
+        fields (T); operation volIntegrate; writeFields false; writeControl timeStep; writeInterval 5; log false;
+    }
+    Tint_housing
+    {
+        type volFieldValue; libs ("libfieldFunctionObjects.so"); region housing; select all;
+        fields (T); operation volIntegrate; writeFields false; writeControl timeStep; writeInterval 5; log false;
+    }
+    Tint_inair
+    {
+        type volFieldValue; libs ("libfieldFunctionObjects.so"); region inair; select all;
+        fields (T); operation volIntegrate; writeFields false; writeControl timeStep; writeInterval 5; log false;
+    }
+    Tint_magnets
+    {
+        type volFieldValue; libs ("libfieldFunctionObjects.so"); region magnets; select all;
+        fields (T); operation volIntegrate; writeFields false; writeControl timeStep; writeInterval 5; log false;
+    }
+    Tint_rotor
+    {
+        type volFieldValue; libs ("libfieldFunctionObjects.so"); region rotor; select all;
+        fields (T); operation volIntegrate; writeFields false; writeControl timeStep; writeInterval 5; log false;
+    }
+    Tint_shaft
+    {
+        type volFieldValue; libs ("libfieldFunctionObjects.so"); region shaft; select all;
+        fields (T); operation volIntegrate; writeFields false; writeControl timeStep; writeInterval 5; log false;
+    }
+    Tint_stator
+    {
+        type volFieldValue; libs ("libfieldFunctionObjects.so"); region stator; select all;
+        fields (T); operation volIntegrate; writeFields false; writeControl timeStep; writeInterval 5; log false;
+    }
+    Tint_wedge
+    {
+        type volFieldValue; libs ("libfieldFunctionObjects.so"); region wedge; select all;
+        fields (T); operation volIntegrate; writeFields false; writeControl timeStep; writeInterval 5; log false;
+    }
+    Tint_winding
+    {
+        type volFieldValue; libs ("libfieldFunctionObjects.so"); region winding; select all;
+        fields (T); operation volIntegrate; writeFields false; writeControl timeStep; writeInterval 5; log false;
+    }
+    Tavgz_rotor
+    {
+        type volFieldValue; libs ("libfieldFunctionObjects.so"); region rotor; select cellZone; cellZone rotor;
+        fields (T); operation volAverage; writeFields false; writeControl timeStep; writeInterval 5; log false;
+    }
+    Tintz_rotor
+    {
+        type volFieldValue; libs ("libfieldFunctionObjects.so"); region rotor; select cellZone; cellZone rotor;
+        fields (T); operation volIntegrate; writeFields false; writeControl timeStep; writeInterval 5; log false;
+    }
+    Tavgz_rpocket
+    {
+        type volFieldValue; libs ("libfieldFunctionObjects.so"); region rotor; select cellZone; cellZone rpocket;
+        fields (T); operation volAverage; writeFields false; writeControl timeStep; writeInterval 5; log false;
+    }
+    Tintz_rpocket
+    {
+        type volFieldValue; libs ("libfieldFunctionObjects.so"); region rotor; select cellZone; cellZone rpocket;
+        fields (T); operation volIntegrate; writeFields false; writeControl timeStep; writeInterval 5; log false;
+    }
+    Tavgz_slot
+    {
+        type volFieldValue; libs ("libfieldFunctionObjects.so"); region winding; select cellZone; cellZone slot;
+        fields (T); operation volAverage; writeFields false; writeControl timeStep; writeInterval 5; log false;
+    }
+    Tintz_slot
+    {
+        type volFieldValue; libs ("libfieldFunctionObjects.so"); region winding; select cellZone; cellZone slot;
+        fields (T); operation volIntegrate; writeFields false; writeControl timeStep; writeInterval 5; log false;
+    }
+    Tavgz_endw
+    {
+        type volFieldValue; libs ("libfieldFunctionObjects.so"); region winding; select cellZone; cellZone endw;
+        fields (T); operation volAverage; writeFields false; writeControl timeStep; writeInterval 5; log false;
+    }
+    Tintz_endw
+    {
+        type volFieldValue; libs ("libfieldFunctionObjects.so"); region winding; select cellZone; cellZone endw;
+        fields (T); operation volIntegrate; writeFields false; writeControl timeStep; writeInterval 5; log false;
+    }
+    T_slot
+    {
+        type volFieldValue; libs ("libfieldFunctionObjects.so"); region winding; select cellZone; cellZone slot;
+        fields (T); operation max; writeFields false; writeControl timeStep; writeInterval 5; log false;
+    }
+    T_endw
+    {
+        type volFieldValue; libs ("libfieldFunctionObjects.so"); region winding; select cellZone; cellZone endw;
+        fields (T); operation max; writeFields false; writeControl timeStep; writeInterval 5; log false;
+    }
+    Qout_housing
+    {
+        type wallHeatFlux; libs ("libfieldFunctionObjects.so"); region housing; patches (defaultFaces);
+        objects (); writeControl timeStep; writeInterval 1; log false;
+    }
+    Qout_shaft
+    {
+        type wallHeatFlux; libs ("libfieldFunctionObjects.so"); region shaft; patches (defaultFaces);
+        objects (); writeControl timeStep; writeInterval 1; log false;
+    }
+    Qif_bearings
+    {
+        type wallHeatFlux; libs ("libfieldFunctionObjects.so"); region bearings; patches ("bearings_to_.*");
+        objects (); writeControl timeStep; writeInterval 1; log false;
+    }
+    Qif_endcaps
+    {
+        type wallHeatFlux; libs ("libfieldFunctionObjects.so"); region endcaps; patches ("endcaps_to_.*");
+        objects (); writeControl timeStep; writeInterval 1; log false;
+    }
+    Qif_housing
+    {
+        type wallHeatFlux; libs ("libfieldFunctionObjects.so"); region housing; patches ("housing_to_.*");
+        objects (); writeControl timeStep; writeInterval 1; log false;
+    }
+    Qif_inair
+    {
+        type wallHeatFlux; libs ("libfieldFunctionObjects.so"); region inair; patches ("inair_to_.*");
+        objects (); writeControl timeStep; writeInterval 1; log false;
+    }
+    Qif_magnets
+    {
+        type wallHeatFlux; libs ("libfieldFunctionObjects.so"); region magnets; patches ("magnets_to_.*");
+        objects (); writeControl timeStep; writeInterval 1; log false;
+    }
+    Qif_rotor
+    {
+        type wallHeatFlux; libs ("libfieldFunctionObjects.so"); region rotor; patches ("rotor_to_.*");
+        objects (); writeControl timeStep; writeInterval 1; log false;
+    }
+    Qif_shaft
+    {
+        type wallHeatFlux; libs ("libfieldFunctionObjects.so"); region shaft; patches ("shaft_to_.*");
+        objects (); writeControl timeStep; writeInterval 1; log false;
+    }
+    Qif_stator
+    {
+        type wallHeatFlux; libs ("libfieldFunctionObjects.so"); region stator; patches ("stator_to_.*");
+        objects (); writeControl timeStep; writeInterval 1; log false;
+    }
+    Qif_wedge
+    {
+        type wallHeatFlux; libs ("libfieldFunctionObjects.so"); region wedge; patches ("wedge_to_.*");
+        objects (); writeControl timeStep; writeInterval 1; log false;
+    }
+    Qif_winding
+    {
+        type wallHeatFlux; libs ("libfieldFunctionObjects.so"); region winding; patches ("winding_to_.*");
+        objects (); writeControl timeStep; writeInterval 1; log false;
+    }
+}

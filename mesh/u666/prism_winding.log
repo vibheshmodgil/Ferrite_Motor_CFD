@@ -1,0 +1,4 @@
+degenerate skin faces: []
+prism route winding volumes 110 section faces 216 bands [-30.3, -0.3502, 60.2002, 90.15]
+patch area mm2 (prism | CAD): {'winding_to_inair': (50774, 50806), 'winding_to_stator': (104748, 105074), 'winding_to_wedge': (37082, 37148)}
+prisms: 208944 volumes cm3 {'slot': np.float64(220.64), 'endw': np.float64(107.96)} patches {np.str_('winding_to_inair'): 28644, np.str_('winding_to_stator'): 36576, np.str_('winding_to_wedge'): 22464}

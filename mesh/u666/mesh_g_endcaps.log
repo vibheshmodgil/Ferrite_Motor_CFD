@@ -1,0 +1,1561 @@
+Info    : Reading 'C:\Users\vibhe\Downloads\OUTPUT\CFD\scripts\..\mesh\u666\u666_geo.brep'...
+Info    : Snapping geometry point 5 to curve (distance = 1.38195e-08)
+Info    : Snapping geometry point 6 to curve (distance = 1.38195e-08)
+Info    : Snapping geometry point 15 to curve (distance = 1.08699e-05)
+Info    : Snapping geometry point 15 to curve (distance = 2.17397e-05)
+Info    : Snapping geometry point 16 to curve (distance = 4.41722e-06)
+Info    : Snapping geometry point 16 to curve (distance = 8.83445e-06)
+Info    : Snapping geometry point 17 to curve (distance = 1.43506e-05)
+Info    : Snapping geometry point 17 to curve (distance = 2.87012e-05)
+Info    : Snapping geometry point 18 to curve (distance = 2.2744e-06)
+Info    : Snapping geometry point 18 to curve (distance = 4.5488e-06)
+Info    : Snapping geometry point 20 to curve (distance = 9.64118e-06)
+Info    : Snapping geometry point 20 to curve (distance = 1.92824e-05)
+Info    : Snapping geometry point 20 to curve (distance = 1.92824e-05)
+Info    : Snapping geometry point 20 to curve (distance = 1.92824e-05)
+Info    : Snapping geometry point 21 to curve (distance = 1.52801e-06)
+Info    : Snapping geometry point 21 to curve (distance = 3.05603e-06)
+Info    : Snapping geometry point 21 to curve (distance = 3.05603e-06)
+Info    : Snapping geometry point 21 to curve (distance = 3.05603e-06)
+Info    : Snapping geometry point 23 to curve (distance = 7.30272e-06)
+Info    : Snapping geometry point 23 to curve (distance = 1.46054e-05)
+Info    : Snapping geometry point 23 to curve (distance = 1.46054e-05)
+Info    : Snapping geometry point 23 to curve (distance = 1.46054e-05)
+Info    : Snapping geometry point 24 to curve (distance = 2.96763e-06)
+Info    : Snapping geometry point 24 to curve (distance = 5.93527e-06)
+Info    : Snapping geometry point 24 to curve (distance = 5.93527e-06)
+Info    : Snapping geometry point 24 to curve (distance = 5.93527e-06)
+Info    : Snapping geometry point 425 to curve (distance = 2.30654e-06)
+Info    : Snapping geometry point 425 to curve (distance = 2.30654e-06)
+Info    : Snapping geometry point 425 to curve (distance = 2.30633e-06)
+Info    : Snapping geometry point 426 to curve (distance = 3.24953e-06)
+Info    : Snapping geometry point 429 to curve (distance = 2.30653e-06)
+Info    : Snapping geometry point 429 to curve (distance = 2.30653e-06)
+Info    : Snapping geometry point 429 to curve (distance = 2.30633e-06)
+Info    : Snapping geometry point 430 to curve (distance = 3.24953e-06)
+Info    : Snapping geometry point 433 to curve (distance = 2.30654e-06)
+Info    : Snapping geometry point 433 to curve (distance = 2.30654e-06)
+Info    : Snapping geometry point 433 to curve (distance = 2.30633e-06)
+Info    : Snapping geometry point 434 to curve (distance = 3.24953e-06)
+Info    : Snapping geometry point 437 to curve (distance = 2.30654e-06)
+Info    : Snapping geometry point 437 to curve (distance = 2.30654e-06)
+Info    : Snapping geometry point 437 to curve (distance = 2.30633e-06)
+Info    : Snapping geometry point 438 to curve (distance = 3.24953e-06)
+Info    : Snapping geometry point 441 to curve (distance = 2.30654e-06)
+Info    : Snapping geometry point 441 to curve (distance = 2.30654e-06)
+Info    : Snapping geometry point 441 to curve (distance = 2.30633e-06)
+Info    : Snapping geometry point 442 to curve (distance = 3.24953e-06)
+Info    : Snapping geometry point 445 to curve (distance = 2.30653e-06)
+Info    : Snapping geometry point 445 to curve (distance = 2.30653e-06)
+Info    : Snapping geometry point 445 to curve (distance = 2.30632e-06)
+Info    : Snapping geometry point 446 to curve (distance = 3.24954e-06)
+Info    : Snapping geometry point 449 to curve (distance = 2.30653e-06)
+Info    : Snapping geometry point 449 to curve (distance = 2.30653e-06)
+Info    : Snapping geometry point 449 to curve (distance = 2.30632e-06)
+Info    : Snapping geometry point 450 to curve (distance = 3.24953e-06)
+Info    : Snapping geometry point 453 to curve (distance = 2.30654e-06)
+Info    : Snapping geometry point 453 to curve (distance = 2.30654e-06)
+Info    : Snapping geometry point 453 to curve (distance = 2.30633e-06)
+Info    : Snapping geometry point 454 to curve (distance = 3.24953e-06)
+Info    : Snapping geometry point 457 to curve (distance = 2.30654e-06)
+Info    : Snapping geometry point 457 to curve (distance = 2.30654e-06)
+Info    : Snapping geometry point 457 to curve (distance = 2.30633e-06)
+Info    : Snapping geometry point 458 to curve (distance = 3.24953e-06)
+Info    : Snapping geometry point 461 to curve (distance = 2.30654e-06)
+Info    : Snapping geometry point 461 to curve (distance = 2.30654e-06)
+Info    : Snapping geometry point 461 to curve (distance = 2.30633e-06)
+Info    : Snapping geometry point 462 to curve (distance = 3.24953e-06)
+Info    : Snapping geometry point 465 to curve (distance = 2.30653e-06)
+Info    : Snapping geometry point 465 to curve (distance = 2.30653e-06)
+Info    : Snapping geometry point 465 to curve (distance = 2.30633e-06)
+Info    : Snapping geometry point 466 to curve (distance = 3.24953e-06)
+Info    : Snapping geometry point 469 to curve (distance = 2.30654e-06)
+Info    : Snapping geometry point 469 to curve (distance = 2.30654e-06)
+Info    : Snapping geometry point 469 to curve (distance = 2.30633e-06)
+Info    : Snapping geometry point 470 to curve (distance = 3.24953e-06)
+Info    : Snapping geometry point 473 to curve (distance = 2.30654e-06)
+Info    : Snapping geometry point 473 to curve (distance = 2.30654e-06)
+Info    : Snapping geometry point 473 to curve (distance = 2.30633e-06)
+Info    : Snapping geometry point 474 to curve (distance = 3.24953e-06)
+Info    : Snapping geometry point 477 to curve (distance = 2.30654e-06)
+Info    : Snapping geometry point 477 to curve (distance = 2.30654e-06)
+Info    : Snapping geometry point 477 to curve (distance = 2.30633e-06)
+Info    : Snapping geometry point 478 to curve (distance = 3.24953e-06)
+Info    : Snapping geometry point 481 to curve (distance = 2.30653e-06)
+Info    : Snapping geometry point 481 to curve (distance = 2.30653e-06)
+Info    : Snapping geometry point 481 to curve (distance = 2.30632e-06)
+Info    : Snapping geometry point 482 to curve (distance = 3.24954e-06)
+Info    : Snapping geometry point 489 to curve (distance = 4.33186e-06)
+Info    : Snapping geometry point 489 to curve (distance = 4.33186e-06)
+Info    : Snapping geometry point 489 to curve (distance = 4.33167e-06)
+Info    : Snapping geometry point 490 to curve (distance = 9.39831e-06)
+Info    : Snapping geometry point 490 to curve (distance = 9.82241e-06)
+Info    : Snapping geometry point 490 to curve (distance = 2.85514e-06)
+Info    : Snapping geometry point 490 to curve (distance = 2.13637e-07)
+Info    : Snapping geometry point 491 to curve (distance = 5.38548e-06)
+Info    : Snapping geometry point 491 to curve (distance = 6.52787e-06)
+Info    : Snapping geometry point 491 to curve (distance = 3.68918e-06)
+Info    : Snapping geometry point 491 to curve (distance = 5.11137e-06)
+Info    : Snapping geometry point 492 to curve (distance = 1.06536e-05)
+Info    : Snapping geometry point 495 to curve (distance = 3.57126e-07)
+Info    : Snapping geometry point 495 to curve (distance = 3.57126e-07)
+Info    : Snapping geometry point 495 to curve (distance = 3.56966e-07)
+Info    : Snapping geometry point 496 to curve (distance = 1.97799e-06)
+Info    : Snapping geometry point 499 to curve (distance = 8.78814e-06)
+Info    : Snapping geometry point 500 to curve (distance = 1.74201e-06)
+Info    : Snapping geometry point 500 to curve (distance = 1.74188e-06)
+Info    : Snapping geometry point 500 to curve (distance = 2.10844e-08)
+Info    : Snapping geometry point 501 to curve (distance = 1.74958e-06)
+Info    : Snapping geometry point 501 to curve (distance = 1.74958e-06)
+Info    : Snapping geometry point 501 to curve (distance = 4.80715e-07)
+Info    : Snapping geometry point 502 to curve (distance = 6.25677e-06)
+Info    : Snapping geometry point 502 to curve (distance = 1.017e-05)
+Info    : Snapping geometry point 502 to curve (distance = 4.87162e-06)
+Info    : Snapping geometry point 503 to curve (distance = 1.59601e-07)
+Info    : Snapping geometry point 504 to curve (distance = 1.59601e-07)
+Info    : Snapping geometry point 505 to curve (distance = 8.78816e-06)
+Info    : Snapping geometry point 506 to curve (distance = 1.742e-06)
+Info    : Snapping geometry point 506 to curve (distance = 1.74187e-06)
+Info    : Snapping geometry point 506 to curve (distance = 2.10838e-08)
+Info    : Snapping geometry point 507 to curve (distance = 1.74958e-06)
+Info    : Snapping geometry point 507 to curve (distance = 1.74958e-06)
+Info    : Snapping geometry point 507 to curve (distance = 4.8072e-07)
+Info    : Snapping geometry point 508 to curve (distance = 6.25679e-06)
+Info    : Snapping geometry point 508 to curve (distance = 1.01701e-05)
+Info    : Snapping geometry point 508 to curve (distance = 4.87163e-06)
+Info    : Snapping geometry point 509 to curve (distance = 8.80999e-06)
+Info    : Snapping geometry point 510 to curve (distance = 1.74201e-06)
+Info    : Snapping geometry point 510 to curve (distance = 1.74188e-06)
+Info    : Snapping geometry point 510 to curve (distance = 2.10837e-08)
+Info    : Snapping geometry point 511 to curve (distance = 1.74958e-06)
+Info    : Snapping geometry point 511 to curve (distance = 1.74958e-06)
+Info    : Snapping geometry point 511 to curve (distance = 4.80716e-07)
+Info    : Snapping geometry point 512 to curve (distance = 6.27016e-06)
+Info    : Snapping geometry point 512 to curve (distance = 1.01918e-05)
+Info    : Snapping geometry point 512 to curve (distance = 4.88204e-06)
+Info    : Snapping geometry point 513 to curve (distance = 8.87083e-06)
+Info    : Snapping geometry point 514 to curve (distance = 1.74201e-06)
+Info    : Snapping geometry point 514 to curve (distance = 1.74188e-06)
+Info    : Snapping geometry point 514 to curve (distance = 2.10839e-08)
+Info    : Snapping geometry point 515 to curve (distance = 1.74958e-06)
+Info    : Snapping geometry point 515 to curve (distance = 1.74958e-06)
+Info    : Snapping geometry point 515 to curve (distance = 4.80715e-07)
+Info    : Snapping geometry point 516 to curve (distance = 6.31145e-06)
+Info    : Snapping geometry point 516 to curve (distance = 1.02589e-05)
+Info    : Snapping geometry point 516 to curve (distance = 4.91419e-06)
+Info    : Snapping geometry point 517 to curve (distance = 8.78839e-06)
+Info    : Snapping geometry point 518 to curve (distance = 1.742e-06)
+Info    : Snapping geometry point 518 to curve (distance = 1.74187e-06)
+Info    : Snapping geometry point 518 to curve (distance = 2.10841e-08)
+Info    : Snapping geometry point 519 to curve (distance = 1.74958e-06)
+Info    : Snapping geometry point 519 to curve (distance = 1.74958e-06)
+Info    : Snapping geometry point 519 to curve (distance = 4.80716e-07)
+Info    : Snapping geometry point 520 to curve (distance = 6.25697e-06)
+Info    : Snapping geometry point 520 to curve (distance = 1.01704e-05)
+Info    : Snapping geometry point 520 to curve (distance = 4.87177e-06)
+Info    : Snapping geometry point 521 to curve (distance = 8.78821e-06)
+Info    : Snapping geometry point 522 to curve (distance = 1.742e-06)
+Info    : Snapping geometry point 522 to curve (distance = 1.74187e-06)
+Info    : Snapping geometry point 522 to curve (distance = 2.10832e-08)
+Info    : Snapping geometry point 523 to curve (distance = 1.74958e-06)
+Info    : Snapping geometry point 523 to curve (distance = 1.74958e-06)
+Info    : Snapping geometry point 523 to curve (distance = 4.80726e-07)
+Info    : Snapping geometry point 524 to curve (distance = 6.25683e-06)
+Info    : Snapping geometry point 524 to curve (distance = 1.01701e-05)
+Info    : Snapping geometry point 524 to curve (distance = 4.87166e-06)
+Info    : Snapping geometry point 525 to curve (distance = 8.78816e-06)
+Info    : Snapping geometry point 526 to curve (distance = 1.742e-06)
+Info    : Snapping geometry point 526 to curve (distance = 1.74187e-06)
+Info    : Snapping geometry point 526 to curve (distance = 2.10832e-08)
+Info    : Snapping geometry point 527 to curve (distance = 1.74958e-06)
+Info    : Snapping geometry point 527 to curve (distance = 1.74958e-06)
+Info    : Snapping geometry point 527 to curve (distance = 4.80722e-07)
+Info    : Snapping geometry point 528 to curve (distance = 6.25679e-06)
+Info    : Snapping geometry point 528 to curve (distance = 1.01701e-05)
+Info    : Snapping geometry point 528 to curve (distance = 4.87163e-06)
+Info    : Snapping geometry point 529 to curve (distance = 8.77536e-06)
+Info    : Snapping geometry point 530 to curve (distance = 1.74201e-06)
+Info    : Snapping geometry point 530 to curve (distance = 1.74188e-06)
+Info    : Snapping geometry point 530 to curve (distance = 2.10838e-08)
+Info    : Snapping geometry point 531 to curve (distance = 1.74958e-06)
+Info    : Snapping geometry point 531 to curve (distance = 1.74958e-06)
+Info    : Snapping geometry point 531 to curve (distance = 4.80716e-07)
+Info    : Snapping geometry point 532 to curve (distance = 6.24896e-06)
+Info    : Snapping geometry point 532 to curve (distance = 1.01573e-05)
+Info    : Snapping geometry point 532 to curve (distance = 4.86553e-06)
+Info    : Snapping geometry point 533 to curve (distance = 8.89822e-06)
+Info    : Snapping geometry point 534 to curve (distance = 1.74201e-06)
+Info    : Snapping geometry point 534 to curve (distance = 1.74188e-06)
+Info    : Snapping geometry point 534 to curve (distance = 2.10844e-08)
+Info    : Snapping geometry point 535 to curve (distance = 1.74958e-06)
+Info    : Snapping geometry point 535 to curve (distance = 1.74958e-06)
+Info    : Snapping geometry point 535 to curve (distance = 4.80715e-07)
+Info    : Snapping geometry point 536 to curve (distance = 6.32982e-06)
+Info    : Snapping geometry point 536 to curve (distance = 1.02888e-05)
+Info    : Snapping geometry point 536 to curve (distance = 4.92849e-06)
+Info    : Snapping geometry point 537 to curve (distance = 8.78814e-06)
+Info    : Snapping geometry point 538 to curve (distance = 1.74201e-06)
+Info    : Snapping geometry point 538 to curve (distance = 1.74188e-06)
+Info    : Snapping geometry point 538 to curve (distance = 2.10844e-08)
+Info    : Snapping geometry point 539 to curve (distance = 1.74958e-06)
+Info    : Snapping geometry point 539 to curve (distance = 1.74958e-06)
+Info    : Snapping geometry point 539 to curve (distance = 4.80715e-07)
+Info    : Snapping geometry point 540 to curve (distance = 6.25677e-06)
+Info    : Snapping geometry point 540 to curve (distance = 1.017e-05)
+Info    : Snapping geometry point 540 to curve (distance = 4.87161e-06)
+Info    : Snapping geometry point 541 to curve (distance = 8.78816e-06)
+Info    : Snapping geometry point 542 to curve (distance = 1.742e-06)
+Info    : Snapping geometry point 542 to curve (distance = 1.74187e-06)
+Info    : Snapping geometry point 542 to curve (distance = 2.10838e-08)
+Info    : Snapping geometry point 543 to curve (distance = 1.74958e-06)
+Info    : Snapping geometry point 543 to curve (distance = 1.74958e-06)
+Info    : Snapping geometry point 543 to curve (distance = 4.8072e-07)
+Info    : Snapping geometry point 544 to curve (distance = 6.25679e-06)
+Info    : Snapping geometry point 544 to curve (distance = 1.01701e-05)
+Info    : Snapping geometry point 544 to curve (distance = 4.87163e-06)
+Info    : Snapping geometry point 545 to curve (distance = 8.80999e-06)
+Info    : Snapping geometry point 546 to curve (distance = 1.74201e-06)
+Info    : Snapping geometry point 546 to curve (distance = 1.74188e-06)
+Info    : Snapping geometry point 546 to curve (distance = 2.10837e-08)
+Info    : Snapping geometry point 547 to curve (distance = 1.74958e-06)
+Info    : Snapping geometry point 547 to curve (distance = 1.74958e-06)
+Info    : Snapping geometry point 547 to curve (distance = 4.80716e-07)
+Info    : Snapping geometry point 548 to curve (distance = 6.27016e-06)
+Info    : Snapping geometry point 548 to curve (distance = 1.01918e-05)
+Info    : Snapping geometry point 548 to curve (distance = 4.88204e-06)
+Info    : Snapping geometry point 549 to curve (distance = 8.87083e-06)
+Info    : Snapping geometry point 550 to curve (distance = 1.74201e-06)
+Info    : Snapping geometry point 550 to curve (distance = 1.74188e-06)
+Info    : Snapping geometry point 550 to curve (distance = 2.10839e-08)
+Info    : Snapping geometry point 551 to curve (distance = 1.74958e-06)
+Info    : Snapping geometry point 551 to curve (distance = 1.74958e-06)
+Info    : Snapping geometry point 551 to curve (distance = 4.80715e-07)
+Info    : Snapping geometry point 552 to curve (distance = 6.31145e-06)
+Info    : Snapping geometry point 552 to curve (distance = 1.02589e-05)
+Info    : Snapping geometry point 552 to curve (distance = 4.91419e-06)
+Info    : Snapping geometry point 553 to curve (distance = 8.78839e-06)
+Info    : Snapping geometry point 554 to curve (distance = 1.742e-06)
+Info    : Snapping geometry point 554 to curve (distance = 1.74187e-06)
+Info    : Snapping geometry point 554 to curve (distance = 2.10841e-08)
+Info    : Snapping geometry point 555 to curve (distance = 1.74958e-06)
+Info    : Snapping geometry point 555 to curve (distance = 1.74958e-06)
+Info    : Snapping geometry point 555 to curve (distance = 4.80716e-07)
+Info    : Snapping geometry point 556 to curve (distance = 6.25697e-06)
+Info    : Snapping geometry point 556 to curve (distance = 1.01704e-05)
+Info    : Snapping geometry point 556 to curve (distance = 4.87177e-06)
+Info    : Snapping geometry point 557 to curve (distance = 8.78821e-06)
+Info    : Snapping geometry point 558 to curve (distance = 1.742e-06)
+Info    : Snapping geometry point 558 to curve (distance = 1.74187e-06)
+Info    : Snapping geometry point 558 to curve (distance = 2.10832e-08)
+Info    : Snapping geometry point 559 to curve (distance = 1.74958e-06)
+Info    : Snapping geometry point 559 to curve (distance = 1.74958e-06)
+Info    : Snapping geometry point 559 to curve (distance = 4.80726e-07)
+Info    : Snapping geometry point 560 to curve (distance = 6.25683e-06)
+Info    : Snapping geometry point 560 to curve (distance = 1.01701e-05)
+Info    : Snapping geometry point 560 to curve (distance = 4.87166e-06)
+Info    : Snapping geometry point 561 to curve (distance = 8.78816e-06)
+Info    : Snapping geometry point 562 to curve (distance = 0.00293884)
+Info    : Snapping geometry point 562 to curve (distance = 0.00308895)
+Info    : Snapping geometry point 562 to curve (distance = 0.000477111)
+Info    : Snapping geometry point 563 to curve (distance = 0.00293884)
+Info    : Snapping geometry point 563 to curve (distance = 0.00293884)
+Info    : Snapping geometry point 563 to curve (distance = 0.00047711)
+Info    : Snapping geometry point 564 to curve (distance = 6.25679e-06)
+Info    : Snapping geometry point 564 to curve (distance = 1.01699e-05)
+Info    : Snapping geometry point 564 to curve (distance = 4.87135e-06)
+Info    : Snapping geometry point 565 to curve (distance = 8.77536e-06)
+Info    : Snapping geometry point 566 to curve (distance = 3.28273e-06)
+Info    : Snapping geometry point 567 to curve (distance = 1.74201e-06)
+Info    : Snapping geometry point 567 to curve (distance = 1.74188e-06)
+Info    : Snapping geometry point 567 to curve (distance = 2.10838e-08)
+Info    : Snapping geometry point 568 to curve (distance = 7.548e-06)
+Info    : Snapping geometry point 568 to curve (distance = 7.548e-06)
+Info    : Snapping geometry point 569 to curve (distance = 6.24896e-06)
+Info    : Snapping geometry point 569 to curve (distance = 1.01573e-05)
+Info    : Snapping geometry point 569 to curve (distance = 4.86553e-06)
+Info    : Snapping geometry point 570 to curve (distance = 4.80088e-07)
+Info    : Snapping geometry point 570 to curve (distance = 1.68224e-06)
+Info    : Snapping geometry point 570 to curve (distance = 1.7494e-06)
+Info    : Snapping geometry point 571 to curve (distance = 8.89822e-06)
+Info    : Snapping geometry point 572 to curve (distance = 1.83134e-06)
+Info    : Snapping geometry point 572 to curve (distance = 1.9974e-06)
+Info    : Snapping geometry point 572 to curve (distance = 1.52803e-06)
+Info    : Snapping geometry point 573 to curve (distance = 2.13239e-06)
+Info    : Snapping geometry point 573 to curve (distance = 2.13239e-06)
+Info    : Snapping geometry point 573 to curve (distance = 4.06653e-08)
+Info    : Snapping geometry point 574 to curve (distance = 6.32982e-06)
+Info    : Snapping geometry point 574 to curve (distance = 1.02888e-05)
+Info    : Snapping geometry point 574 to curve (distance = 4.92849e-06)
+Info    : Snapping geometry point 576 to curve (distance = 9.97507e-08)
+Info    : Snapping geometry point 576 to curve (distance = 9.97507e-08)
+Info    : Snapping geometry point 576 to curve (distance = 1.01055e-07)
+Info    : Snapping geometry point 577 to curve (distance = 9.97507e-08)
+Info    : Snapping geometry point 577 to curve (distance = 9.97507e-08)
+Info    : Snapping geometry point 577 to curve (distance = 1.01055e-07)
+Info    : Snapping geometry point 586 to curve (distance = 4.88692e-08)
+Info    : Snapping geometry point 586 to curve (distance = 9.97507e-08)
+Info    : Snapping geometry point 586 to curve (distance = 5.21034e-08)
+Info    : Snapping geometry point 587 to curve (distance = 5.21034e-08)
+Info    : Snapping geometry point 587 to curve (distance = 5.21034e-08)
+Info    : Snapping geometry point 587 to curve (distance = 4.88691e-08)
+Info    : Snapping geometry point 587 to curve (distance = 4.88691e-08)
+Info    : Snapping geometry point 740 to curve (distance = 7.63521e-08)
+Info    : Snapping geometry point 741 to curve (distance = 7.63521e-08)
+Info    : Snapping geometry point 742 to curve (distance = 5.13363e-08)
+Info    : Snapping geometry point 742 to curve (distance = 5.13363e-08)
+Info    : Snapping geometry point 742 to curve (distance = 5.51602e-08)
+Info    : Snapping geometry point 743 to curve (distance = 5.13363e-08)
+Info    : Snapping geometry point 743 to curve (distance = 5.13363e-08)
+Info    : Snapping geometry point 743 to curve (distance = 5.51602e-08)
+Info    : Snapping geometry point 744 to curve (distance = 3.52231e-08)
+Info    : Snapping geometry point 744 to curve (distance = 5.13363e-08)
+Info    : Snapping geometry point 744 to curve (distance = 2.25907e-08)
+Info    : Snapping geometry point 745 to curve (distance = 2.25908e-08)
+Info    : Snapping geometry point 745 to curve (distance = 2.25908e-08)
+Info    : Snapping geometry point 745 to curve (distance = 3.52232e-08)
+Info    : Snapping geometry point 745 to curve (distance = 3.52232e-08)
+Info    : Snapping geometry point 757 to curve (distance = 5.93564e-08)
+Info    : Snapping geometry point 757 to curve (distance = 9.97507e-08)
+Info    : Snapping geometry point 757 to curve (distance = 4.12969e-08)
+Info    : Snapping geometry point 758 to curve (distance = 4.12968e-08)
+Info    : Snapping geometry point 758 to curve (distance = 9.97507e-08)
+Info    : Snapping geometry point 758 to curve (distance = 5.93564e-08)
+Info    : Snapping geometry point 801 to curve (distance = 5.80879e-06)
+Info    : Snapping geometry point 801 to curve (distance = 1.16176e-05)
+Info    : Snapping geometry point 801 to curve (distance = 1.16176e-05)
+Info    : Snapping geometry point 802 to curve (distance = 5.53864e-06)
+Info    : Snapping geometry point 802 to curve (distance = 1.10773e-05)
+Info    : Snapping geometry point 802 to curve (distance = 1.10773e-05)
+Info    : Snapping geometry point 802 to curve (distance = 1.10773e-05)
+Info    : Snapping geometry point 806 to curve (distance = 8.20956e-06)
+Info    : Snapping geometry point 806 to curve (distance = 1.64191e-05)
+Info    : Snapping geometry point 806 to curve (distance = 1.64191e-05)
+Info    : Snapping geometry point 807 to curve (distance = 5.85786e-06)
+Info    : Snapping geometry point 807 to curve (distance = 1.17157e-05)
+Info    : Snapping geometry point 807 to curve (distance = 1.17157e-05)
+Info    : Snapping geometry point 807 to curve (distance = 1.17157e-05)
+Info    : Snapping geometry point 1186 to curve (distance = 5e-08)
+Info    : Snapping geometry point 1186 to curve (distance = 5e-08)
+Info    : Snapping geometry point 1187 to curve (distance = 5e-08)
+Info    : Snapping geometry point 1187 to curve (distance = 5e-08)
+Info    : Snapping geometry point 1187 to curve (distance = 5e-08)
+Info    : Snapping geometry point 1187 to curve (distance = 5e-08)
+Info    : Snapping geometry point 1188 to curve (distance = 5e-08)
+Info    : Snapping geometry point 1188 to curve (distance = 5e-08)
+Info    : Snapping geometry point 1188 to curve (distance = 5e-08)
+Info    : Snapping geometry point 1188 to curve (distance = 5e-08)
+Info    : Snapping geometry point 1190 to curve (distance = 1e-07)
+Info    : Snapping geometry point 1190 to curve (distance = 1e-07)
+Info    : Snapping geometry point 1193 to curve (distance = 5e-08)
+Info    : Snapping geometry point 1193 to curve (distance = 5e-08)
+Info    : Snapping geometry point 1194 to curve (distance = 1e-07)
+Info    : Snapping geometry point 1194 to curve (distance = 1e-07)
+Info    : Snapping geometry point 1197 to curve (distance = 1e-07)
+Info    : Snapping geometry point 1197 to curve (distance = 1e-07)
+Info    : Snapping geometry point 1198 to curve (distance = 5e-08)
+Info    : Snapping geometry point 1198 to curve (distance = 5e-08)
+Info    : Snapping geometry point 1198 to curve (distance = 5e-08)
+Info    : Snapping geometry point 1198 to curve (distance = 5e-08)
+Info    : Snapping geometry point 1199 to curve (distance = 1e-07)
+Info    : Snapping geometry point 1199 to curve (distance = 1e-07)
+Info    : Snapping geometry point 1202 to curve (distance = 1e-07)
+Info    : Snapping geometry point 1202 to curve (distance = 1e-07)
+Info    : Snapping geometry point 1203 to curve (distance = 1e-07)
+Info    : Snapping geometry point 1203 to curve (distance = 1e-07)
+Info    : Snapping geometry point 1206 to curve (distance = 1e-07)
+Info    : Snapping geometry point 1206 to curve (distance = 1e-07)
+Info    : Snapping geometry point 1207 to curve (distance = 1e-07)
+Info    : Snapping geometry point 1207 to curve (distance = 1e-07)
+Info    : Snapping geometry point 1210 to curve (distance = 1e-07)
+Info    : Snapping geometry point 1210 to curve (distance = 1e-07)
+Info    : Snapping geometry point 1211 to curve (distance = 1e-07)
+Info    : Snapping geometry point 1211 to curve (distance = 1e-07)
+Info    : Snapping geometry point 1215 to curve (distance = 1e-07)
+Info    : Snapping geometry point 1215 to curve (distance = 1e-07)
+Info    : Snapping geometry point 1216 to curve (distance = 1e-07)
+Info    : Snapping geometry point 1216 to curve (distance = 1e-07)
+Info    : Snapping geometry point 1218 to curve (distance = 5e-08)
+Info    : Snapping geometry point 1218 to curve (distance = 5e-08)
+Info    : Snapping geometry point 1219 to curve (distance = 5e-08)
+Info    : Snapping geometry point 1219 to curve (distance = 5e-08)
+Info    : Snapping geometry point 1219 to curve (distance = 5e-08)
+Info    : Snapping geometry point 1219 to curve (distance = 5e-08)
+Info    : Snapping geometry point 1220 to curve (distance = 5e-08)
+Info    : Snapping geometry point 1220 to curve (distance = 5e-08)
+Info    : Snapping geometry point 1221 to curve (distance = 1e-07)
+Info    : Snapping geometry point 1221 to curve (distance = 1e-07)
+Info    : Snapping geometry point 1224 to curve (distance = 1e-07)
+Info    : Snapping geometry point 1224 to curve (distance = 1e-07)
+Info    : Snapping geometry point 1225 to curve (distance = 5e-08)
+Info    : Snapping geometry point 1225 to curve (distance = 5e-08)
+Info    : Snapping geometry point 1225 to curve (distance = 5e-08)
+Info    : Snapping geometry point 1225 to curve (distance = 5e-08)
+Info    : Snapping geometry point 1226 to curve (distance = 1e-07)
+Info    : Snapping geometry point 1226 to curve (distance = 1e-07)
+Info    : Snapping geometry point 1229 to curve (distance = 1e-07)
+Info    : Snapping geometry point 1229 to curve (distance = 1e-07)
+Info    : Snapping geometry point 1230 to curve (distance = 1e-07)
+Info    : Snapping geometry point 1230 to curve (distance = 1e-07)
+Info    : Snapping geometry point 1233 to curve (distance = 1e-07)
+Info    : Snapping geometry point 1233 to curve (distance = 1e-07)
+Info    : Snapping geometry point 1234 to curve (distance = 1e-07)
+Info    : Snapping geometry point 1234 to curve (distance = 1e-07)
+Info    : Snapping geometry point 1237 to curve (distance = 1e-07)
+Info    : Snapping geometry point 1237 to curve (distance = 1e-07)
+Info    : Snapping geometry point 1238 to curve (distance = 1e-07)
+Info    : Snapping geometry point 1238 to curve (distance = 1e-07)
+Info    : Snapping geometry point 1243 to curve (distance = 1e-07)
+Info    : Snapping geometry point 1243 to curve (distance = 1e-07)
+Info    : Snapping geometry point 1244 to curve (distance = 1e-07)
+Info    : Snapping geometry point 1244 to curve (distance = 1e-07)
+Info    : Snapping geometry point 1246 to curve (distance = 1e-07)
+Info    : Snapping geometry point 1246 to curve (distance = 1e-07)
+Info    : Snapping geometry point 1247 to curve (distance = 5e-08)
+Info    : Snapping geometry point 1247 to curve (distance = 5e-08)
+Info    : Snapping geometry point 1247 to curve (distance = 5e-08)
+Info    : Snapping geometry point 1247 to curve (distance = 5e-08)
+Info    : Snapping geometry point 1248 to curve (distance = 5e-08)
+Info    : Snapping geometry point 1248 to curve (distance = 5e-08)
+Info    : Snapping geometry point 1249 to curve (distance = 5e-08)
+Info    : Snapping geometry point 1249 to curve (distance = 5e-08)
+Info    : Snapping geometry point 1249 to curve (distance = 5e-08)
+Info    : Snapping geometry point 1249 to curve (distance = 5e-08)
+Info    : Snapping geometry point 1250 to curve (distance = 5e-08)
+Info    : Snapping geometry point 1250 to curve (distance = 5e-08)
+Info    : Snapping geometry point 1251 to curve (distance = 1e-07)
+Info    : Snapping geometry point 1251 to curve (distance = 1e-07)
+Info    : Snapping geometry point 1254 to curve (distance = 1e-07)
+Info    : Snapping geometry point 1254 to curve (distance = 1e-07)
+Info    : Snapping geometry point 1255 to curve (distance = 5e-08)
+Info    : Snapping geometry point 1255 to curve (distance = 5e-08)
+Info    : Snapping geometry point 1255 to curve (distance = 5e-08)
+Info    : Snapping geometry point 1255 to curve (distance = 5e-08)
+Info    : Snapping geometry point 1256 to curve (distance = 1e-07)
+Info    : Snapping geometry point 1256 to curve (distance = 1e-07)
+Info    : Snapping geometry point 1259 to curve (distance = 1e-07)
+Info    : Snapping geometry point 1259 to curve (distance = 1e-07)
+Info    : Snapping geometry point 1260 to curve (distance = 1e-07)
+Info    : Snapping geometry point 1260 to curve (distance = 1e-07)
+Info    : Snapping geometry point 1263 to curve (distance = 1e-07)
+Info    : Snapping geometry point 1263 to curve (distance = 1e-07)
+Info    : Snapping geometry point 1264 to curve (distance = 1e-07)
+Info    : Snapping geometry point 1264 to curve (distance = 1e-07)
+Info    : Snapping geometry point 1267 to curve (distance = 1e-07)
+Info    : Snapping geometry point 1267 to curve (distance = 1e-07)
+Info    : Snapping geometry point 1268 to curve (distance = 1e-07)
+Info    : Snapping geometry point 1268 to curve (distance = 1e-07)
+Info    : Snapping geometry point 1273 to curve (distance = 1e-07)
+Info    : Snapping geometry point 1273 to curve (distance = 1e-07)
+Info    : Snapping geometry point 1274 to curve (distance = 1e-07)
+Info    : Snapping geometry point 1274 to curve (distance = 1e-07)
+Info    : Snapping geometry point 1276 to curve (distance = 1e-07)
+Info    : Snapping geometry point 1276 to curve (distance = 1e-07)
+Info    : Snapping geometry point 1277 to curve (distance = 5e-08)
+Info    : Snapping geometry point 1277 to curve (distance = 5e-08)
+Info    : Snapping geometry point 1277 to curve (distance = 5e-08)
+Info    : Snapping geometry point 1277 to curve (distance = 5e-08)
+Info    : Snapping geometry point 3990 to curve (distance = 1e-07)
+Info    : Snapping geometry point 3990 to curve (distance = 1e-07)
+Info    : Snapping geometry point 3991 to curve (distance = 5e-08)
+Info    : Snapping geometry point 3991 to curve (distance = 5e-08)
+Info    : Snapping geometry point 3991 to curve (distance = 5e-08)
+Info    : Snapping geometry point 3991 to curve (distance = 5e-08)
+Info    : Snapping geometry point 3994 to curve (distance = 1e-07)
+Info    : Snapping geometry point 3994 to curve (distance = 1e-07)
+Info    : Snapping geometry point 3995 to curve (distance = 5e-08)
+Info    : Snapping geometry point 3995 to curve (distance = 5e-08)
+Info    : Snapping geometry point 3995 to curve (distance = 5e-08)
+Info    : Snapping geometry point 3995 to curve (distance = 5e-08)
+Info    : Snapping geometry point 3996 to curve (distance = 5e-08)
+Info    : Snapping geometry point 3996 to curve (distance = 5e-08)
+Info    : Snapping geometry point 3997 to curve (distance = 5e-08)
+Info    : Snapping geometry point 3997 to curve (distance = 5e-08)
+Info    : Snapping geometry point 3997 to curve (distance = 5e-08)
+Info    : Snapping geometry point 3997 to curve (distance = 5e-08)
+Info    : Snapping geometry point 3998 to curve (distance = 5e-08)
+Info    : Snapping geometry point 3998 to curve (distance = 5e-08)
+Info    : Snapping geometry point 3999 to curve (distance = 1e-07)
+Info    : Snapping geometry point 3999 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4002 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4002 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4003 to curve (distance = 5e-08)
+Info    : Snapping geometry point 4003 to curve (distance = 5e-08)
+Info    : Snapping geometry point 4003 to curve (distance = 5e-08)
+Info    : Snapping geometry point 4003 to curve (distance = 5e-08)
+Info    : Snapping geometry point 4004 to curve (distance = 5e-08)
+Info    : Snapping geometry point 4004 to curve (distance = 5e-08)
+Info    : Snapping geometry point 4005 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4005 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4006 to curve (distance = 5e-08)
+Info    : Snapping geometry point 4006 to curve (distance = 5e-08)
+Info    : Snapping geometry point 4006 to curve (distance = 5e-08)
+Info    : Snapping geometry point 4006 to curve (distance = 5e-08)
+Info    : Snapping geometry point 4009 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4009 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4010 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4010 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4013 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4013 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4014 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4014 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4017 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4017 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4018 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4018 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4021 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4021 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4022 to curve (distance = 5e-08)
+Info    : Snapping geometry point 4022 to curve (distance = 5e-08)
+Info    : Snapping geometry point 4023 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4023 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4026 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4026 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4027 to curve (distance = 5e-08)
+Info    : Snapping geometry point 4027 to curve (distance = 5e-08)
+Info    : Snapping geometry point 4027 to curve (distance = 5e-08)
+Info    : Snapping geometry point 4027 to curve (distance = 5e-08)
+Info    : Snapping geometry point 4028 to curve (distance = 5e-08)
+Info    : Snapping geometry point 4028 to curve (distance = 5e-08)
+Info    : Snapping geometry point 4029 to curve (distance = 5e-08)
+Info    : Snapping geometry point 4029 to curve (distance = 5e-08)
+Info    : Snapping geometry point 4030 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4030 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4033 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4033 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4034 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4034 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4037 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4037 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4038 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4038 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4041 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4041 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4042 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4042 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4045 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4045 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4046 to curve (distance = 5e-08)
+Info    : Snapping geometry point 4046 to curve (distance = 5e-08)
+Info    : Snapping geometry point 4047 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4047 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4050 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4050 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4051 to curve (distance = 5e-08)
+Info    : Snapping geometry point 4051 to curve (distance = 5e-08)
+Info    : Snapping geometry point 4051 to curve (distance = 5e-08)
+Info    : Snapping geometry point 4051 to curve (distance = 5e-08)
+Info    : Snapping geometry point 4052 to curve (distance = 5e-08)
+Info    : Snapping geometry point 4052 to curve (distance = 5e-08)
+Info    : Snapping geometry point 4053 to curve (distance = 5e-08)
+Info    : Snapping geometry point 4053 to curve (distance = 5e-08)
+Info    : Snapping geometry point 4053 to curve (distance = 5e-08)
+Info    : Snapping geometry point 4053 to curve (distance = 5e-08)
+Info    : Snapping geometry point 4054 to curve (distance = 5e-08)
+Info    : Snapping geometry point 4054 to curve (distance = 5e-08)
+Info    : Snapping geometry point 4055 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4055 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4058 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4058 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4059 to curve (distance = 5e-08)
+Info    : Snapping geometry point 4059 to curve (distance = 5e-08)
+Info    : Snapping geometry point 4059 to curve (distance = 5e-08)
+Info    : Snapping geometry point 4059 to curve (distance = 5e-08)
+Info    : Snapping geometry point 4060 to curve (distance = 5e-08)
+Info    : Snapping geometry point 4060 to curve (distance = 5e-08)
+Info    : Snapping geometry point 4061 to curve (distance = 5e-08)
+Info    : Snapping geometry point 4061 to curve (distance = 5e-08)
+Info    : Snapping geometry point 4062 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4062 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4065 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4065 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4066 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4066 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4069 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4069 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4070 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4070 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4073 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4073 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4074 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4074 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4077 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4077 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4078 to curve (distance = 5e-08)
+Info    : Snapping geometry point 4078 to curve (distance = 5e-08)
+Info    : Snapping geometry point 4079 to curve (distance = 5e-08)
+Info    : Snapping geometry point 4079 to curve (distance = 5e-08)
+Info    : Snapping geometry point 4080 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4080 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4083 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4083 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4084 to curve (distance = 5e-08)
+Info    : Snapping geometry point 4084 to curve (distance = 5e-08)
+Info    : Snapping geometry point 4085 to curve (distance = 5e-08)
+Info    : Snapping geometry point 4085 to curve (distance = 5e-08)
+Info    : Snapping geometry point 4202 to curve (distance = 0.000151272)
+Info    : Snapping geometry point 4202 to curve (distance = 0.000151272)
+Info    : Snapping geometry point 4203 to curve (distance = 9.432e-05)
+Info    : Snapping geometry point 4203 to curve (distance = 9.432e-05)
+Info    : Snapping geometry point 4204 to curve (distance = 0.000121087)
+Info    : Snapping geometry point 4204 to curve (distance = 0.000121087)
+Info    : Snapping geometry point 4205 to curve (distance = 4.67386e-05)
+Info    : Snapping geometry point 4205 to curve (distance = 4.67386e-05)
+Info    : Snapping geometry point 4206 to curve (distance = 2.51303e-05)
+Info    : Snapping geometry point 4206 to curve (distance = 2.51303e-05)
+Info    : Snapping geometry point 4207 to curve (distance = 0.000215709)
+Info    : Snapping geometry point 4207 to curve (distance = 0.000215709)
+Info    : Snapping geometry point 4210 to curve (distance = 0.000228175)
+Info    : Snapping geometry point 4210 to curve (distance = 0.000228175)
+Info    : Snapping geometry point 4211 to curve (distance = 0.000189434)
+Info    : Snapping geometry point 4211 to curve (distance = 0.000189434)
+Info    : Snapping geometry point 4214 to curve (distance = 6.11368e-06)
+Info    : Snapping geometry point 4214 to curve (distance = 1.22274e-05)
+Info    : Snapping geometry point 4215 to curve (distance = 0.000111204)
+Info    : Snapping geometry point 4215 to curve (distance = 0.000222407)
+Info    : Snapping geometry point 4224 to curve (distance = 0.000144619)
+Info    : Snapping geometry point 4224 to curve (distance = 0.000289238)
+Info    : Snapping geometry point 4225 to curve (distance = 2.48444e-06)
+Info    : Snapping geometry point 4225 to curve (distance = 4.96887e-06)
+Info    : Snapping geometry point 4226 to curve (distance = 8.07138e-06)
+Info    : Snapping geometry point 4226 to curve (distance = 1.61428e-05)
+Info    : Snapping geometry point 4227 to curve (distance = 3.40529e-06)
+Info    : Snapping geometry point 4227 to curve (distance = 6.81057e-06)
+Info    : Snapping geometry point 4236 to curve (distance = 5.39697e-07)
+Info    : Snapping geometry point 4236 to curve (distance = 1.0794e-06)
+Info    : Snapping geometry point 4237 to curve (distance = 1.27922e-06)
+Info    : Snapping geometry point 4237 to curve (distance = 2.55844e-06)
+Info    : Snapping geometry point 4238 to curve (distance = 0.000284213)
+Info    : Snapping geometry point 4238 to curve (distance = 0.000355256)
+Info    : Snapping geometry point 4239 to curve (distance = 1.01396e-08)
+Info    : Snapping geometry point 4239 to curve (distance = 1.01396e-08)
+Info    : Snapping geometry point 4239 to curve (distance = 1.00281e-08)
+Info    : Snapping geometry point 4240 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4240 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4241 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4241 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4242 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4242 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4243 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4243 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4243 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4243 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4248 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4248 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4249 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4249 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4249 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4249 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4250 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4250 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4251 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4251 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4252 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4252 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4252 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4252 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4253 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4253 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4254 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4254 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4254 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4254 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4259 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4259 to curve (distance = 1e-07)
+Info    : Snapping geometry point 4260 to curve (distance = 0.000304979)
+Info    : Snapping geometry point 4260 to curve (distance = 0.000304979)
+Info    : Snapping geometry point 4260 to curve (distance = 0.000113731)
+Info    : Snapping geometry point 4260 to curve (distance = 0.000113731)
+Info    : Snapping geometry point 4261 to curve (distance = 1.01397e-08)
+Info    : Snapping geometry point 4261 to curve (distance = 1.01397e-08)
+Info    : Snapping geometry point 4261 to curve (distance = 1.00281e-08)
+Info    : Snapping geometry point 4262 to curve (distance = 0.000136766)
+Info    : Snapping geometry point 4263 to curve (distance = 8.50606e-05)
+Info    : Snapping geometry point 4263 to curve (distance = 0.000124036)
+Info    : Snapping geometry point 4263 to curve (distance = 0.000101787)
+Info    : Snapping geometry point 4264 to curve (distance = 0.000175707)
+Info    : Snapping geometry point 4264 to curve (distance = 0.000175707)
+Info    : Snapping geometry point 4264 to curve (distance = 0.000126704)
+Info    : Snapping geometry point 4265 to curve (distance = 0.000136757)
+Info    : Snapping geometry point 4265 to curve (distance = 0.000136757)
+Info    : Snapping geometry point 4266 to curve (distance = 8.07688e-05)
+Info    : Snapping geometry point 4266 to curve (distance = 8.54053e-05)
+Info    : Snapping geometry point 4266 to curve (distance = 4.81765e-06)
+Info    : Snapping geometry point 4267 to curve (distance = 3.79219e-06)
+Info    : Snapping geometry point 4267 to curve (distance = 3.79219e-06)
+Info    : Snapping geometry point 4267 to curve (distance = 3.79219e-06)
+Info    : Snapping geometry point 4267 to curve (distance = 3.79219e-06)
+Info    : Snapping geometry point 4281 to curve (distance = 5.77326e-08)
+Info    : Snapping geometry point 4281 to curve (distance = 5.77326e-08)
+Info    : Snapping geometry point 4282 to curve (distance = 5.77326e-08)
+Info    : Snapping geometry point 4282 to curve (distance = 5.77326e-08)
+Info    : Done reading 'C:\Users\vibhe\Downloads\OUTPUT\CFD\scripts\..\mesh\u666\u666_geo.brep'
+degenerate skin faces: []
+group fuse endcaps [np.int32(26), np.int32(65), np.int32(67), np.int32(69), np.int32(71), np.int32(72), np.int32(73), np.int32(75), np.int32(77), np.int32(79), np.int32(81), np.int32(83), np.int32(85), np.int32(87), np.int32(89), np.int32(91), np.int32(93), np.int32(94), np.int32(96), np.int32(98), np.int32(100), np.int32(102), np.int32(104), np.int32(106), np.int32(108), np.int32(110), np.int32(111), np.int32(113), np.int32(115), np.int32(117), np.int32(119), np.int32(121), np.int32(123), np.int32(344), np.int32(346), np.int32(347), np.int32(348), np.int32(349), np.int32(350), np.int32(351), np.int32(390), np.int32(391), np.int32(392), np.int32(393), np.int32(394), np.int32(395), np.int32(396), np.int32(397), np.int32(398), np.int32(399), np.int32(400), np.int32(401), np.int32(402), np.int32(403), np.int32(404), np.int32(405), np.int32(406), np.int32(407), np.int32(408), np.int32(415), np.int32(416), np.int32(417), np.int32(418), np.int32(419), np.int32(420), np.int32(421), np.int32(422), np.int32(423), np.int32(424), np.int32(425), np.int32(426), np.int32(427), np.int32(428), np.int32(429), np.int32(430), np.int32(431), np.int32(432), np.int32(433), np.int32(434), np.int32(435), np.int32(436), np.int32(437), np.int32(438), np.int32(441), np.int32(444), np.int32(445), np.int32(447), np.int32(448), np.int32(449), np.int32(450), np.int32(451), np.int32(452), np.int32(453), np.int32(454), np.int32(455), np.int32(463), np.int32(464), np.int32(465), np.int32(466), np.int32(467), np.int32(468)] -> [2, 3]
+group endcaps volumes 3 boundary faces 81 mixed faces [(216, ['endcaps_to_inair', 'endcaps_to_shaft']), (217, ['endcaps_to_inair', 'endcaps_to_rotor']), (218, ['endcaps_to_inair', 'endcaps_to_rotor']), (219, ['endcaps_to_inair', 'endcaps_to_rotor']), (220, ['endcaps_to_inair', 'endcaps_to_rotor']), (221, ['endcaps_to_inair', 'endcaps_to_rotor']), (222, ['endcaps_to_inair', 'endcaps_to_rotor']), (223, ['endcaps_to_inair', 'endcaps_to_rotor']), (224, ['endcaps_to_inair', 'endcaps_to_rotor']), (225, ['endcaps_to_inair', 'endcaps_to_rotor']), (228, ['endcaps_to_inair', 'endcaps_to_magnets', 'endcaps_to_rotor']), (229, ['endcaps_to_inair', 'endcaps_to_rotor']), (230, ['endcaps_to_inair', 'endcaps_to_magnets', 'endcaps_to_rotor']), (231, ['endcaps_to_inair', 'endcaps_to_magnets']), (232, ['endcaps_to_inair', 'endcaps_to_magnets', 'endcaps_to_rotor']), (233, ['endcaps_to_inair', 'endcaps_to_magnets', 'endcaps_to_rotor']), (234, ['endcaps_to_inair', 'endcaps_to_rotor']), (235, ['endcaps_to_inair', 'endcaps_to_magnets', 'endcaps_to_rotor']), (236, ['endcaps_to_inair', 'endcaps_to_magnets']), (237, ['endcaps_to_inair', 'endcaps_to_magnets', 'endcaps_to_rotor']), (238, ['endcaps_to_inair', 'endcaps_to_magnets', 'endcaps_to_rotor']), (239, ['endcaps_to_inair', 'endcaps_to_rotor']), (240, ['endcaps_to_inair', 'endcaps_to_magnets', 'endcaps_to_rotor']), (241, ['endcaps_to_inair', 'endcaps_to_magnets']), (242, ['endcaps_to_inair', 'endcaps_to_magnets', 'endcaps_to_rotor']), (243, ['endcaps_to_inair', 'endcaps_to_shaft']), (244, ['endcaps_to_magnets', 'endcaps_to_rotor']), (245, ['endcaps_to_inair', 'endcaps_to_rotor']), (246, ['endcaps_to_inair', 'endcaps_to_shaft']), (247, ['endcaps_to_magnets', 'endcaps_to_rotor']), (248, ['endcaps_to_inair', 'endcaps_to_magnets', 'endcaps_to_rotor']), (249, ['endcaps_to_inair', 'endcaps_to_rotor']), (250, ['endcaps_to_inair', 'endcaps_to_magnets', 'endcaps_to_rotor']), (251, ['endcaps_to_inair', 'endcaps_to_rotor']), (252, ['endcaps_to_inair', 'endcaps_to_magnets', 'endcaps_to_rotor']), (253, ['endcaps_to_inair', 'endcaps_to_rotor']), (254, ['endcaps_to_inair', 'endcaps_to_magnets', 'endcaps_to_rotor']), (255, ['endcaps_to_inair', 'endcaps_to_rotor']), (256, ['endcaps_to_inair', 'endcaps_to_rotor']), (257, ['endcaps_to_inair', 'endcaps_to_magnets', 'endcaps_to_rotor']), (258, ['endcaps_to_inair', 'endcaps_to_rotor']), (259, ['endcaps_to_inair', 'endcaps_to_magnets', 'endcaps_to_rotor']), (260, ['endcaps_to_inair', 'endcaps_to_rotor']), (261, ['endcaps_to_inair', 'endcaps_to_rotor']), (262, ['endcaps_to_inair', 'endcaps_to_rotor']), (263, ['endcaps_to_inair', 'endcaps_to_magnets', 'endcaps_to_rotor']), (264, ['endcaps_to_inair', 'endcaps_to_rotor']), (265, ['endcaps_to_inair', 'endcaps_to_rotor']), (266, ['endcaps_to_inair', 'endcaps_to_magnets', 'endcaps_to_rotor']), (267, ['endcaps_to_inair', 'endcaps_to_rotor']), (268, ['endcaps_to_inair', 'endcaps_to_rotor']), (269, ['endcaps_to_inair', 'endcaps_to_rotor']), (270, ['endcaps_to_inair', 'endcaps_to_rotor']), (271, ['endcaps_to_inair', 'endcaps_to_magnets', 'endcaps_to_rotor']), (272, ['endcaps_to_inair', 'endcaps_to_rotor']), (278, ['endcaps_to_inair', 'endcaps_to_shaft'])]
+endcaps   pieces    3  volume     36.77 cm3
+Info    : Meshing 1D...
+Info    : [  0%] Meshing curve 1 (Circle)
+Info    : [ 10%] Meshing curve 2 (Circle)
+Info    : [ 10%] Meshing curve 3 (Circle)
+Info    : [ 10%] Meshing curve 4 (Circle)
+Info    : [ 10%] Meshing curve 5 (Circle)
+Info    : [ 10%] Meshing curve 6 (Circle)
+Info    : [ 10%] Meshing curve 7 (Circle)
+Info    : [ 10%] Meshing curve 8 (Circle)
+Info    : [ 10%] Meshing curve 9 (Line)
+Info    : [ 10%] Meshing curve 10 (Circle)
+Info    : [ 10%] Meshing curve 11 (Line)
+Info    : [ 10%] Meshing curve 12 (Circle)
+Info    : [ 10%] Meshing curve 13 (Circle)
+Info    : [ 10%] Meshing curve 14 (Circle)
+Info    : [ 10%] Meshing curve 15 (Line)
+Info    : [ 10%] Meshing curve 16 (Circle)
+Info    : [ 10%] Meshing curve 17 (Circle)
+Info    : [ 10%] Meshing curve 18 (Circle)
+Info    : [ 10%] Meshing curve 19 (Line)
+Info    : [ 10%] Meshing curve 20 (Circle)
+Info    : [ 10%] Meshing curve 21 (Circle)
+Info    : [ 10%] Meshing curve 22 (Circle)
+Info    : [ 10%] Meshing curve 23 (Line)
+Info    : [ 20%] Meshing curve 24 (Circle)
+Info    : [ 20%] Meshing curve 25 (Line)
+Info    : [ 20%] Meshing curve 26 (Circle)
+Info    : [ 20%] Meshing curve 27 (Line)
+Info    : [ 20%] Meshing curve 28 (Circle)
+Info    : [ 20%] Meshing curve 29 (Line)
+Info    : [ 20%] Meshing curve 30 (Circle)
+Info    : [ 20%] Meshing curve 31 (Line)
+Info    : [ 20%] Meshing curve 32 (Circle)
+Info    : [ 20%] Meshing curve 33 (Line)
+Info    : [ 20%] Meshing curve 34 (Circle)
+Info    : [ 20%] Meshing curve 35 (Line)
+Info    : [ 20%] Meshing curve 36 (Line)
+Info    : [ 20%] Meshing curve 548 (Line)
+Info    : [ 20%] Meshing curve 549 (Line)
+Info    : [ 20%] Meshing curve 550 (Line)
+Info    : [ 20%] Meshing curve 551 (Line)
+Info    : [ 20%] Meshing curve 552 (Line)
+Info    : [ 20%] Meshing curve 553 (Line)
+Info    : [ 20%] Meshing curve 554 (Line)
+Info    : [ 20%] Meshing curve 555 (Line)
+Info    : [ 20%] Meshing curve 556 (Line)
+Info    : [ 20%] Meshing curve 557 (Line)
+Info    : [ 30%] Meshing curve 558 (Line)
+Info    : [ 30%] Meshing curve 559 (Line)
+Info    : [ 30%] Meshing curve 560 (TrimmedCurve)
+Info    : [ 30%] Meshing curve 561 (Line)
+Info    : [ 30%] Meshing curve 562 (Circle)
+Info    : [ 30%] Meshing curve 563 (Circle)
+Info    : [ 30%] Meshing curve 564 (Circle)
+Info    : [ 30%] Meshing curve 565 (Line)
+Info    : [ 30%] Meshing curve 566 (TrimmedCurve)
+Info    : [ 30%] Meshing curve 567 (Circle)
+Info    : [ 30%] Meshing curve 568 (TrimmedCurve)
+Info    : [ 30%] Meshing curve 569 (Line)
+Info    : [ 30%] Meshing curve 570 (Circle)
+Info    : [ 30%] Meshing curve 571 (Circle)
+Info    : [ 30%] Meshing curve 572 (Circle)
+Info    : [ 30%] Meshing curve 573 (Line)
+Info    : [ 30%] Meshing curve 574 (TrimmedCurve)
+Info    : [ 30%] Meshing curve 575 (Circle)
+Info    : [ 30%] Meshing curve 576 (TrimmedCurve)
+Info    : [ 30%] Meshing curve 577 (Line)
+Info    : [ 30%] Meshing curve 578 (Circle)
+Info    : [ 30%] Meshing curve 579 (Circle)
+Info    : [ 30%] Meshing curve 580 (Circle)
+Info    : [ 40%] Meshing curve 581 (Line)
+Info    : [ 40%] Meshing curve 582 (TrimmedCurve)
+Info    : [ 40%] Meshing curve 583 (Circle)
+Info    : [ 40%] Meshing curve 584 (Circle)
+Info    : [ 40%] Meshing curve 585 (Circle)
+Info    : [ 40%] Meshing curve 586 (TrimmedCurve)
+Info    : [ 40%] Meshing curve 587 (TrimmedCurve)
+Info    : [ 40%] Meshing curve 588 (TrimmedCurve)
+Info    : [ 40%] Meshing curve 589 (Circle)
+Info    : [ 40%] Meshing curve 590 (TrimmedCurve)
+Info    : [ 40%] Meshing curve 591 (TrimmedCurve)
+Info    : [ 40%] Meshing curve 592 (Circle)
+Info    : [ 40%] Meshing curve 593 (TrimmedCurve)
+Info    : [ 40%] Meshing curve 594 (TrimmedCurve)
+Info    : [ 40%] Meshing curve 595 (TrimmedCurve)
+Info    : [ 40%] Meshing curve 596 (Circle)
+Info    : [ 40%] Meshing curve 597 (TrimmedCurve)
+Info    : [ 40%] Meshing curve 598 (TrimmedCurve)
+Info    : [ 40%] Meshing curve 599 (Circle)
+Info    : [ 40%] Meshing curve 600 (TrimmedCurve)
+Info    : [ 40%] Meshing curve 601 (TrimmedCurve)
+Info    : [ 40%] Meshing curve 602 (TrimmedCurve)
+Info    : [ 40%] Meshing curve 603 (Circle)
+Info    : [ 50%] Meshing curve 604 (TrimmedCurve)
+Info    : [ 50%] Meshing curve 605 (TrimmedCurve)
+Info    : [ 50%] Meshing curve 606 (Circle)
+Info    : [ 50%] Meshing curve 607 (Line)
+Info    : [ 50%] Meshing curve 608 (TrimmedCurve)
+Info    : [ 50%] Meshing curve 609 (Circle)
+Info    : [ 50%] Meshing curve 610 (Line)
+Info    : [ 50%] Meshing curve 611 (Circle)
+Info    : [ 50%] Meshing curve 612 (TrimmedCurve)
+Info    : [ 50%] Meshing curve 613 (TrimmedCurve)
+Info    : [ 50%] Meshing curve 614 (TrimmedCurve)
+Info    : [ 50%] Meshing curve 615 (Circle)
+Info    : [ 50%] Meshing curve 616 (TrimmedCurve)
+Info    : [ 50%] Meshing curve 617 (TrimmedCurve)
+Info    : [ 50%] Meshing curve 618 (TrimmedCurve)
+Info    : [ 50%] Meshing curve 619 (Circle)
+Info    : [ 50%] Meshing curve 620 (TrimmedCurve)
+Info    : [ 50%] Meshing curve 621 (TrimmedCurve)
+Info    : [ 50%] Meshing curve 622 (TrimmedCurve)
+Info    : [ 50%] Meshing curve 623 (TrimmedCurve)
+Info    : [ 50%] Meshing curve 624 (Circle)
+Info    : [ 50%] Meshing curve 625 (TrimmedCurve)
+Info    : [ 50%] Meshing curve 626 (TrimmedCurve)
+Info    : [ 60%] Meshing curve 627 (TrimmedCurve)
+Info    : [ 60%] Meshing curve 628 (Circle)
+Info    : [ 60%] Meshing curve 629 (TrimmedCurve)
+Info    : [ 60%] Meshing curve 630 (TrimmedCurve)
+Info    : [ 60%] Meshing curve 631 (TrimmedCurve)
+Info    : [ 60%] Meshing curve 632 (TrimmedCurve)
+Info    : [ 60%] Meshing curve 633 (Circle)
+Info    : [ 60%] Meshing curve 634 (TrimmedCurve)
+Info    : [ 60%] Meshing curve 635 (TrimmedCurve)
+Info    : [ 60%] Meshing curve 636 (TrimmedCurve)
+Info    : [ 60%] Meshing curve 637 (Circle)
+Info    : [ 60%] Meshing curve 638 (TrimmedCurve)
+Info    : [ 60%] Meshing curve 639 (Line)
+Info    : [ 60%] Meshing curve 640 (Circle)
+Info    : [ 60%] Meshing curve 641 (Line)
+Info    : [ 60%] Meshing curve 642 (TrimmedCurve)
+Info    : [ 60%] Meshing curve 643 (TrimmedCurve)
+Info    : [ 60%] Meshing curve 644 (BSpline)
+Info    : [ 60%] Meshing curve 645 (TrimmedCurve)
+Info    : [ 60%] Meshing curve 646 (Circle)
+Info    : [ 60%] Meshing curve 647 (TrimmedCurve)
+Info    : [ 60%] Meshing curve 648 (Circle)
+Info    : [ 60%] Meshing curve 649 (TrimmedCurve)
+Info    : [ 70%] Meshing curve 650 (Circle)
+Info    : [ 70%] Meshing curve 651 (TrimmedCurve)
+Info    : [ 70%] Meshing curve 652 (Circle)
+Info    : [ 70%] Meshing curve 653 (TrimmedCurve)
+Info    : [ 70%] Meshing curve 654 (Circle)
+Info    : [ 70%] Meshing curve 655 (Circle)
+Info    : [ 70%] Meshing curve 656 (Circle)
+Info    : [ 70%] Meshing curve 657 (Circle)
+Info    : [ 70%] Meshing curve 658 (Circle)
+Info    : [ 70%] Meshing curve 659 (Circle)
+Info    : [ 70%] Meshing curve 660 (TrimmedCurve)
+Info    : [ 70%] Meshing curve 661 (Circle)
+Info    : [ 70%] Meshing curve 662 (TrimmedCurve)
+Info    : [ 70%] Meshing curve 663 (Circle)
+Info    : [ 70%] Meshing curve 664 (TrimmedCurve)
+Info    : [ 70%] Meshing curve 665 (TrimmedCurve)
+Info    : [ 70%] Meshing curve 666 (Circle)
+Info    : [ 70%] Meshing curve 667 (TrimmedCurve)
+Info    : [ 70%] Meshing curve 668 (Circle)
+Info    : [ 70%] Meshing curve 669 (Circle)
+Info    : [ 70%] Meshing curve 670 (Circle)
+Info    : [ 70%] Meshing curve 671 (TrimmedCurve)
+Info    : [ 70%] Meshing curve 672 (Circle)
+Info    : [ 80%] Meshing curve 673 (Circle)
+Info    : [ 80%] Meshing curve 674 (Circle)
+Info    : [ 80%] Meshing curve 675 (TrimmedCurve)
+Info    : [ 80%] Meshing curve 676 (Line)
+Info    : [ 80%] Meshing curve 677 (TrimmedCurve)
+Info    : [ 80%] Meshing curve 678 (TrimmedCurve)
+Info    : [ 80%] Meshing curve 679 (Circle)
+Info    : [ 80%] Meshing curve 680 (TrimmedCurve)
+Info    : [ 80%] Meshing curve 681 (Line)
+Info    : [ 80%] Meshing curve 682 (TrimmedCurve)
+Info    : [ 80%] Meshing curve 683 (TrimmedCurve)
+Info    : [ 80%] Meshing curve 684 (Circle)
+Info    : [ 80%] Meshing curve 685 (TrimmedCurve)
+Info    : [ 80%] Meshing curve 686 (Circle)
+Info    : [ 80%] Meshing curve 687 (TrimmedCurve)
+Info    : [ 80%] Meshing curve 688 (Circle)
+Info    : [ 80%] Meshing curve 689 (Line)
+Info    : [ 80%] Meshing curve 690 (TrimmedCurve)
+Info    : [ 80%] Meshing curve 691 (TrimmedCurve)
+Info    : [ 80%] Meshing curve 692 (Circle)
+Info    : [ 80%] Meshing curve 693 (Circle)
+Info    : [ 80%] Meshing curve 694 (TrimmedCurve)
+Info    : [ 80%] Meshing curve 695 (Circle)
+Info    : [ 90%] Meshing curve 696 (TrimmedCurve)
+Info    : [ 90%] Meshing curve 697 (TrimmedCurve)
+Info    : [ 90%] Meshing curve 698 (Circle)
+Info    : [ 90%] Meshing curve 699 (Line)
+Info    : [ 90%] Meshing curve 700 (TrimmedCurve)
+Info    : [ 90%] Meshing curve 701 (TrimmedCurve)
+Info    : [ 90%] Meshing curve 702 (Circle)
+Info    : [ 90%] Meshing curve 703 (Circle)
+Info    : [ 90%] Meshing curve 704 (TrimmedCurve)
+Info    : [ 90%] Meshing curve 705 (TrimmedCurve)
+Info    : [ 90%] Meshing curve 706 (Circle)
+Info    : [ 90%] Meshing curve 707 (Line)
+Info    : [ 90%] Meshing curve 708 (TrimmedCurve)
+Info    : [ 90%] Meshing curve 709 (Circle)
+Info    : [ 90%] Meshing curve 710 (TrimmedCurve)
+Info    : [ 90%] Meshing curve 711 (Circle)
+Info    : [ 90%] Meshing curve 712 (Circle)
+Info    : [ 90%] Meshing curve 713 (Circle)
+Info    : [ 90%] Meshing curve 714 (TrimmedCurve)
+Info    : [ 90%] Meshing curve 715 (Circle)
+Info    : [ 90%] Meshing curve 716 (TrimmedCurve)
+Info    : [ 90%] Meshing curve 717 (Circle)
+Info    : [ 90%] Meshing curve 718 (TrimmedCurve)
+Info    : [100%] Meshing curve 719 (Circle)
+Info    : [100%] Meshing curve 720 (Circle)
+Info    : [100%] Meshing curve 721 (TrimmedCurve)
+Info    : [100%] Meshing curve 722 (TrimmedCurve)
+Info    : [100%] Meshing curve 723 (Circle)
+Info    : [100%] Meshing curve 724 (Line)
+Info    : [100%] Meshing curve 725 (TrimmedCurve)
+Info    : [100%] Meshing curve 726 (Circle)
+Info    : [100%] Meshing curve 727 (Circle)
+Info    : [100%] Meshing curve 728 (Circle)
+Info    : [100%] Meshing curve 729 (Line)
+Info    : [100%] Meshing curve 730 (Line)
+Info    : [100%] Meshing curve 731 (TrimmedCurve)
+Info    : [100%] Meshing curve 732 (Line)
+Info    : [100%] Meshing curve 733 (TrimmedCurve)
+Info    : [100%] Meshing curve 734 (TrimmedCurve)
+Info    : [100%] Meshing curve 735 (Line)
+Info    : [100%] Meshing curve 736 (Circle)
+Info    : [100%] Meshing curve 737 (TrimmedCurve)
+Info    : [100%] Meshing curve 738 (TrimmedCurve)
+Info    : [100%] Meshing curve 739 (Line)
+Info    : [100%] Meshing curve 740 (Circle)
+Info    : [100%] Meshing curve 741 (Line)
+Info    : Done meshing 1D (Wall 0.0283771s, CPU 0s)
+Info    : Meshing 2D...
+Info    : [  0%] Meshing surface 1 (Plane, Frontal-Delaunay)
+Info    : [ 10%] Meshing surface 2 (Plane, Frontal-Delaunay)
+Info    : [ 10%] Meshing surface 3 (Plane, Frontal-Delaunay)
+Info    : [ 10%] Meshing surface 4 (Cylinder, Frontal-Delaunay)
+Info    : [ 10%] Meshing surface 5 (Cylinder, Frontal-Delaunay)
+Info    : [ 10%] Meshing surface 6 (Plane, Frontal-Delaunay)
+Info    : [ 10%] Meshing surface 7 (Cone, Frontal-Delaunay)
+Info    : [ 10%] Meshing surface 8 (Cone, Frontal-Delaunay)
+Info    : [ 10%] Meshing surface 9 (Cylinder, Frontal-Delaunay)
+Info    : [ 20%] Meshing surface 10 (Cylinder, Frontal-Delaunay)
+Info    : [ 20%] Meshing surface 11 (Cylinder, Frontal-Delaunay)
+Info    : [ 20%] Meshing surface 12 (Cylinder, Frontal-Delaunay)
+Info    : [ 20%] Meshing surface 13 (Cylinder, Frontal-Delaunay)
+Info    : [ 20%] Meshing surface 14 (Cylinder, Frontal-Delaunay)
+Info    : [ 20%] Meshing surface 15 (Cone, Frontal-Delaunay)
+Info    : [ 20%] Meshing surface 16 (Cone, Frontal-Delaunay)
+Info    : [ 20%] Meshing surface 210 (Plane, Frontal-Delaunay)
+Info    : [ 20%] Meshing surface 211 (Plane, Frontal-Delaunay)
+Info    : [ 30%] Meshing surface 212 (Plane, Frontal-Delaunay)
+Info    : [ 30%] Meshing surface 213 (Plane, Frontal-Delaunay)
+Info    : [ 30%] Meshing surface 214 (Plane, Frontal-Delaunay)
+Info    : [ 30%] Meshing surface 215 (Plane, Frontal-Delaunay)
+Info    : [ 30%] Meshing surface 216 (Plane, Frontal-Delaunay)
+Info    : [ 30%] Meshing surface 217 (Cylinder, Frontal-Delaunay)
+Info    : [ 30%] Meshing surface 218 (Cylinder, Frontal-Delaunay)
+Info    : [ 30%] Meshing surface 219 (Cylinder, Frontal-Delaunay)
+Info    : [ 30%] Meshing surface 220 (Cylinder, Frontal-Delaunay)
+Info    : [ 40%] Meshing surface 221 (Cylinder, Frontal-Delaunay)
+Info    : [ 40%] Meshing surface 222 (Cylinder, Frontal-Delaunay)
+Info    : [ 40%] Meshing surface 223 (Cylinder, Frontal-Delaunay)
+Info    : [ 40%] Meshing surface 224 (Cylinder, Frontal-Delaunay)
+Info    : [ 40%] Meshing surface 225 (Cylinder, Frontal-Delaunay)
+Info    : [ 40%] Meshing surface 226 (Cone, Frontal-Delaunay)
+Info    : [ 40%] Meshing surface 227 (Cylinder, Frontal-Delaunay)
+Info    : [ 40%] Meshing surface 228 (Plane, Frontal-Delaunay)
+Info    : [ 50%] Meshing surface 229 (Cylinder, Frontal-Delaunay)
+Info    : [ 50%] Meshing surface 230 (Cylinder, Frontal-Delaunay)
+Info    : [ 50%] Meshing surface 231 (Cylinder, Frontal-Delaunay)
+Info    : [ 50%] Meshing surface 232 (Plane, Frontal-Delaunay)
+Info    : [ 50%] Meshing surface 233 (Plane, Frontal-Delaunay)
+Info    : [ 50%] Meshing surface 234 (Cylinder, Frontal-Delaunay)
+Info    : [ 50%] Meshing surface 235 (Cylinder, Frontal-Delaunay)
+Info    : [ 50%] Meshing surface 236 (Cylinder, Frontal-Delaunay)
+Info    : [ 50%] Meshing surface 237 (Plane, Frontal-Delaunay)
+Info    : [ 60%] Meshing surface 238 (Plane, Frontal-Delaunay)
+Info    : [ 60%] Meshing surface 239 (Cylinder, Frontal-Delaunay)
+Info    : [ 60%] Meshing surface 240 (Cylinder, Frontal-Delaunay)
+Info    : [ 60%] Meshing surface 241 (Cylinder, Frontal-Delaunay)
+Info    : [ 60%] Meshing surface 242 (Plane, Frontal-Delaunay)
+Info    : [ 60%] Meshing surface 243 (Cylinder, Frontal-Delaunay)
+Info    : [ 60%] Meshing surface 244 (Plane, Frontal-Delaunay)
+Info    : [ 60%] Meshing surface 245 (Cone, Frontal-Delaunay)
+Info    : [ 60%] Meshing surface 246 (Cylinder, Frontal-Delaunay)
+Info    : [ 70%] Meshing surface 247 (Plane, Frontal-Delaunay)
+Info    : [ 70%] Meshing surface 248 (Plane, Frontal-Delaunay)
+Info    : [ 70%] Meshing surface 249 (Cylinder, Frontal-Delaunay)
+Info    : [ 70%] Meshing surface 250 (Plane, Frontal-Delaunay)
+Info    : [ 70%] Meshing surface 251 (Cylinder, Frontal-Delaunay)
+Info    : [ 70%] Meshing surface 252 (Cylinder, Frontal-Delaunay)
+Info    : [ 70%] Meshing surface 253 (Cylinder, Frontal-Delaunay)
+Info    : [ 70%] Meshing surface 254 (Plane, Frontal-Delaunay)
+Info    : [ 80%] Meshing surface 255 (Cylinder, Frontal-Delaunay)
+Info    : [ 80%] Meshing surface 256 (Cylinder, Frontal-Delaunay)
+Info    : [ 80%] Meshing surface 257 (Cylinder, Frontal-Delaunay)
+Info    : [ 80%] Meshing surface 258 (Cylinder, Frontal-Delaunay)
+Info    : [ 80%] Meshing surface 259 (Plane, Frontal-Delaunay)
+Info    : [ 80%] Meshing surface 260 (Cylinder, Frontal-Delaunay)
+Info    : [ 80%] Meshing surface 261 (Cylinder, Frontal-Delaunay)
+Info    : [ 80%] Meshing surface 262 (Cylinder, Frontal-Delaunay)
+Info    : [ 80%] Meshing surface 263 (Plane, Frontal-Delaunay)
+Info    : [ 90%] Meshing surface 264 (Cylinder, Frontal-Delaunay)
+Info    : [ 90%] Meshing surface 265 (Cylinder, Frontal-Delaunay)
+Info    : [ 90%] Meshing surface 266 (Cylinder, Frontal-Delaunay)
+Info    : [ 90%] Meshing surface 267 (Cylinder, Frontal-Delaunay)
+Info    : [ 90%] Meshing surface 268 (Cylinder, Frontal-Delaunay)
+Info    : [ 90%] Meshing surface 269 (Cylinder, Frontal-Delaunay)
+Info    : [ 90%] Meshing surface 270 (Cylinder, Frontal-Delaunay)
+Info    : [ 90%] Meshing surface 271 (Plane, Frontal-Delaunay)
+Info    : [ 90%] Meshing surface 272 (Cylinder, Frontal-Delaunay)
+Info    : [100%] Meshing surface 273 (Plane, Frontal-Delaunay)
+Info    : [100%] Meshing surface 274 (Cylinder, Frontal-Delaunay)
+Info    : [100%] Meshing surface 275 (Cone, Frontal-Delaunay)
+Info    : [100%] Meshing surface 276 (Cone, Frontal-Delaunay)
+Info    : [100%] Meshing surface 277 (Cylinder, Frontal-Delaunay)
+Info    : [100%] Meshing surface 278 (Cylinder, Frontal-Delaunay)
+Info    : [100%] Meshing surface 279 (Plane, Frontal-Delaunay)
+Info    : [100%] Meshing surface 280 (Cone, Frontal-Delaunay)
+Info    : Done meshing 2D (Wall 18.848s, CPU 18.2344s)
+Info    : 401770 nodes 809061 elements
+Info    : Meshing 3D...
+Info    : 3D Meshing 3 volumes with 3 connected components
+Info    : Tetrahedrizing 752 nodes...
+Info    : Done tetrahedrizing 760 nodes (Wall 0.00710797s, CPU 0s)
+Info    : Reconstructing mesh...
+Info    :  - Creating surface mesh
+Info    :  - Identifying boundary edges
+Info    :  - Recovering boundary
+Info    : Done reconstructing mesh (Wall 0.0158799s, CPU 0.015625s)
+Info    : Found volume 1
+Info    : It. 0 - 0 nodes created - worst tet radius 6.93838 (nodes removed 0 0)
+Info    : 3D refinement terminated (401825 nodes total):
+Info    :  - 14 Delaunay cavities modified for star shapeness
+Info    :  - 14 nodes could not be inserted
+Info    :  - 2410 tetrahedra created in 0.00457382 sec. (526911 tets/s)
+Info    : 2 node relocations
+Info    : Tetrahedrizing 3606 nodes...
+Info    : Done tetrahedrizing 3614 nodes (Wall 0.037514s, CPU 0.046875s)
+Info    : Reconstructing mesh...
+Info    :  - Creating surface mesh
+Info    :  - Identifying boundary edges
+Info    :  - Recovering boundary
+Info    :  - Added 2 Steiner points
+Info    : Done reconstructing mesh (Wall 0.0925519s, CPU 0.09375s)
+Info    : Found volume 2
+Info    : It. 0 - 0 nodes created - worst tet radius 6.44195 (nodes removed 0 0)
+Info    : It. 500 - 431 nodes created - worst tet radius 1.06706 (nodes removed 0 69)
+Info    : 3D refinement terminated (402349 nodes total):
+Info    :  - 8 Delaunay cavities modified for star shapeness
+Info    :  - 70 nodes could not be inserted
+Info    :  - 13852 tetrahedra created in 0.0356238 sec. (388841 tets/s)
+Info    : 0 node relocations
+Info    : Tetrahedrizing 3835 nodes...
+Info    : Done tetrahedrizing 3843 nodes (Wall 0.042856s, CPU 0.046875s)
+Info    : Reconstructing mesh...
+Info    :  - Creating surface mesh
+Info    :  - Identifying boundary edges
+Info    :  - Recovering boundary
+Info    : Done reconstructing mesh (Wall 0.092823s, CPU 0.09375s)
+Info    : Found volume 3
+Info    : It. 0 - 0 nodes created - worst tet radius 4.80165 (nodes removed 0 0)
+Info    : It. 500 - 499 nodes created - worst tet radius 1.04794 (nodes removed 0 1)
+Info    : 3D refinement terminated (402371 nodes total):
+Info    :  - 2 Delaunay cavities modified for star shapeness
+Info    :  - 1 nodes could not be inserted
+Info    :  - 14575 tetrahedra created in 0.0334909 sec. (435192 tets/s)
+Info    : 0 node relocations
+Info    : Done meshing 3D (Wall 6.71014s, CPU 6.42188s)
+Info    : Optimizing mesh...
+Info    : Optimizing volume 1
+Info    : Optimization starts (volume = 2170.06) with worst = 0.000231503 / average = 0.662157:
+Info    : 0.00 < quality < 0.10 :        10 elements
+Info    : 0.10 < quality < 0.20 :        78 elements
+Info    : 0.20 < quality < 0.30 :        99 elements
+Info    : 0.30 < quality < 0.40 :       120 elements
+Info    : 0.40 < quality < 0.50 :       135 elements
+Info    : 0.50 < quality < 0.60 :       273 elements
+Info    : 0.60 < quality < 0.70 :       535 elements
+Info    : 0.70 < quality < 0.80 :       453 elements
+Info    : 0.80 < quality < 0.90 :       534 elements
+Info    : 0.90 < quality < 1.00 :       173 elements
+Info    : 91 edge swaps, 7 node relocations (volume = 2170.06): worst = 0.102988 / average = 0.680153 (Wall 0.00220013s, CPU 0.015625s)
+Info    : 94 edge swaps, 13 node relocations (volume = 2170.06): worst = 0.103081 / average = 0.680721 (Wall 0.00334406s, CPU 0.015625s)
+Info    : 95 edge swaps, 17 node relocations (volume = 2170.06): worst = 0.103084 / average = 0.680892 (Wall 0.00442505s, CPU 0.015625s)
+Info    : 96 edge swaps, 21 node relocations (volume = 2170.06): worst = 0.103084 / average = 0.680869 (Wall 0.005481s, CPU 0.015625s)
+Info    : No ill-shaped tets in the mesh :-)
+Info    : 0.00 < quality < 0.10 :         0 elements
+Info    : 0.10 < quality < 0.20 :        31 elements
+Info    : 0.20 < quality < 0.30 :        70 elements
+Info    : 0.30 < quality < 0.40 :       114 elements
+Info    : 0.40 < quality < 0.50 :       147 elements
+Info    : 0.50 < quality < 0.60 :       258 elements
+Info    : 0.60 < quality < 0.70 :       530 elements
+Info    : 0.70 < quality < 0.80 :       478 elements
+Info    : 0.80 < quality < 0.90 :       534 elements
+Info    : 0.90 < quality < 1.00 :       172 elements
+Info    : Optimizing volume 2
+Info    : Optimization starts (volume = 16634.6) with worst = 3.82698e-07 / average = 0.735903:
+Info    : 0.00 < quality < 0.10 :       101 elements
+Info    : 0.10 < quality < 0.20 :       131 elements
+Info    : 0.20 < quality < 0.30 :       153 elements
+Info    : 0.30 < quality < 0.40 :       307 elements
+Info    : 0.40 < quality < 0.50 :       453 elements
+Info    : 0.50 < quality < 0.60 :       729 elements
+Info    : 0.60 < quality < 0.70 :      2345 elements
+Info    : 0.70 < quality < 0.80 :      4369 elements
+Info    : 0.80 < quality < 0.90 :      3739 elements
+Info    : 0.90 < quality < 1.00 :      1525 elements
+Info    : 338 edge swaps, 16 node relocations (volume = 16634.6): worst = 0.00143227 / average = 0.748998 (Wall 0.00656509s, CPU 0.015625s)
+Info    : 360 edge swaps, 25 node relocations (volume = 16634.6): worst = 0.00143227 / average = 0.749686 (Wall 0.00860524s, CPU 0.015625s)
+Info    : No ill-shaped tets in the mesh :-)
+Info    : 0.00 < quality < 0.10 :        13 elements
+Info    : 0.10 < quality < 0.20 :        41 elements
+Info    : 0.20 < quality < 0.30 :        14 elements
+Info    : 0.30 < quality < 0.40 :       293 elements
+Info    : 0.40 < quality < 0.50 :       448 elements
+Info    : 0.50 < quality < 0.60 :       733 elements
+Info    : 0.60 < quality < 0.70 :      2294 elements
+Info    : 0.70 < quality < 0.80 :      4426 elements
+Info    : 0.80 < quality < 0.90 :      3745 elements
+Info    : 0.90 < quality < 1.00 :      1528 elements
+Info    : Optimizing volume 3
+Info    : Optimization starts (volume = 17988.5) with worst = 0.00163241 / average = 0.745344:
+Info    : 0.00 < quality < 0.10 :        54 elements
+Info    : 0.10 < quality < 0.20 :       112 elements
+Info    : 0.20 < quality < 0.30 :       151 elements
+Info    : 0.30 < quality < 0.40 :       332 elements
+Info    : 0.40 < quality < 0.50 :       430 elements
+Info    : 0.50 < quality < 0.60 :       603 elements
+Info    : 0.60 < quality < 0.70 :      2404 elements
+Info    : 0.70 < quality < 0.80 :      4778 elements
+Info    : 0.80 < quality < 0.90 :      4036 elements
+Info    : 0.90 < quality < 1.00 :      1675 elements
+Info    : 289 edge swaps, 8 node relocations (volume = 17988.5): worst = 0.170858 / average = 0.756861 (Wall 0.00593996s, CPU 0s)
+Info    : 299 edge swaps, 9 node relocations (volume = 17988.5): worst = 0.173944 / average = 0.757173 (Wall 0.00755286s, CPU 0s)
+Info    : 300 edge swaps, 9 node relocations (volume = 17988.5): worst = 0.173944 / average = 0.757222 (Wall 0.00899696s, CPU 0s)
+Info    : No ill-shaped tets in the mesh :-)
+Info    : 0.00 < quality < 0.10 :         0 elements
+Info    : 0.10 < quality < 0.20 :         3 elements
+Info    : 0.20 < quality < 0.30 :        31 elements
+Info    : 0.30 < quality < 0.40 :       326 elements
+Info    : 0.40 < quality < 0.50 :       431 elements
+Info    : 0.50 < quality < 0.60 :       604 elements
+Info    : 0.60 < quality < 0.70 :      2375 elements
+Info    : 0.70 < quality < 0.80 :      4785 elements
+Info    : 0.80 < quality < 0.90 :      4091 elements
+Info    : 0.90 < quality < 1.00 :      1672 elements
+Info    : Done optimizing mesh (Wall 0.0459688s, CPU 0.046875s)
+Info    : Optimizing mesh (Netgen)...
+Info    : Optimizing volume 1
+Info    : CalcLocalH: 807 Points 2335 Elements 1504 Surface Elements 
+Info    : Remove Illegal Elements 
+Info    : 689 illegal tets 
+Info    : SplitImprove 
+Info    : badmax = 63.5807 
+Info    : 120 splits performed 
+Info    : SwapImprove  
+Info    : 75 swaps performed 
+Info    : SwapImprove2  
+Info    : 2 swaps performed 
+Info    : 433 illegal tets 
+Info    : SplitImprove 
+Info    : badmax = 83.4551 
+Info    : 93 splits performed 
+Info    : SwapImprove  
+Info    : 44 swaps performed 
+Info    : SwapImprove2  
+Info    : 7 swaps performed 
+Info    : 225 illegal tets 
+Info    : SplitImprove 
+Info    : badmax = 3865.31 
+Info    : 68 splits performed 
+Info    : SwapImprove  
+Info    : 11 swaps performed 
+Info    : SwapImprove2  
+Info    : 2 swaps performed 
+Info    : 78 illegal tets 
+Info    : SplitImprove 
+Info    : badmax = 3480.99 
+Info    : 31 splits performed 
+Info    : SwapImprove  
+Info    : 1 swaps performed 
+Info    : SwapImprove2  
+Info    : 1 swaps performed 
+Info    : 7 illegal tets 
+Info    : SplitImprove 
+Info    : badmax = 464.735 
+Info    : 3 splits performed 
+Info    : SwapImprove  
+Info    : 1 swaps performed 
+Info    : SwapImprove2  
+Info    : 0 swaps performed 
+Info    : 0 illegal tets 
+Info    : Volume Optimization 
+Info    : CombineImprove 
+Info    : 60 elements combined 
+Info    : ImproveMesh 
+Info    : Total badness = 9850.21 
+Info    : Total badness = 9020.06 
+Info    : SplitImprove 
+Info    : badmax = 135.442 
+Info    : 24 splits performed 
+Info    : ImproveMesh 
+Info    : Total badness = 9130.33 
+Info    : Total badness = 8958.84 
+Info    : SwapImprove  
+Info    : 422 swaps performed 
+Info    : SwapImprove2  
+Info    : 0 swaps performed 
+Info    : ImproveMesh 
+Info    : Total badness = 7926.27 
+Info    : Total badness = 7151.97 
+Info    : CombineImprove 
+Info    : 27 elements combined 
+Info    : ImproveMesh 
+Info    : Total badness = 6831.76 
+Info    : Total badness = 6697.24 
+Info    : SplitImprove 
+Info    : badmax = 77.8257 
+Info    : 2 splits performed 
+Info    : ImproveMesh 
+Info    : Total badness = 6705.87 
+Info    : Total badness = 6670.96 
+Info    : SwapImprove  
+Info    : 188 swaps performed 
+Info    : SwapImprove2  
+Info    : 0 swaps performed 
+Info    : ImproveMesh 
+Info    : Total badness = 6384.68 
+Info    : Total badness = 6132.86 
+Info    : CombineImprove 
+Info    : 12 elements combined 
+Info    : ImproveMesh 
+Info    : Total badness = 5994.04 
+Info    : Total badness = 5964.87 
+Info    : SplitImprove 
+Info    : badmax = 49.7723 
+Info    : 2 splits performed 
+Info    : ImproveMesh 
+Info    : Total badness = 5976.97 
+Info    : Total badness = 5959.13 
+Info    : SwapImprove  
+Info    : 104 swaps performed 
+Info    : SwapImprove2  
+Info    : 0 swaps performed 
+Info    : ImproveMesh 
+Info    : Total badness = 5862.46 
+Info    : Total badness = 5756.55 
+Info    : Optimizing volume 2
+Info    : CalcLocalH: 4185 Points 13555 Elements 7224 Surface Elements 
+Info    : Remove Illegal Elements 
+Info    : 2518 illegal tets 
+Info    : SplitImprove 
+Info    : badmax = 5803.53 
+Info    : 370 splits performed 
+Info    : SwapImprove  
+Info    : 509 swaps performed 
+Info    : SwapImprove2  
+Info    : 23 swaps performed 
+Info    : 1508 illegal tets 
+Info    : SplitImprove 
+Info    : badmax = 8911.16 
+Info    : 332 splits performed 
+Info    : SwapImprove  
+Info    : 97 swaps performed 
+Info    : SwapImprove2  
+Info    : 12 swaps performed 
+Info    : 654 illegal tets 
+Info    : SplitImprove 
+Info    : badmax = 8911.16 
+Info    : 147 splits performed 
+Info    : SwapImprove  
+Info    : 21 swaps performed 
+Info    : SwapImprove2  
+Info    : 8 swaps performed 
+Info    : 306 illegal tets 
+Info    : SplitImprove 
+Info    : badmax = 8911.16 
+Info    : 76 splits performed 
+Info    : SwapImprove  
+Info    : 13 swaps performed 
+Info    : SwapImprove2  
+Info    : 4 swaps performed 
+Info    : 137 illegal tets 
+Info    : SplitImprove 
+Info    : badmax = 8911.16 
+Info    : 42 splits performed 
+Info    : SwapImprove  
+Info    : 2 swaps performed 
+Info    : SwapImprove2  
+Info    : 1 swaps performed 
+Info    : 51 illegal tets 
+Info    : SplitImprove 
+Info    : badmax = 8911.16 
+Info    : 16 splits performed 
+Info    : SwapImprove  
+Info    : 0 swaps performed 
+Info    : SwapImprove2  
+Info    : 2 swaps performed 
+Info    : 9 illegal tets 
+Info    : SplitImprove 
+Info    : badmax = 8911.16 
+Info    : 4 splits performed 
+Info    : SwapImprove  
+Info    : 0 swaps performed 
+Info    : SwapImprove2  
+Info    : 0 swaps performed 
+Info    : 0 illegal tets 
+Info    : Volume Optimization 
+Info    : CombineImprove 
+Info    : 203 elements combined 
+Info    : ImproveMesh 
+Info    : Total badness = 33108.6 
+Info    : Total badness = 30821 
+Info    : SplitImprove 
+Info    : badmax = 558.662 
+Info    : 0 splits performed 
+Info    : ImproveMesh 
+Info    : Total badness = 30821 
+Info    : Total badness = 30727.8 
+Info    : SwapImprove  
+Info    : 1321 swaps performed 
+Info    : SwapImprove2  
+Info    : 1 swaps performed 
+Info    : ImproveMesh 
+Info    : Total badness = 28170.1 
+Info    : Total badness = 26973 
+Info    : CombineImprove 
+Info    : 55 elements combined 
+Info    : ImproveMesh 
+Info    : Total badness = 26327.5 
+Info    : Total badness = 26200.9 
+Info    : SplitImprove 
+Info    : badmax = 75.6209 
+Info    : 1 splits performed 
+Info    : ImproveMesh 
+Info    : Total badness = 26209.9 
+Info    : Total badness = 26198.4 
+Info    : SwapImprove  
+Info    : 520 swaps performed 
+Info    : SwapImprove2  
+Info    : 0 swaps performed 
+Info    : ImproveMesh 
+Info    : Total badness = 25561.2 
+Info    : Total badness = 25106.4 
+Info    : CombineImprove 
+Info    : 33 elements combined 
+Info    : ImproveMesh 
+Info    : Total badness = 24772.7 
+Info    : Total badness = 24709.5 
+Info    : SplitImprove 
+Info    : badmax = 57.0684 
+Info    : 2 splits performed 
+Info    : ImproveMesh 
+Info    : Total badness = 24719.8 
+Info    : Total badness = 24707.1 
+Info    : SwapImprove  
+Info    : 262 swaps performed 
+Info    : SwapImprove2  
+Info    : 1 swaps performed 
+Info    : ImproveMesh 
+Info    : Total badness = 24463.9 
+Info    : Total badness = 24277.1 
+Info    : Optimizing volume 3
+Info    : CalcLocalH: 4436 Points 14320 Elements 7682 Surface Elements 
+Info    : Remove Illegal Elements 
+Info    : 2587 illegal tets 
+Info    : SplitImprove 
+Info    : badmax = 56.4971 
+Info    : 390 splits performed 
+Info    : SwapImprove  
+Info    : 515 swaps performed 
+Info    : SwapImprove2  
+Info    : 27 swaps performed 
+Info    : 1562 illegal tets 
+Info    : SplitImprove 
+Info    : badmax = 779.369 
+Info    : 361 splits performed 
+Info    : SwapImprove  
+Info    : 102 swaps performed 
+Info    : SwapImprove2  
+Info    : 17 swaps performed 
+Info    : 606 illegal tets 
+Info    : SplitImprove 
+Info    : badmax = 947.106 
+Info    : 147 splits performed 
+Info    : SwapImprove  
+Info    : 22 swaps performed 
+Info    : SwapImprove2  
+Info    : 4 swaps performed 
+Info    : 254 illegal tets 
+Info    : SplitImprove 
+Info    : badmax = 1449.43 
+Info    : 63 splits performed 
+Info    : SwapImprove  
+Info    : 3 swaps performed 
+Info    : SwapImprove2  
+Info    : 1 swaps performed 
+Info    : 127 illegal tets 
+Info    : SplitImprove 
+Info    : badmax = 947.106 
+Info    : 39 splits performed 
+Info    : SwapImprove  
+Info    : 2 swaps performed 
+Info    : SwapImprove2  
+Info    : 0 swaps performed 
+Info    : 46 illegal tets 
+Info    : SplitImprove 
+Info    : badmax = 947.106 
+Info    : 20 splits performed 
+Info    : SwapImprove  
+Info    : 0 swaps performed 
+Info    : SwapImprove2  
+Info    : 0 swaps performed 
+Info    : 5 illegal tets 
+Info    : SplitImprove 
+Info    : badmax = 947.106 
+Info    : 2 splits performed 
+Info    : SwapImprove  
+Info    : 0 swaps performed 
+Info    : SwapImprove2  
+Info    : 0 swaps performed 
+Info    : 0 illegal tets 
+Info    : Volume Optimization 
+Info    : CombineImprove 
+Info    : 189 elements combined 
+Info    : ImproveMesh 
+Info    : Total badness = 34090.6 
+Info    : Total badness = 32151.6 
+Info    : SplitImprove 
+Info    : badmax = 58.966 
+Info    : 17 splits performed 
+Info    : ImproveMesh 
+Info    : Total badness = 32221.6 
+Info    : Total badness = 32066 
+Info    : SwapImprove  
+Info    : 1381 swaps performed 
+Info    : SwapImprove2  
+Info    : 0 swaps performed 
+Info    : ImproveMesh 
+Info    : Total badness = 29622.9 
+Info    : Total badness = 28520.1 
+Info    : CombineImprove 
+Info    : 60 elements combined 
+Info    : ImproveMesh 
+Info    : Total badness = 27850.8 
+Info    : Total badness = 27734.7 
+Info    : SplitImprove 
+Info    : badmax = 35.5178 
+Info    : 3 splits performed 
+Info    : ImproveMesh 
+Info    : Total badness = 27753.7 
+Info    : Total badness = 27745.5 
+Info    : SwapImprove  
+Info    : 544 swaps performed 
+Info    : SwapImprove2  
+Info    : 0 swaps performed 
+Info    : ImproveMesh 
+Info    : Total badness = 27174.2 
+Info    : Total badness = 26754.5 
+Info    : CombineImprove 
+Info    : 19 elements combined 
+Info    : ImproveMesh 
+Info    : Total badness = 26585.5 
+Info    : Total badness = 26557.1 
+Info    : SplitImprove 
+Info    : badmax = 35.8821 
+Info    : 1 splits performed 
+Info    : ImproveMesh 
+Info    : Total badness = 26563.4 
+Info    : Total badness = 26561.3 
+Info    : SwapImprove  
+Info    : 233 swaps performed 
+Info    : SwapImprove2  
+Info    : 0 swaps performed 
+Info    : ImproveMesh 
+Info    : Total badness = 26401 
+Info    : Total badness = 26255.3 
+Info    : Done optimizing mesh (Wall 2.75271s, CPU 2.70312s)
+Info    : 404723 nodes 848155 elements
+Info    : Reading 'C:\Users\vibhe\Downloads\OUTPUT\CFD\scripts\..\mesh\u666\u666_g_shaft.msh'...
+Info    : 14330 nodes
+Info    : 75280 elements
+Info    : Done reading 'C:\Users\vibhe\Downloads\OUTPUT\CFD\scripts\..\mesh\u666\u666_g_shaft.msh'
+partner endcaps_to_shaft 604 triangles
+Info    : Reading 'C:\Users\vibhe\Downloads\OUTPUT\CFD\scripts\..\mesh\u666\u666_g_magnets.msh'...
+Info    : 26400 nodes
+Info    : 126250 elements
+Info    : Done reading 'C:\Users\vibhe\Downloads\OUTPUT\CFD\scripts\..\mesh\u666\u666_g_magnets.msh'
+partner endcaps_to_magnets 1697 triangles
+Info    : Reading 'C:\Users\vibhe\Downloads\OUTPUT\CFD\scripts\..\mesh\u666\u666_g_inair.msh'...
+Info    : 60160 nodes
+Info    : 313545 elements
+Info    : Done reading 'C:\Users\vibhe\Downloads\OUTPUT\CFD\scripts\..\mesh\u666\u666_g_inair.msh'
+partner endcaps_to_inair 6300 triangles
+Info    : Reading 'C:\Users\vibhe\Downloads\OUTPUT\CFD\scripts\..\mesh\u666\u666_g_rotor.msh'...
+Info    : 346707 nodes
+Info    : 1973781 elements
+Info    : Done reading 'C:\Users\vibhe\Downloads\OUTPUT\CFD\scripts\..\mesh\u666\u666_g_rotor.msh'
+partner endcaps_to_rotor 23438 triangles
+mixed face 216 {'endcaps_to_inair': 2043, 'endcaps_to_shaft': 236}
+mixed face 217 {'endcaps_to_inair': 18, 'endcaps_to_rotor': 0}
+mixed face 218 {'endcaps_to_inair': 104, 'endcaps_to_rotor': 0}
+mixed face 219 {'endcaps_to_inair': 18, 'endcaps_to_rotor': 0}
+mixed face 220 {'endcaps_to_inair': 18, 'endcaps_to_rotor': 0}
+mixed face 221 {'endcaps_to_inair': 108, 'endcaps_to_rotor': 0}
+mixed face 222 {'endcaps_to_inair': 18, 'endcaps_to_rotor': 0}
+mixed face 223 {'endcaps_to_inair': 18, 'endcaps_to_rotor': 0}
+mixed face 224 {'endcaps_to_inair': 104, 'endcaps_to_rotor': 0}
+mixed face 225 {'endcaps_to_inair': 18, 'endcaps_to_rotor': 0}
+mixed face 228 {'endcaps_to_inair': 34, 'endcaps_to_magnets': 0, 'endcaps_to_rotor': 0}
+mixed face 229 {'endcaps_to_inair': 26, 'endcaps_to_rotor': 0}
+mixed face 230 {'endcaps_to_inair': 174, 'endcaps_to_magnets': 0, 'endcaps_to_rotor': 0}
+mixed face 231 {'endcaps_to_inair': 26, 'endcaps_to_magnets': 0}
+mixed face 232 {'endcaps_to_inair': 34, 'endcaps_to_magnets': 0, 'endcaps_to_rotor': 0}
+mixed face 233 {'endcaps_to_inair': 34, 'endcaps_to_magnets': 0, 'endcaps_to_rotor': 0}
+mixed face 234 {'endcaps_to_inair': 26, 'endcaps_to_rotor': 0}
+mixed face 235 {'endcaps_to_inair': 172, 'endcaps_to_magnets': 0, 'endcaps_to_rotor': 0}
+mixed face 236 {'endcaps_to_inair': 26, 'endcaps_to_magnets': 0}
+mixed face 237 {'endcaps_to_inair': 34, 'endcaps_to_magnets': 0, 'endcaps_to_rotor': 0}
+mixed face 238 {'endcaps_to_inair': 34, 'endcaps_to_magnets': 0, 'endcaps_to_rotor': 0}
+mixed face 239 {'endcaps_to_inair': 26, 'endcaps_to_rotor': 0}
+mixed face 240 {'endcaps_to_inair': 170, 'endcaps_to_magnets': 0, 'endcaps_to_rotor': 0}
+mixed face 241 {'endcaps_to_inair': 26, 'endcaps_to_magnets': 0}
+mixed face 242 {'endcaps_to_inair': 34, 'endcaps_to_magnets': 0, 'endcaps_to_rotor': 0}
+mixed face 243 {'endcaps_to_inair': 52, 'endcaps_to_shaft': 208}
+mixed face 244 {'endcaps_to_magnets': 263, 'endcaps_to_rotor': 2016}
+mixed face 245 {'endcaps_to_inair': 124, 'endcaps_to_rotor': 0}
+mixed face 246 {'endcaps_to_inair': 7, 'endcaps_to_shaft': 0}
+mixed face 247 {'endcaps_to_magnets': 198, 'endcaps_to_rotor': 2127}
+mixed face 248 {'endcaps_to_inair': 34, 'endcaps_to_magnets': 0, 'endcaps_to_rotor': 0}
+mixed face 249 {'endcaps_to_inair': 18, 'endcaps_to_rotor': 0}
+mixed face 250 {'endcaps_to_inair': 34, 'endcaps_to_magnets': 0, 'endcaps_to_rotor': 0}
+mixed face 251 {'endcaps_to_inair': 26, 'endcaps_to_rotor': 0}
+mixed face 252 {'endcaps_to_inair': 170, 'endcaps_to_magnets': 0, 'endcaps_to_rotor': 0}
+mixed face 253 {'endcaps_to_inair': 26, 'endcaps_to_rotor': 0}
+mixed face 254 {'endcaps_to_inair': 34, 'endcaps_to_magnets': 0, 'endcaps_to_rotor': 0}
+mixed face 255 {'endcaps_to_inair': 18, 'endcaps_to_rotor': 0}
+mixed face 256 {'endcaps_to_inair': 104, 'endcaps_to_rotor': 0}
+mixed face 257 {'endcaps_to_inair': 172, 'endcaps_to_magnets': 0, 'endcaps_to_rotor': 0}
+mixed face 258 {'endcaps_to_inair': 26, 'endcaps_to_rotor': 0}
+mixed face 259 {'endcaps_to_inair': 34, 'endcaps_to_magnets': 0, 'endcaps_to_rotor': 0}
+mixed face 260 {'endcaps_to_inair': 18, 'endcaps_to_rotor': 0}
+mixed face 261 {'endcaps_to_inair': 106, 'endcaps_to_rotor': 0}
+mixed face 262 {'endcaps_to_inair': 18, 'endcaps_to_rotor': 0}
+mixed face 263 {'endcaps_to_inair': 34, 'endcaps_to_magnets': 0, 'endcaps_to_rotor': 0}
+mixed face 264 {'endcaps_to_inair': 26, 'endcaps_to_rotor': 0}
+mixed face 265 {'endcaps_to_inair': 196, 'endcaps_to_rotor': 0}
+mixed face 266 {'endcaps_to_inair': 170, 'endcaps_to_magnets': 0, 'endcaps_to_rotor': 0}
+mixed face 267 {'endcaps_to_inair': 26, 'endcaps_to_rotor': 0}
+mixed face 268 {'endcaps_to_inair': 18, 'endcaps_to_rotor': 0}
+mixed face 269 {'endcaps_to_inair': 104, 'endcaps_to_rotor': 0}
+mixed face 270 {'endcaps_to_inair': 18, 'endcaps_to_rotor': 0}
+mixed face 271 {'endcaps_to_inair': 34, 'endcaps_to_magnets': 0, 'endcaps_to_rotor': 0}
+mixed face 272 {'endcaps_to_inair': 26, 'endcaps_to_rotor': 0}
+mixed face 278 {'endcaps_to_inair': 26, 'endcaps_to_shaft': 172}
+  patch endcaps_to_inair         faces    75
+  patch endcaps_to_magnets       faces     2
+  patch endcaps_to_rotor         faces     2
+  patch endcaps_to_shaft         faces     5
+  patch outside                  faces     2
+Info    : Writing 'C:\Users\vibhe\Downloads\OUTPUT\CFD\scripts\..\mesh\u666\u666_g_endcaps.msh'...
+Info    : Done writing 'C:\Users\vibhe\Downloads\OUTPUT\CFD\scripts\..\mesh\u666\u666_g_endcaps.msh'
+tets: 39094

@@ -1,0 +1,2 @@
+FoamFile { format ascii; class dictionary; object x; }
+limitT { type limitTemperature; select all; min 300; max 345.15; }   // guard: 16 sliver cells (z~97, quality 0.03) gave T<0

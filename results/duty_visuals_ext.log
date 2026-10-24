@@ -1,0 +1,25 @@
++ cd /c/Users/vibhe/Downloads/OUTPUT/CFD
++ PY='.venv/Scripts/python -I'
++ PV='/c/Program Files/ParaView 6.2.0/bin/pvpython.exe'
++ A=results/anim_duty
++ F=results/figs_duty
++ mkdir -p results/anim_duty results/figs_duty
++ G=results/continuous/slices_18000
++ G40=results/continuous/slices_18000_z-0.040
++ NAME=(['duty1']='Duty 1, grade 12.3 % @ 23 km/h, 37 N·m @ 1782 rpm' ['duty4']='Duty 4, flat road 60 km/h, 3.24 N·m @ 9339 rpm')
++ declare -A NAME
++ RPM=(['duty1']='1782' ['duty4']='9339')
++ declare -A RPM
++ case $1 in
++ flow results/air/air_z.vtk z ext_air_z 'Air around the motor (natural convection), radial mid-plane z = 5 mm' 1 results/continuous/slices_18000
++ .venv/Scripts/python -I scripts/animate_flow.py results/air/air_z.vtk z results/anim_duty/ext_air_z.mp4 'Air around the motor (natural convection), radial mid-plane z = 5 mm' 1 auto --solids results/continuous/slices_18000
+wrote results/anim_duty/ext_air_z.mp4 200 frames
++ .venv/Scripts/python -I scripts/animate_flow.py results/air/air_z.vtk z - 'Air around the motor (natural convection), radial mid-plane z = 5 mm' 1 auto --solids results/continuous/slices_18000 --still results/figs_duty/ext_air_z.png
+wrote results/figs_duty/ext_air_z.png
++ flow results/air/air_x.vtk x ext_air_x 'Air around the motor (natural convection), axial mid-plane (rear left, drive end right)' 1 results/continuous/slices_18000
++ .venv/Scripts/python -I scripts/animate_flow.py results/air/air_x.vtk x results/anim_duty/ext_air_x.mp4 'Air around the motor (natural convection), axial mid-plane (rear left, drive end right)' 1 auto --solids results/continuous/slices_18000
+wrote results/anim_duty/ext_air_x.mp4 200 frames
++ .venv/Scripts/python -I scripts/animate_flow.py results/air/air_x.vtk x - 'Air around the motor (natural convection), axial mid-plane (rear left, drive end right)' 1 auto --solids results/continuous/slices_18000 --still results/figs_duty/ext_air_x.png
+wrote results/figs_duty/ext_air_x.png
++ echo DUTY_VISUALS_DONE ext
+DUTY_VISUALS_DONE ext

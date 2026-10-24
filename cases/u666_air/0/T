@@ -1,0 +1,7 @@
+FoamFile { format ascii; class volScalarField; object T; }
+dimensions [0 0 0 1 0 0 0]; internalField uniform 313.15;
+boundaryField
+{
+    ambient { type fixedValue; value uniform 313.15; }      // closed box, walls at ambient: still room air
+    motor   { type fixedValue; value uniform 343.15; }
+}

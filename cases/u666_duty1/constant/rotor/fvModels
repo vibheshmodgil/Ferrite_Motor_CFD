@@ -1,0 +1,14 @@
+FoamFile
+{
+    format      ascii;
+    class       dictionary;
+    object      fvModels;
+}
+
+loss
+{
+    type    heatSource;
+    select  cellZone;
+    cellZone rotor;
+    Q       9.4060;
+}

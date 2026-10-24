@@ -1,0 +1,35 @@
+FoamFile
+{
+    format      ascii;
+    class       volScalarField;
+    object      T;
+}
+dimensions [0 0 0 1 0 0 0];
+internalField uniform 313.15;
+boundaryField
+{
+    rotor_to_stator
+    {
+        type coupledTemperature;
+        thicknessLayers (0.0005);
+        kappaLayers (0.03);
+        value $internalField;
+    }
+    rotor_to_inair
+    {
+        type coupledTemperature;
+        value $internalField;
+    }
+    rotor_to_magnets
+    {
+        type coupledTemperature;
+        thicknessLayers (0.0001);
+        kappaLayers (0.2);
+        value $internalField;
+    }
+    rotor_to_shaft
+    {
+        type coupledTemperature;
+        value $internalField;
+    }
+}

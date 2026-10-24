@@ -1,0 +1,14 @@
+FoamFile { format ascii; class dictionary; object x; }
+ddtSchemes { default localEuler; }     // pseudo-transient (local time step): steadyState SIMPLE diverged on the fin mesh (KNOWN_ISSUES 12)
+gradSchemes { default Gauss linear; limited cellLimited Gauss linear 1; grad(U) $limited; }
+divSchemes
+{
+    default none;
+    div(phi,U) bounded Gauss upwind;
+    div(phi,h) bounded Gauss upwind;
+    div(phi,K) bounded Gauss upwind;
+    div(((rho*nuEff)*dev2(T(grad(U))))) Gauss linear;
+}
+laplacianSchemes { default Gauss linear limited corrected 0.33; }
+interpolationSchemes { default linear; }
+snGradSchemes { default limited corrected 0.33; }

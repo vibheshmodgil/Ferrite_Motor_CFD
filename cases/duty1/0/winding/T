@@ -1,0 +1,23 @@
+FoamFile
+{
+    format      ascii;
+    class       volScalarField;
+    object      T;
+}
+dimensions [0 0 0 1 0 0 0];
+internalField uniform 313.15;
+boundaryField
+{
+    winding_to_inair
+    {
+        type coupledTemperature;
+        value $internalField;
+    }
+    winding_to_stator
+    {
+        type coupledTemperature;
+        thicknessLayers (0.0017);
+        kappaLayers (0.3);
+        value $internalField;
+    }
+}

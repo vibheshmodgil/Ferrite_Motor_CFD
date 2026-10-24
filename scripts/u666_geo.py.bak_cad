@@ -1,0 +1,332 @@
+"""U666 benchmark motor: CAD (BREP cache of the STEP) -> clean conformal region set for the thermal model (gmsh OCC, mm).
+
+    .venv/Scripts/python -I scripts/u666_geo.py            -> mesh/u666/u666_geo.brep + .json, results/u666/geo.json
+
+Regions: housing (housing + front seat + rear cover/sleeve/cap/plate/gasket + plugs), stator (one lamination face
+extruded over the stack), winding (cellZones slot / endw), wedge (CAD wedge + slot opening), rotor (lamination face
+extruded, OD grown to the bore: the air gap is a contact layer), rpocket (air left in the rotor pockets, a zone of the
+rotor region), magnets (18 columns, the 3 axial segments joined), endcaps (brass caps + steel nut), shaft, bearings
+(solid rings), inair (internal air: end spaces + terminal box; + the front shaft seal as a plug), air (outside box).
+Overlaps are resolved by priority (first claim wins) in one fragment, so every interface is conformal.
+The CAD winding KE250510 is a representative body only: it is measured (report) but not meshed. The slot winding is
+the slot minus wedge (it also fills the 0.25 mm liner: liner = contact layer), the end windings are rings sized to the
+Motor-CAD copper volume (36 x 47.51 mm2 x MLT/2).
+"""
+import gmsh, json, math, os, sys, time
+import numpy as np
+
+ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
+OUT = os.path.join(ROOT, "mesh", "u666")
+TAG = "subset_w" if "--cad-winding" in sys.argv else "subset"   # u666_subset.py [--with-winding]: needed solids only
+DF = "--df" in sys.argv        # u666_defeature.py pre-pass output: same solid order as subset.brep
+BREP_IN = os.path.join(OUT, TAG + ("_df" if DF else "") + ".brep")
+SUB = json.load(open(os.path.join(OUT, TAG + ".json")))
+BOX = (-300, 300, -300, 500, -350, 400)        # outside air, mm; gravity -y, more room above for the plume
+
+# Motor-CAD winding data (user, 2026-10-22)
+N_SLOT, A_CU, MLT, FILL_EW = 36, 47.51, 187.76, 0.528
+# End-winding shells (CALIBRATION KNOB: area to the end-space air). Overhang from the CAD winding extents, mid-radius
+# = slot mid-radius; thickness None = sized so the copper matches Motor-CAD (36 x 47.51 mm2 x MLT/2 in total).
+EW = {"front": dict(overhang=29.95, r_mid=55.5, t=None),     # CAD KE250510 z max 90.15 - stack end 60.2
+      "rear": dict(overhang=29.95, r_mid=55.5, t=None)}      # set from probe_ew (CAD rear extent)
+R_SLOT = 66.0                  # slot bottom 65.5 (stator claims beyond)
+R_WEDGE_OPEN = 44.0            # slot opening (bore .. wedge) is given to the wedge region
+
+t0 = time.time()
+gmsh.initialize()
+gmsh.option.setNumber("General.Terminal", 0)
+gmsh.option.setNumber("Geometry.ToleranceBoolean", 1e-3)
+occ, M = gmsh.model.occ, gmsh.model
+occ.importShapes(BREP_IN)
+occ.synchronize()
+print("brep loaded %.0f s" % (time.time() - t0), flush=True)
+n_sub = sum(len(v) for v in SUB.values())
+assert len(M.getEntities(3)) == n_sub, (len(M.getEntities(3)), n_sub)
+assert abs(occ.getMass(3, SUB["shaft"][0]) - 89375.9) < (500 if DF else 1), "subset tag order changed"
+pick = lambda *keys: [t for k in keys for t in SUB[k]]
+
+
+def bottom_face(t):
+    zmin = M.getBoundingBox(3, t)[2]
+    for _, f in M.getBoundary([(3, t)], oriented=False):
+        b = M.getBoundingBox(2, abs(f))
+        if abs(b[2] - zmin) < 1e-4 and abs(b[5] - zmin) < 1e-4:
+            return abs(f)
+
+
+def extrude_face(f, dz):
+    cp = occ.copy([(2, f)])
+    return [t for d, t in occ.extrude(cp, 0, 0, dz) if d == 3]
+
+
+def annulus(r0, r1, z0, z1):
+    o = occ.addCylinder(0, 0, z0, 0, 0, z1 - z0, r1)
+    if r0 <= 0:
+        return [o]
+    i = occ.addCylinder(0, 0, z0 - 1, 0, 0, z1 - z0 + 2, r0)
+    return [t for _, t in occ.cut([(3, o)], [(3, i)])[0]]
+
+
+def zbox(z0, z1, r=200):
+    return occ.addBox(-r, -r, z0, 2 * r, 2 * r, z1 - z0)
+
+
+def vol(ts):
+    return sum(occ.getMass(3, t) for t in ts)
+
+
+def common(a, b):
+    """volume (mm3) and bbox of a & b, inputs kept."""
+    o, _ = occ.intersect([(3, t) for t in a], [(3, t) for t in b], removeObject=False, removeTool=False)
+    ts = [t for d, t in o if d == 3]
+    v = vol(ts)
+    bb = None
+    if ts:
+        occ.synchronize()
+        bbs = np.array([M.getBoundingBox(3, t) for t in ts])
+        bb = [round(float(x), 2) for x in np.r_[bbs[:, :3].min(0), bbs[:, 3:].max(0)]]
+    occ.remove([(3, t) for t in ts], recursive=True)
+    return v, bb
+
+
+geo = {}
+step = lambda msg: print("%-28s %6.0f s" % (msg, time.time() - t0), flush=True)
+lam_s, lam_r = pick("lam_s"), pick("lam_r")
+Z_S, Z_R = (-0.35, 60.2), (-2.2, 60.8)           # 173 / 180 laminations x 0.35 mm (probe1/probe4)
+L_STACK = Z_S[1] - Z_S[0]
+R_BORE, R_SO, R_RO = 43.53, 75.0, 42.88          # probed from the lamination edges (probe4)
+geo.update(stack_z=Z_S, rotor_z=Z_R, stack_len=L_STACK, r_bore=R_BORE, r_stator=R_SO, r_rotor=R_RO,
+           gap_mm=R_BORE - R_RO)
+wedges, liners = pick("wedge"), pick("liner")
+geo["cad_wedge_area_mm2"] = vol(wedges[:1]) / (M.getBoundingBox(3, wedges[0])[5] - M.getBoundingBox(3, wedges[0])[2])
+geo["cad_liner_vol_mm3_each"] = vol(liners[:1])
+step("stack data")
+
+# ---- stacks -> extrusions of ONE lamination end face (copies), magnets -> 18 columns (mid-section extruded)
+fs = occ.copy([(2, bottom_face(lam_s[0]))])[0][1]
+fr = occ.copy([(2, bottom_face(lam_r[0]))])[0][1]
+occ.translate([(2, fr)], 0, 0, Z_R[0] - M.getBoundingBox(3, lam_r[0])[2])   # the kept lamination is not the lowest
+mags = pick("magnet")
+mz = sorted({round(M.getBoundingBox(3, t)[2], 1) for t in mags})
+msec = []
+for t in mags:
+    if round(M.getBoundingBox(3, t)[2], 1) != mz[0]:
+        continue
+    zc = 0.5 * (M.getBoundingBox(3, t)[2] + M.getBoundingBox(3, t)[5])
+    rect = occ.addRectangle(-60, -60, zc, 120, 120)
+    sec, _ = occ.intersect([(3, t)], [(2, rect)], removeObject=False)
+    sec = [s for s in sec if s[0] == 2]
+    occ.translate(sec, 0, 0, Z_R[0] - zc)
+    msec += sec
+    step("magnet section %d" % len(msec))
+keep = set(pick("shaft", "housing", "endcaps", "seal", "wedge", "screws"))
+if "--cad-winding" in sys.argv:
+    keep |= set(pick("wcad", "liner"))
+step("start remove")
+occ.remove([(3, t) for _, t in M.getEntities(3) if t not in keep], recursive=True)
+step("removed")
+occ.synchronize()
+step("stacks/drops removed")
+stator = [t for d, t in occ.extrude([(2, fs)], 0, 0, L_STACK) if d == 3]
+rotor = [t for d, t in occ.extrude([(2, fr)], 0, 0, Z_R[1] - Z_R[0]) if d == 3]
+cols = [v for d, v in occ.extrude(msec, 0, 0, Z_R[1] - Z_R[0]) if d == 3]
+occ.synchronize()
+step("extrusions")
+
+# ---- slot geometry from the stator profile (2D)
+A_lam = occ.getMass(2, fs)
+zf = Z_S[0]
+geo["slot_area_to_bore_mm2"] = (math.pi * (R_SO ** 2 - R_BORE ** 2) - A_lam) / N_SLOT
+d1, d0 = occ.addDisk(0, 0, zf, R_SO, R_SO), occ.addDisk(0, 0, zf, R_WEDGE_OPEN, R_WEDGE_OPEN)
+ring2d, _ = occ.cut([(2, d1)], [(2, d0)])
+sl, _ = occ.cut(ring2d, occ.copy([(2, fs)]))
+occ.synchronize()
+geo["slot_area_above_r44_mm2"] = sum(occ.getMass(2, t) for d, t in sl if d == 2) / N_SLOT
+occ.remove(sl, recursive=True)
+step("slot area")
+
+if "--cad-winding" in sys.argv:   # slow (B-spline body): measure the CAD winding only, then stop
+    wcad = pick("wcad")
+    for k, (z0, z1) in dict(cad_w_slot=Z_S, cad_w_front=(Z_S[1], 200), cad_w_rear=(-40, Z_S[0]), cad_w_lead=(-200, -40)).items():
+        b = zbox(z0, z1)
+        geo[k] = common(wcad, [b])
+        occ.remove([(3, b)], recursive=True)
+        step(k)
+    geo["cad_w_total"] = vol(wcad)
+    geo["cad_w_overlap_stator"] = common(wcad, stator)[0]
+    geo["cad_w_overlap_liners"] = common(wcad, liners)[0]
+    geo["cad_w_overlap_wedges"] = common(wcad, wedges)[0]
+    step("winding analysed")
+    os.makedirs(os.path.join(ROOT, "results", "u666"), exist_ok=True)
+    json.dump(geo, open(os.path.join(ROOT, "results", "u666", "geo_cadwinding.json"), "w"), indent=1)
+    sys.exit(0)
+
+# ---- build the regions (priority order = dict order)
+G = {}
+G["shaft"] = pick("shaft")
+G["housing"] = pick("housing", "screws")       # screws fill their holes
+# FALLBACK (MESH agent, 2026-10-23, ASSUMPTION + CALIBRATION KNOB): the terminal-box cap (114) and gasket (74) CAD faces
+# would not mesh (slivers, folds and inverted faces at the cap/gasket/cover rim). Both are replaced by extruded profiles:
+# walls = cap section at z -88 extruded z -90.5..-83.5 (overlaps the cover, so the gasket seal is kept); lid = cap section
+# at z -91.5 extruded z CAP_LID_Z0..-90.5, thickened so cap+gasket volume (53.3 cm3) is kept (screw bosses dropped).
+# Walls + lid are fused with the rear cover (64) into one solid: no internal faces at the joint.
+def _prism(v, zs, z0, z1):
+    r = occ.addRectangle(-150, -150, zs, 300, 300)
+    sec = [x for x in occ.intersect([(3, v)], [(2, r)], removeObject=False)[0] if x[0] == 2]
+    occ.translate(sec, 0, 0, z0 - zs)
+    return [x for x in occ.extrude(sec, 0, 0, z1 - z0) if x[0] == 3]
+
+assert abs(occ.getMass(3, 74) - 3699) < 5 and abs(occ.getMass(3, 114) - 49593) < 50
+_v0 = occ.getMass(3, 74) + occ.getMass(3, 114)
+_new = _prism(114, -88.0, -90.5, -83.5) + _prism(114, -91.5, float(os.environ.get("CAP_LID_Z0", -93.55)), -90.5)
+geo["tb_cap_rebuilt_mm3"] = (_v0, sum(occ.getMass(3, t) for _, t in _new))
+occ.remove([(3, 74), (3, 114)], recursive=True)
+_f = [t for d, t in occ.fuse([(3, 64)], _new)[0] if d == 3]
+G["housing"] = [t for t in G["housing"] if t not in (74, 114, 64)] + _f
+step("cap/gasket rebuilt %.1f -> %.1f cm3, fused with cover" % (geo["tb_cap_rebuilt_mm3"][0] / 1e3, geo["tb_cap_rebuilt_mm3"][1] / 1e3))
+# the terminal box has a flat wall with 3 cable-gland bores (z about -88..-45). Cables and glands are dropped, so the
+# bores are closed with a slab along that wall (chord (-45,-50) -> (62,-12) at z -65, sections air_z-65.png)
+P0, TH = (-45.0, -50.0), math.atan2(-12 + 50, 62 + 45)
+slab = occ.addBox(-10, -5, -90, 135, 10, 50)
+occ.rotate([(3, slab)], 0, 0, 0, 0, 0, 1, TH)
+occ.translate([(3, slab)], *P0, 0)
+plug = [slab]
+# hexagonal through-hole (47 mm2, AF ~7.5) in the terminal-box cap at (-12.0, 32.9), z -91.1 (MESH agent leak scan):
+# its part (cable/stud) is dropped, so the hole is plugged with housing
+plug.append(occ.addCylinder(-12.0, 32.9, -91.6, 0, 0, 1.0, 4.6))
+G["housing"] += plug
+G["bearings"] = annulus(12.5, 26.0, 77.56, 92.79) + annulus(8.5, 17.5, -30.2, -20.2)     # 6205 front, 6003 rear
+G["endcaps"] = pick("endcaps")
+G["magnets"] = cols
+# gap annulus FUSED with the lamination: r 42.68 grazed the OD dips (r 42.70..42.88) -> overlapping facets in 3D.
+# r 42.6 lies between the pocket tops (42.35) and the dips; fused, so no internal face is left at that radius.
+G["rotor"] = [t for d, t in occ.fuse([(3, t) for t in rotor], [(3, t) for t in annulus(42.6, R_BORE, *Z_S)])[0] if d == 3]
+G["stator"] = stator
+wclip = []
+for t in wedges:
+    b = zbox(*Z_S)
+    o, _ = occ.intersect([(3, t)], [(3, b)])
+    wclip += [v for d, v in o if d == 3]
+G["wedge"] = wclip + annulus(R_BORE - 0.5, R_WEDGE_OPEN, *Z_S)
+G["slot"] = annulus(R_BORE - 0.5, R_SLOT, *Z_S)   # to the slot bottom only (OD notches stay air)
+# end windings: shell volume = copper outside the slots / end fill, half per end
+L_EW_CU = MLT / 2 - L_STACK                      # end-turn copper length per turn half (both ends), mm
+V_EW = N_SLOT * A_CU * L_EW_CU / FILL_EW         # homogenised end-winding volume, both ends
+G["endw"] = []
+for k, e in EW.items():
+    if e["t"] is None:
+        e["t"] = V_EW / 2 / (2 * math.pi * e["r_mid"] * e["overhang"])
+    r0, r1 = e["r_mid"] - e["t"] / 2, e["r_mid"] + e["t"] / 2
+    z0, z1 = (Z_S[1], Z_S[1] + e["overhang"]) if k == "front" else (Z_S[0] - e["overhang"], Z_S[0])
+    G["endw"] += annulus(r0, r1, z0, z1)
+geo["ew_shells"] = EW
+G["seal"] = pick("seal")
+# Internal air envelope (old-pipeline approach): the CAD interior leaks to the outside through sub-mm fit clearances
+# that the section plots could not pin down, so inair = everything no part claims inside cylinders that END INSIDE
+# the housing / cover walls (radii from the sections air_0/90/z-65.png). Air outside them stays outside air.
+# Odd radii/z on purpose: faces coincident with CAD faces broke the fragment (overlapping solids, +1.6 L).
+cav = annulus(0, 77.37, 60.95, 96.53)                       # front end space (wall r 75..80, shield z 94..100)
+cav += annulus(0, 75.43, -36.71, -1.13)                     # rear end space (housing r 75, cover wall r 74..77.8)
+c3 = annulus(0, 72.61, -91.07, -36.23)[0]                         # terminal box: arc wall r ~70..75, cap z -90..-94
+hp = occ.addBox(-40, 0, -100, 240, 200, 80)                    # interior side of the flat gland wall
+occ.rotate([(3, hp)], 0, 0, 0, 0, 0, 1, TH)
+occ.translate([(3, hp)], *P0, 0)
+tb = [t for d, t in occ.intersect([(3, c3)], [(3, hp)])[0] if d == 3]
+# the r 72.61 cylinder grazed a cone on the box outside (overlapping facets in 3D, surfaces 1621/9148): cut the
+# terminal-box envelope by the housing and keep only the box interior (largest piece); the rest stays unclaimed
+tb = [t for d, t in occ.cut([(3, t) for t in tb], occ.copy([(3, t) for t in G["housing"]]))[0] if d == 3]
+tb_keep = max(tb, key=lambda t: occ.getMass(3, t))
+geo["tb_envelope_pieces_mm3"] = sorted(round(occ.getMass(3, t), 1) for t in tb)
+occ.remove([(3, t) for t in tb if t != tb_keep], recursive=True)
+cav += [tb_keep]
+G["cavity"] = cav
+geo.update(ew_volume_target_mm3=V_EW,
+           cu_volume_target_mm3=N_SLOT * A_CU * MLT / 2, cu_slot_mm3=N_SLOT * A_CU * L_STACK)
+occ.synchronize()
+live = {t for _, t in M.getEntities(3)}
+stray = live - {t for ts in G.values() for t in ts}
+occ.remove([(3, t) for t in stray], recursive=True)
+occ.synchronize()
+step("parts built %s stray %d" % ({k: len(v) for k, v in G.items()}, len(stray)))
+
+box = occ.addBox(BOX[0], BOX[2], BOX[4], BOX[1] - BOX[0], BOX[3] - BOX[2], BOX[5] - BOX[4])
+order = list(G)
+objs = [(3, t) for n in order for t in G[n]]
+out, omap = occ.fragment([(3, box)], objs)
+occ.synchronize()
+print("fragment %.0f s" % (time.time() - t0), flush=True)
+owner = {}
+for (d, t), ch in zip([(3, box)] + objs, omap):
+    n = "air?" if (d, t) == (3, box) else next(k for k in order if t in G[k])
+    for c in ch:
+        cur = owner.get(c[1])
+        if cur is None or cur == "air?" or (n != "air?" and order.index(n) < order.index(cur)):
+            owner[c[1]] = n
+# complement pieces: the one touching the box faces = outside air; the rest are cavities
+def touches_box(t):
+    x0, y0, z0, x1, y1, z1 = M.getBoundingBox(3, t)
+    return min(abs(x0 - BOX[0]), abs(y0 - BOX[2]), abs(z0 - BOX[4])) < 0.5
+
+
+def neighbours(t):
+    nb = {}
+    for _, f in M.getBoundary([(3, t)], oriented=False):
+        up, _ = M.getAdjacencies(2, abs(f))
+        for u in up:
+            if u != t:
+                nb[owner.get(u, "?")] = nb.get(owner.get(u, "?"), 0) + occ.getMass(2, abs(f))
+    return nb
+
+
+cav = []
+for t, n in list(owner.items()):
+    if n != "air?":
+        continue
+    if touches_box(t):
+        owner[t] = "air"
+        continue
+    cav.append(t)
+cav_info = []
+for t in cav:
+    nb = neighbours(t)
+    v = occ.getMass(3, t)
+    cav_info.append(dict(tag=t, vol=round(v, 2), nb={k: round(a, 1) for k, a in nb.items()},
+                         bb=[round(x, 1) for x in M.getBoundingBox(3, t)]))
+    if set(nb) <= {"housing"}:
+        owner[t] = "housing"          # closed grooves / thread ends inside the housing: filled
+    elif set(nb) <= {"rotor", "magnets", "endcaps", "shaft", "cavity"} and set(nb) & {"rotor", "magnets"} \
+            and max(map(abs, M.getBoundingBox(3, t)[:2] + M.getBoundingBox(3, t)[3:5])) < R_RO + 0.1:
+        owner[t] = "rpocket"          # magnet-pocket air (still air), open ends to the end space allowed
+    else:
+        owner[t] = "inair"
+geo["cavities"] = sorted(cav_info, key=lambda c: -c["vol"])
+for c in geo["cavities"][:40]:
+    print(c, flush=True)
+# leak scan (MESH agent): internal-air pieces that touch the outside air but no other internal air are outside air
+# (envelope parts beyond the terminal-box walls, the open shaft front bore); seal pieces touching only air too
+for _ in range(2):
+    for t, n in list(owner.items()):
+        if n in ("inair", "cavity", "seal"):
+            nb = set(neighbours(t))
+            if "air" in nb and (nb == {"air"} if n == "seal" else not nb & {"inair", "cavity"}):
+                print("-> air:", n, t, round(occ.getMass(3, t), 1), [round(x, 1) for x in M.getBoundingBox(3, t)], flush=True)
+                owner[t] = "air"
+regions = {}
+for t, n in owner.items():   # seal = its own region (polymer; prep_base merges it into the wedge region)
+    regions.setdefault({"cavity": "inair"}.get(n, n), []).append(t)
+print({n: (len(ts), round(vol(ts) / 1e3, 2)) for n, ts in regions.items()}, flush=True)
+leak = sum(a for t in regions.get("inair", []) for k, a in neighbours(t).items() if k == "air")
+print("inair-air contact area mm2: %.1f" % leak, flush=True)
+for t in regions.get("inair", []):
+    for _, f in M.getBoundary([(3, t)], oriented=False):
+        if any(owner.get(u) == "air" for u in M.getAdjacencies(2, abs(f))[0]):
+            print("  leak face", abs(f), "vol", t, round(occ.getMass(2, abs(f)), 1), [round(x, 1) for x in M.getBoundingBox(2, abs(f))])
+vt = sum(vol(ts) for ts in regions.values()) / 1e3
+print("volume closure: regions %.1f cm3 vs box %.1f cm3" % (vt, (BOX[1] - BOX[0]) * (BOX[3] - BOX[2]) * (BOX[5] - BOX[4]) / 1e3), flush=True)
+geo["inair_air_contact_mm2"] = leak
+geo["regions_cm3"] = {n: vol(ts) / 1e3 for n, ts in regions.items()}
+gmsh.write(os.path.join(OUT, "u666_geo.brep"))
+json.dump({n: sorted(ts) for n, ts in regions.items()}, open(os.path.join(OUT, "u666_geo.brep.json"), "w"))
+os.makedirs(os.path.join(ROOT, "results", "u666"), exist_ok=True)
+json.dump(geo, open(os.path.join(ROOT, "results", "u666", "geo.json"), "w"), indent=1)
+print("done %.0f s" % (time.time() - t0))

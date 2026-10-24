@@ -1,0 +1,1 @@
+cd ~/cfd/air; grep -h "ddtSchemes" system/fvSchemes; grep -c "^Time =" log.run 2>/dev/null; grep -c "Solving for Ux" log.run 2>/dev/null; grep continuity log.run 2>/dev/null | tail -1; grep "Solving for h" log.run | tail -1 | cut -c1-90; grep ExecutionTime log.run | tail -1

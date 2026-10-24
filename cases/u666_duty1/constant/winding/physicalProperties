@@ -1,0 +1,37 @@
+FoamFile
+{
+    format      ascii;
+    class       dictionary;
+    object      physicalProperties;
+}
+thermoType constAnisoSolidThermo;
+rho
+{
+    type zonal;
+    value 4636.75;
+    zones
+    {
+        slot 4636.75;
+        endw 5510;
+    }
+}
+Cv
+{
+    type zonal;
+    value 473;
+    zones
+    {
+        slot 473;
+        endw 473;
+    }
+}
+Kappa
+{
+    type zonal;
+    value (1.12 1.12 182.6);
+    zones
+    {
+        slot (1.12 1.12 182.6);
+        endw (1.05 205 205);
+    }
+}

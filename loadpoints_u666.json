@@ -1,0 +1,9 @@
+{
+ "_source": "User Motor-CAD (Ansys) loss screenshots 2026-10-22. rpm = P_em/T_em, matches the old duty1-5. Iron is the total only: stator/rotor split pending (placeholder 0.8/0.2). Copper reference temperature pending. friction -> bearings, windage -> inair.",
+ "duty1": {"rpm":1782,"torque_Nm":37.33,"P_em_W":6966,"Q_cu_dc_W":1133,"Q_cu_ac_W":6.408,"Q_iron_W":47.03,"Q_magnet_W":0.2857,"Q_windage_W":4.256,"Q_friction_W":9.928,"Q_total_W":1201,"PF":0.7299,"target_min":5},
+ "duty2": {"rpm":2550,"torque_Nm":26.66,"P_em_W":7119,"Q_cu_dc_W":548.3,"Q_cu_ac_W":7.326,"Q_iron_W":66.91,"Q_magnet_W":0.2163,"Q_windage_W":8.56,"Q_friction_W":19.97,"Q_total_W":651.3,"PF":0.8022,"target_min":15},
+ "duty3": {"rpm":3637,"torque_Nm":20.4,"P_em_W":7770,"Q_cu_dc_W":324.4,"Q_cu_ac_W":9.881,"Q_iron_W":94.92,"Q_magnet_W":0.4407,"Q_windage_W":17.11,"Q_friction_W":39.91,"Q_total_W":486.7,"PF":0.8625,"target_min":30},
+ "duty4": {"rpm":9339,"torque_Nm":3.807,"P_em_W":3723,"Q_cu_dc_W":133.3,"Q_cu_ac_W":30.87,"Q_iron_W":193.1,"Q_magnet_W":0.5651,"Q_windage_W":107.6,"Q_friction_W":251.0,"Q_total_W":716.4,"PF":0.645,"target_min":45},
+ "duty5": {"rpm":1612,"torque_Nm":12.68,"P_em_W":2140,"Q_cu_dc_W":132.2,"Q_cu_ac_W":0.8996,"Q_iron_W":30.01,"Q_magnet_W":0.07383,"Q_windage_W":3.5,"Q_friction_W":8.165,"Q_total_W":174.8,"PF":0.9209,"target_min":45},
+ "_limits": {"winding_C":155,"magnet_C":100}
+}

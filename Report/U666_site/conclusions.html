@@ -1,0 +1,270 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>U666 Conclusions &amp; open questions</title><style>:root{--bg:#fff;--fg:#1d1d1f;--muted:#5f6368;--line:#e2e2e2;--card:#f6f7f9;--accent:#1f4e8c;--todo:#a15c00;--ok:#2e7d32;--bad:#c62828;--ink:#1d1d1f}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#141517;--fg:#e8e8e8;--muted:#a0a4aa;--line:#2c2f33;--card:#1d1f22;--accent:#7fb0ff;--todo:#ffb74d;--ok:#81c784;--bad:#ef9a9a;--ink:#e8e8e8}}
+:root[data-theme=dark]{--bg:#141517;--fg:#e8e8e8;--muted:#a0a4aa;--line:#2c2f33;--card:#1d1f22;--accent:#7fb0ff;--todo:#ffb74d;--ok:#81c784;--bad:#ef9a9a;--ink:#e8e8e8}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.55 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+main{max-width:1000px;margin:auto;padding:0 16px 60px}h1{font-size:28px;margin:22px 0 6px}h2{font-size:21px;border-left:4px solid var(--accent);padding-left:10px;margin:26px 0 10px}h3{font-size:16px;margin:18px 0 6px}
+.topnav{position:sticky;top:0;z-index:9;background:var(--bg);border-bottom:1px solid var(--line);display:flex;flex-wrap:wrap;gap:2px;padding:6px 12px;align-items:center}
+.topnav a{padding:6px 9px;border-radius:6px;text-decoration:none;color:var(--fg);font-size:13.5px}.topnav a.on{background:var(--accent);color:#fff}.topnav button{margin-left:auto;border:1px solid var(--line);background:var(--card);color:var(--fg);border-radius:6px;padding:4px 8px;cursor:pointer}
+table{border-collapse:collapse;width:100%;margin:12px 0;font-size:13.5px;display:block;overflow-x:auto}th,td{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}th{background:var(--card)}
+figure{margin:14px 0}figure img,figure video{max-width:100%;height:auto;display:block;margin:auto;border:1px solid var(--line);border-radius:6px;background:#fff}figcaption{color:var(--muted);font-size:12.5px;margin-top:4px}
+.todo{color:var(--todo);font-style:italic}.summary{background:var(--card);border-left:4px solid var(--accent);padding:10px 14px;border-radius:6px}.mut,.note{color:var(--muted);font-size:13px}
+code{background:var(--card);padding:1px 4px;border-radius:4px}mark{background:rgba(224,168,0,.25);color:inherit;padding:0 3px;border-radius:3px}details{border:1px solid var(--line);border-radius:6px;padding:6px 10px;margin:10px 0}summary{cursor:pointer;font-weight:600;color:var(--accent)}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px;margin:16px 0}.card{display:block;border:1px solid var(--line);border-radius:10px;padding:12px;background:var(--card);text-decoration:none;color:var(--fg)}.card b{display:block;color:var(--accent)}.card span{font-size:13px;color:var(--muted)}
+.chip{display:inline-block;font-size:12px;padding:1px 8px;border-radius:10px;border:1px solid var(--line)}.chip.done{color:var(--ok)}.chip.pending{color:var(--todo)}.ok{color:var(--ok)}.bad{color:var(--bad)}
+.tw{overflow-x:auto}.box{border:1px solid var(--line);border-left:4px solid #8a8f98;border-radius:6px;background:var(--card);padding:6px 12px;margin:12px 0}ul{padding-left:20px}</style><script>(function(){try{var t=localStorage.getItem('u666theme');if(t)document.documentElement.dataset.theme=t}catch(e){}})();function tg(){var d=document.documentElement,t=(d.dataset.theme||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light'))=='dark'?'light':'dark';d.dataset.theme=t;try{localStorage.setItem('u666theme',t)}catch(e){}}</script></head><body><nav class="topnav"><a href="index.html">Overview</a><a href="geometry.html">Geometry</a><a href="materials.html">Materials</a><a href="mesh.html">Mesh</a><a href="contacts.html">Contacts & BCs</a><a href="airflow.html">Airflow</a><a href="method.html">Method & verification</a><a href="results.html">Results</a><a href="calibration.html">Calibration</a><a href="conclusions.html" class=on>Conclusions</a><a href="viewer3d.html">3D viewer</a><button onclick="tg()" aria-label="theme">theme</button></nav><main><h1>Conclusions &amp; open questions</h1><p class="summary">Limitations, assumptions, the questions for the user, and the complete step log.</p><h2>Limitations</h2><ul><li>Simplified housing (-2 % volume), real CAD unmeshable.</li><li>End-winding geometry is a shell, not the CAD.</li><li>Energy gate -1.14 %: winding-side interface losses ~14 W of 1201 W unexplained.</li><li>Internal air lumped; external h at one assumed skin dT, suspended mounting.</li><li>Rotor / wedge skewness above 4 on a few faces.</li></ul><h2>Feedback needed from the user</h2><table><thead><tr><th>Item</th><th>Used now</th><th>Why it matters</th></tr></thead><tbody><tr><td>iron loss split</td><td>0.8/0.2 placeholder</td><td>rotor iron heat goes through the magnets</td></tr><tr><td>copper T_ref</td><td>100 C pending</td><td>0.4 % per K on winding heat</td></tr><tr><td>duty4 friction 251 W</td><td>50/50 to bearings</td><td>more than iron and 2x windage: measured or seal/gearbox?</td></tr><tr><td>test data</td><td>none</td><td>needed for calibration</td></tr><tr><td>mounting</td><td>suspended, no feet</td><td>adds conduction path</td></tr><tr><td>skin temperature for h</td><td>70 C</td><td>h depends on dT</td></tr><tr><td>end-winding geometry</td><td>5 mm shell</td><td>knob</td></tr><tr><td>contact values</td><td>old baseline</td><td>re-check against test</td></tr></tbody></table><h2>Full step log (traceability)</h2><details open><summary>S0 Inputs (2026-10-22)</summary><ul>
+<li>CAD: <code>U666 CAD/U666_L4_20261022/ge250440_step.stp</code> (Creo, GE250440_ASM, mm, axis z). 73 unique solids, 480 instances, 599 solids after import. No materials in the STEP (&quot;NOT SPECIFIED&quot;).</li>
+<li>Losses: from the user&#x27;s Motor-CAD (Ansys) screenshots, saved in <code>loadpoints_u666.json</code>. Each speed was checked as P_em/T_em, and each loss sum was checked against the total.</li>
+<li>Winding: user&#x27;s Motor-CAD winding screenshot. 36 slots, stranded and overlapping (distributed), wire 0.76 mm with copper 0.71 mm, 5 strands in hand, 120 conductors drawn per slot.</li>
+<li>Motor-CAD slot data: slot area 97.57 mm², winding area 85.54 mm², copper 47.51 mm², wedge 0.89 mm², liner 0.25 mm, MLT 187.76 mm, end-winding fill 0.528.</li>
+<li>User statements: NdFeB magnets (not ferrite), NO busbar, BRASS rotor end caps, housing cast Al then machined (bare), NO potting, and the CAD winding body is only representative.</li>
+<li>Purpose: U666 is the benchmark motor with test data. Tune the CFD to the test, then apply the method to our motor. Use the same duty1–5 load points as last time.</li>
+</ul></details><details open><summary>S1 CAD check and part map</summary><ul>
+<li>Inventory script: <code>scripts/u666_cadinv.py</code>, output <code>mesh/u666/inv.json</code>. The STEP import takes 18 min; the BREP cache is <code>mesh/u666/u666.brep</code>.</li>
+<li>Global bbox: x -100..246, y -647..98, z -101..149 mm. The phase cables reach y -647.</li>
+<li>Part map:</li>
+<ul>
+<li>Stator: KE250030_1 ×173 laminations, OD 150, z -0.4..60.2.</li>
+<li>Rotor: KE250110_1 ×180, OD 85.8, z -2.2..60.8.</li>
+<li>Magnets: KE250130 ×54, r 23.9–40.3.</li>
+<li>Brass end caps: KE250150 (z 60.8–65.8) and KE250370 (z -10..-2); nut KE250320.</li>
+<li>Shaft: GE250300.</li>
+<li>Bearings: 6205-2RSH front (z 78–93), SKF 6003-2Z rear (z -30..-20).</li>
+<li>Housing: KE250089_1 (714 cm³, OD about 200). Front seat: KE250269.</li>
+<li>Rear cover: KE250179_1 (270 cm³). Rear sleeve: KE250380.</li>
+<li>Rear cap and plate: KE250200 / KE250300.</li>
+<li>Liners: KE250520 ×36 (r 45.5–66.2). Wedges: KE250530 ×36 (r 44–48).</li>
+<li>CAD winding: KE250510 (747 cm³, representative only).</li>
+</ul>
+<li>Dropped:</li>
+<ul>
+<li>the 3 phase cables (GE250410/420/430) and the gland/connector (GE250480);</li>
+<li>screws and washers; the circlip; the seal K2200050;</li>
+<li>the sensor (KE250190) and the encoder (KE250340/310);</li>
+<li>the terminal-block small parts.</li>
+</ul>
+<li>Problem: plane-face sampling for the radii gave wrong values (parametric bounds go past the trimmed faces). Only the cylindrical-face radii were used.</li>
+</ul></details><details open><summary>S2 Materials (rho kg/m³, cp J/kg·K, k W/m·K)</summary><div class=tw><table><thead><tr><th>Region</th><th>Material</th><th>rho</th><th>cp</th><th>k</th><th>Source</th></tr></thead><tbody><tr><td>Housing and cover</td><td>cast Al, machined, ε 0.1</td><td>2680</td><td>900</td><td>150</td><td>kept from the last run; user: cast + machined</td></tr><tr><td>Stator and rotor</td><td>laminated steel</td><td>7650</td><td>460</td><td>28/28/1.5 (in-plane/axial)</td><td>kept</td></tr><tr><td>Magnets</td><td>sintered NdFeB</td><td>7500</td><td>440</td><td>9</td><td>user: NdFeB; handbook values</td></tr><tr><td>Rotor end caps</td><td>brass CuZn39Pb3</td><td>8470</td><td>380</td><td>115</td><td>user: brass; handbook values</td></tr><tr><td>Shaft</td><td>steel</td><td>7850</td><td>460</td><td>45</td><td>kept</td></tr><tr><td>Bearings</td><td>steel ring, reduced k</td><td>7850</td><td>460</td><td>15</td><td>kept</td></tr><tr><td>Winding in the slot</td><td>homogenised (see S3)</td><td>5510 (scaled)</td><td>473</td><td>1.12 transverse / 217 axial</td><td>S3</td></tr><tr><td>End winding</td><td>homogenised</td><td>–</td><td>473</td><td>(r, θ, z) = (1.05, 205, 205)</td><td>S3; GEO proposal approved</td></tr></tbody></table></div>
+<ul>
+<li>Busbar, strap and tbar from the old model are REMOVED (no busbar in U666).</li>
+</ul></details><details open><summary>S3 Winding homogenisation</summary><ul>
+<li>Script: <code>scripts/u666_winding_props.py</code>, output <code>results/u666/winding_props.json</code>.</li>
+<li>Transverse k: Hashin–Shtrikman lower bound (copper in a varnish+enamel matrix, k 0.25/0.2). A layered (Wiener series) model gives a lower bound of about 0.54 at Kf 0.555, which we judged too pessimistic.</li>
+<li>Axial k: rule of mixtures. rho and cp: mass-weighted.</li>
+<li>Kf = 47.51/85.54 = 0.555, giving k_T 1.12, k_ax 217, rho 5510, cp 473.</li>
+<li>End-winding fill 0.528 gives k_T about 1.05 and k_wire about 205.</li>
+<li>Liner 0.25 mm, k 0.15: R = 1.67e-3 m²K/W (h about 600 W/m²K), applied as a contact layer at the winding/stator interface.</li>
+<li>Assumptions: enamel/varnish rho and cp are typical values. The varnish fills all voids.</li>
+</ul></details><details open><summary>S4 Geometry simplification (GEO agent)</summary><ul>
+<li>Attempt 1 (15:59) took over 50 min: it intersected the B-spline CAD winding with slabs. That approach was dropped.</li>
+<li>Attempt 2 stalled for more than 30 min after the BREP load (deleting about 450 solids, or the magnet sections).</li>
+<li>USER decision: build each lamination stack from ONE lamination face, extruded over the stack length.</li>
+<ul>
+<li>Stator: z -0.35..60.2. Rotor: z -2.2..60.8.</li>
+<li>Slots and pockets come from the profile.</li>
+<li>The 3 axial magnet segments become 18 extruded columns.</li>
+</ul>
+<li>The wedges are clipped to the stack and merged with the slot opening.</li>
+<li>The liner is not meshed; it is the S3 contact layer. The slot winding fills 96.7 mm², with rho scaled by 85.54/96.67 so the copper mass and heat capacity are exact.</li>
+<li>Winding rebuilt (the CAD body was deleted):</li>
+<ul>
+<li>slot profile extruded over the stack;</li>
+<li>end windings as rings: shells about 5 mm thick at the slot mid-radius, overhang about 30 mm (matching the CAD).</li>
+<li>Copper: in-slot 103.6 cm³ plus end windings 57.0 cm³ = 160.6 cm³ = 36 × 47.51 × 187.76/2.</li>
+<li>The end-winding homogenised volume is 107.9 cm³ (54 cm³ per end).</li>
+<li><mark>CALIBRATION KNOB</mark>: the shell thickness, overhang and radius are parameters, tuned against the test.</li>
+</ul>
+<li>Tip applied: save a subset BREP of the needed solids only.</li>
+<li>Status: in progress (<code>mesh/u666/geo.log</code>).</li>
+<li>18:08 GEO: fix for the stall. gmsh <code>occ.remove</code> is O(N²) on the 599-solid model: recursive removal stalled for more than 30 min, and non-recursive unbinding took 5 min for the faces alone. <code>scripts/u666_subset.py</code> now hides everything, shows only the needed solids and exports with <code>Geometry.OCCExportOnlyVisible=1</code>, in 49 s. The kept solids are 1 stator lamination, 1 rotor lamination, 18 magnets (segment 1), the housing parts (8), shaft, end caps and nut, seal, 36 wedges and 1 liner. Output: <code>mesh/u666/subset.brep</code> + <code>subset.json</code>. <code>u666_geo.py</code> loads only the subset.</li>
+<li>19:20 GEO: regions built from the subset (subset 47 s, parts 5 min, fragment 10 min). Problems and fixes:</li>
+<ul>
+<li>(1) The kept rotor lamination sat at z 39.8, so the extrusion ran past the stack. Fix: translate the profile to z -2.2.</li>
+<li>(2) The inner end-space air was connected to the outside air. Section plots (filled, at 0/90/45° and z -65) show that the terminal box has a flat wall with 3 cable-gland bores of about 20 mm, open once the cables and glands are dropped. Fix: a 10 mm Al slab along that wall (z -90..-40) closes the bores. Screws stay as housing plugs (they fill their holes).</li>
+<li>(3) The slot annulus ran to r 74.99, which filled the stator OD notches with winding. Fix: the slot region now ends at r 66 (slot bottom 65.5), and the notches stay air.</li>
+<li>Cavity rule: pockets bounded only by housing (grooves, thread ends) are filled with housing. Pockets bounded only by rotor/magnets/endcaps/shaft become the <code>rpocket</code> zone (still air, k 0.03), and the rest is <code>inair</code>.</li>
+</ul>
+<li>20:40 GEO: the leak remains after the bore plugs (fit clearances that are too small to locate). Switched to the old-pipeline internal-air envelope: inair = space no part claims inside 3 cylinders that end inside the walls. They are the front end space r 77.4 / z 61..96.5, the rear end space r 75.4 / z -36.7..-1.1, and the terminal box r 72.6 / z -91..-36, cut at the gland wall. Enclosed leftover air pieces also go to inair, except pockets bounded only by the rotor (rpocket) or only by the housing (filled).</li>
+<ul>
+<li>Problem: the first try put envelope faces coincident with CAD/stack faces, and the OCC fragment returned overlapping solids (region volumes summed to the box + 1.6 L). Fix: odd radii and z values, plus a volume-closure check printed in geo.log.</li>
+</ul>
+<li>20:40 GEO: CAD winding KE250510 measured on its own subset (<code>results/u666/geo_cadwinding.json</code>):</li>
+<ul>
+<li>In-slot 227.6 cm³ (fills the slot, including liner and wedge space). It overlaps the liners by 14.1 cm³, the wedges by 6.5 cm³, and the stator by 0.16 cm³ (negligible).</li>
+<li>End windings: front 255.8 cm³ (z 60.2..90.15, overhang 29.95 mm); rear about 256 cm³ (overhang about 30 mm, plus a 6.7 cm³ lead to the terminal box).</li>
+<li>The CAD end blobs are about 4.7× the Motor-CAD end-winding volume (54 cm³ per end at fill 0.528), confirming that the body is only representative.</li>
+</ul>
+<li>20:40 GEO: slot area. CAD slot to the bore = 106.5 mm²; above the slot opening (r 44) = 105.5 mm²; minus the CAD wedge (3.62 mm²) = 101.9 mm², against Motor-CAD winding + liner 96.67 mm² (+5.4 %). The meshed slot winding is 101.65 mm² per slot (221.58 cm³). In <code>u666_make_case.py</code>, slot rho, the copper fraction and k_axial are scaled by 85.54/101.65 (A_SLOT_MESH), so the copper mass and axial conductance match Motor-CAD.</li>
+<li>20:43 MESH agent: inair-air leak closed (was 12991 mm2). Shared faces located from the brep (face adjacency):</li>
+<ul>
+<li>(a) terminal-box envelope: 2 pieces (25.2 + 39.6 cm3) of the r 72.6 cylinder lie OUTSIDE the box walls (touch only housing + outside air, 9038 mm2 incl. the z -91.1 end faces) -&gt; outside air.</li>
+<li>(b) front shaft exit z 96.5-106.5: the seal was mapped to inair (3290 mm2 to air). Seal is now its own region <code>seal</code> (2.88 cm3, polymer: prep_base merges it into the wedge zone, k 0.2); a 0.1 cm3 seal piece touching only air (spring) -&gt; air.</li>
+<li>(c) shaft front centre bore r 5, z 62.8-96.5 (2.39 cm3), open to outside -&gt; outside air (79 mm2).</li>
+<li>(d) hexagonal through-hole (47 mm2) in the terminal-box cap at (-12.0, 32.9, z -91.1): plugged with a housing cylinder r 4.6 x 1 mm (+0.06 cm3 housing).</li>
+<li>Rule in u666_geo.py: an internal-air piece that touches outside air but no other internal air is outside air (2 passes).</li>
+<li>Also: rotor-pocket air (8 pieces, 48.6 cm3) is now <code>rpocket</code> (still air k 0.03, rule allows the open pocket ends); before it was lumped inair (k ~0.4, optimistic).</li>
+<li>Result: inair-air contact 0.0 mm2, closure exact 360000 cm3. Regions cm3: inair 1403.7, rpocket 48.6, seal 2.9, housing 1108.9, air 356180 (+67 cm3), others unchanged.</li>
+<li>Tried and reverted: envelope ends moved 0.5 mm into the stack (to remove the 0.15 mm slab beyond the rotor end) -&gt; overlapping fragment (+1.6 L), as in GEO&#x27;s first try.</li>
+</ul>
+</ul></details><details open><summary>S5 Loss input and mapping</summary><div class=tw><table><thead><tr><th>Point</th><th>rpm</th><th>T Nm</th><th>DC Cu</th><th>AC Cu</th><th>Iron</th><th>Magnet</th><th>Windage</th><th>Friction</th><th>Total W</th></tr></thead><tbody><tr><td>duty1</td><td>1782</td><td>37.33</td><td>1133</td><td>6.408</td><td>47.03</td><td>0.2857</td><td>4.256</td><td>9.928</td><td>1201</td></tr><tr><td>duty2</td><td>2550</td><td>26.66</td><td>548.3</td><td>7.326</td><td>66.91</td><td>0.2163</td><td>8.56</td><td>19.97</td><td>651.3</td></tr><tr><td>duty3</td><td>3637</td><td>20.4</td><td>324.4</td><td>9.881</td><td>94.92</td><td>0.4407</td><td>17.11</td><td>39.91</td><td>486.7</td></tr><tr><td>duty4</td><td>9339</td><td>3.807</td><td>133.3</td><td>30.87</td><td>193.1</td><td>0.5651</td><td>107.6</td><td>251.0</td><td>716.4</td></tr><tr><td>duty5</td><td>1612</td><td>12.68</td><td>132.2</td><td>0.8996</td><td>30.01</td><td>0.07383</td><td>3.5</td><td>8.165</td><td>174.8</td></tr></tbody></table></div>
+<ul>
+<li>Mapping:</li>
+<ul>
+<li>DC Cu goes to the winding, with q = q_ref·(1 + 0.00393·(T − T_ref)), T_ref = 100 °C (<mark>PENDING</mark> user confirmation). AC Cu goes to the winding as a constant.</li>
+<li>Iron goes to the stator and rotor, 0.8/0.2 split (<mark>PLACEHOLDER</mark>, user split pending).</li>
+<li>Magnet loss goes to the magnets. Windage goes to the internal end-space air (inair).</li>
+<li>Friction goes to the bearings, 50/50 front/rear (placeholder).</li>
+</ul>
+<li>Open questions: duty4 friction of 251 W looks high (more than iron, more than 2× windage); is it measured, or does it include a seal or gearbox?</li>
+<li>Limits: winding 155 °C, magnets 100 °C. Targets: 5/15/30/45/45 min.</li>
+</ul></details><details open><summary>S6 Contact resistances, boundary conditions and solver (from the old baseline; values to be re-checked for U666)</summary><ul>
+<li>See <code>handover/ENGINEERING_BASELINE.yaml</code>:</li>
+<ul>
+<li>stator–housing shrink fit t 2e-5 m, k 0.026 (about 1300 W/m²K);</li>
+<li>magnet–rotor glue t 1e-4, k 0.2;</li>
+<li>air gap as an equivalent k from Taylor–Couette per point;</li>
+<li>winding–stator now uses the liner R from S3.</li>
+</ul>
+<li>Outer skin: per-face h from the external-air CFD plus radiation, ε 0.1 (bare machined Al), ambient 40 °C. Natural convection, horizontal shaft, gravity -y.</li>
+<li>Internal end-space air: lumped inair region with k_inair = h_endspace × 0.01 m (old method). To be re-checked; it is a calibration knob.</li>
+<li>Energy check: an adiabatic test must close within ±1.5 % before any duty run.</li>
+</ul></details><details open><summary>S7 Mesh (MESH agent, 2026-10-22/23)</summary><ul>
+<li>Solids mesh <code>u666_mesh.py --solids</code> (H 2.5, Delaunay 3D, 1 thread). gmsh failures on the dirty CAD, in order, and fixes:</li>
+<ul>
+<li>20:45 2D &quot;1D mesh not a closed loop&quot; on a 0.2 mm2 torus sliver at the terminal-box gasket rim (z -85). Compound retry did not help. Fix (geo): gasket (subset tag 74) shrunk 1.5 % in x/y about its centre (GASKET_SCALE; housing -0.44 cm3).</li>
+<li>21:53 2D hang on a housing B-spline lug face (1428, x -90 y 24 z -5): curvature sizing (10) makes its curves cross. Fix: MeshSizeFromCurvature 0 (env CURV). Face meshes at ~H.</li>
+<li>22:11 3D overlapping facets: the terminal-box envelope cylinder r 72.61 grazed a cone on the box outside. Fix (geo): the box envelope is cut by the housing and only the interior piece is kept (cut ~6 min).</li>
+<li>22:38 3D overlapping facets at the rotor OD: gap annulus r 42.68 vs lamination OD dips r 42.70..42.88. Fix (geo): annulus r 42.6 (pocket tops 42.35) FUSED with the lamination.</li>
+<li>23:07 3D &quot;PLC Error: segment and facet intersect&quot; (no location). Seen: 1D crossings of two circles 0.07 mm apart at the shaft/rotor rear end (shaft internal faces from lower-priority overlaps), 2-4 invalid triangles on fin and torus faces. Tried proximity sizing (Distance/Threshold balls at close CAD vertices, PROX 1.5): 1.74 M nodes, still PLC + 0.065 deg facet folds at the gasket (AngleToleranceFacetOverlap 0.01 set). PROX now off by default.</li>
+<li>00:17 new <code>scripts/u666_fuse.py</code>: fuses each region&#x27;s pieces and re-glues with one fragment (~30 min) on <code>u666_geo_raw.brep</code>. Housing fuse fails in OCC (&quot;Courbes non jointives&quot;); one-by-one fusing lost 370 cm3 -&gt; never fuse the housing. Endcaps fuse (cap + nut) left a dangling face -&gt; skipped.</li>
+<li>01:47-02:35 shaft fused (u666_fuse) -&gt; 2D ok, 3D still PLC. Invalid-triangle surfaces (fins every 66 surfaces, cap torus) re-meshed by mesh.py with MeshAdapt + a finer size: fixed, PLC remained. Per-region 3D test was invalid (a discrete msh gives 0 tets). HXT (ALG3D 10) also fails.</li>
+<li>02:35 gasket dropped -&gt; the terminal box opens to the outside (11 000 mm2 leak): the gasket IS the seal. Reverted.</li>
+<li>09:17 gasket+cap+cover fused before the fragment (volume kept): leak 0, closure exact; 2D fails on an inverted torus (-0.0018 mm2) and cones (-1404 / -32 mm2) at x -55..-30 y -52..-35 z -86..-41. mesh.py now defeatures degenerate skin faces (worked for 1 face, shared faces unchanged) and fuses same-region pairs on a failure (worked once); the next inverted cone could not be defeatured.</li>
+<li>12:11 FALLBACK (assumption + calibration knob): cap 114 + gasket 74 replaced by extruded profiles (walls = cap section z -88 over z -90.5..-83.5, overlapping the cover = seal; lid = section z -91.5 over CAP_LID_Z0 -93.55..-90.5, thickened to keep 53.3 cm3; screw bosses dropped), fused with cover 64. Isolated test: 0 tiny faces, fuse 84 s. Chain geo -&gt; mesh running; result pending (see handoff/u666_mesh_handoff.md).</li>
+</ul>
+<li>12:33 cap-fallback chain (DEFEAT agent check): geo OK (inair-air 0 mm2, closure exact 360000 cm3), mesh --solids FAILED again: 3D &quot;PLC Error: segment and facet intersect&quot;.</li>
+<li>13:00-15:50 DEFEAT agent, per-part CAD defeature (user decision 12:15), <code>scripts/u666_defeature.py</code> (pre-pass subset.brep -&gt; subset_df.brep, <code>u666_geo.py --df</code>):</li>
+<ul>
+<li>Inventory: <code>results/u666/defeature_inventory.md</code> (fillets r &lt; 1.95 mm with arc span &lt;= 0.55 pi, cone chamfers &lt; 2 mm, holes d &lt; 3 mm). Housing 39/64: ~350 blends r 0.2-1.0, ~130 chamfers, 8 holes d 2.5 (64); shaft 53 faces; screws, endcaps small. Threads: none modelled in the CAD. Wedges and lip seal kept exact. ~870 B-spline faces of housing 39 not classifiable (fins/blends).</li>
+<li>Result: OCC defeature is impractical on this CAD. Shaft 51/53 faces (dV +0.17 cm3); small housing parts 40/65/66/119 mostly fail (2/14, 2/14, 0/4, ~19/47); screws/endcaps mostly OK. Housing 39: 200 s for one 15-face call, then &gt; 20 min hang on the next; cover 64: 408 s per 15-face call, one 284-face call &gt; 30 min with no end.</li>
+<li>Problems met: a failed defeature call can delete the input solid (fixed with a backup copy per call); bulk occ.remove is O(N^2) here (export now uses OCCExportOnlyVisible).</li>
+<li>Main decision 15:46: stop the defeature, switch to snappyHexMesh multi-region from the gmsh 2D surfaces (strategy A). The --df geo path stays in the code, unused.</li>
+</ul>
+<li>15:55 strategy A: <code>u666_mesh.py --solids --stl</code> (2D only, retries as before) -&gt; <code>mesh/u666/stl/&lt;region&gt;.stl</code> + <code>skin.stl</code> + <code>volumes.json</code>; <code>scripts/u666_snappy.sh</code> -&gt; <code>~/cfd/u666_snappy</code> (blockMesh H 2.5 mm, region surfaces = faceZone + cellZone (mode inside), skin = outside patch -&gt; defaultFaces, mesh built in mm and scaled to m); <code>u666_prep_base.sh</code> now accepts the snappy case dir.</li>
+<li>16:00-16:55 snappy (strategy A): the first run (levels up to 3, nCellsBetweenLevels 2) reached 8 M cells and 8/9 GB of WSL RAM, so it was killed. The coarsened run (levels (1 1), wedge/seal 2, 2.4 M cells) stalled &gt; 25 min after &quot;762458 free-standing zone faces&quot;: the closed per-region STLs overlap on every shared face, which fragments the zones (OF12 has one insidePoint per surface, so per-interface STLs are not workable with 28 housing / 18 magnet pieces). Dropped. <code>u666_snappy.sh</code> and the <code>--stl</code> export stay in the code, unused.</li>
+<li>17:00 switch to the simple housing (S7b): <code>U666_HOUSING=simple</code> in <code>u666_geo.py</code> (CAD version saved as <code>scripts/u666_geo.py.bak_cad</code>).</li>
+<ul>
+<li>housing = 8 solids of housing_simple.brep; screws, cap fallback and plugs skipped; no cavity envelopes (the simple housing is closed, so inair = the enclosed complement).</li>
+<li>Fix 1: the CAD lip seal against the simple hub bore broke the fragment (body left uncut, +694 cm3 closure). The seal is now a plug primitive: disk r 21, z 100.5..106.5; housing and shaft claim first; seal 4.9 vs CAD 2.9 cm3 (KNOB). After this fix: closure exact, inair-air 0.</li>
+<li>Fix 2: without envelopes the pocket air merged into inair (rpocket 6.1 vs 48.6 cm3), so an rpocket cylinder r 42.45 over the rotor z (lowest priority) was added.</li>
+<li>The 3D mesh still fails with PLC (simple housing, closure exact, leak 0). CORRECTION: the per-region and cumulative DIAG passes in <code>u666_mesh.py</code> (Mesh.MeshOnlyVisible) produced 0 tets, so their &#x27;ok&#x27; results are VOID and the PLC source is still unknown. Set DIAG=0 or fix the visibility (surfaces/curves must be visible too) before trusting it.</li>
+</ul>
+<li>Region volumes, simple housing (cm3): housing 1048.7 (CAD run 1109.8), inair 983 (CAD 1402.7, simple cover interior differs), seal 4.9; all others unchanged (stator 477.33, slot 221.58, endw 107.97, rotor 244.84, magnets 36.55, shaft 89.38, bearings 32.16, endcaps 36.77, wedge 9.52).</li>
+</ul></details><details open><summary>S8 Base case and energy test — pending</summary></details><details open><summary>S9 External-air CFD (h map) — pending</summary></details><details open><summary>S10 Duty runs — pending</summary></details><details open><summary>S11 Calibration against the test — pending (needs the test data)</summary></details><details open><summary>S7 b Simplified housing, backup (HSIMPLE agent, 2026-10-23)</summary><ul>
+<li>Purpose: fallback for the dirty housing CAD (B-spline fillets break gmsh). <code>scripts/u666_housing_simple.py</code> -&gt; <code>mesh/u666/housing_simple.brep</code> + <code>.json</code> (5 s). Planes, cylinders and cones only; no fillets. <mark>CALIBRATION KNOB</mark>: dict <code>K</code> in the script (fin profile, tip/valley radius, skirt thickness, box thickness).</li>
+<li>Measured from <code>subset.brep</code> (subset tags 39 body, 40 front seat, 64 rear cover, 65 rear seat, 66 O-ring, 74 gasket, 114 terminal cap, 119 gland): face types/areas/bboxes + one y=0 section. The section is slow (225 s) because of B-splines.</li>
+<li>Findings: fins are 11 CIRCUMFERENTIAL rings (not axial strips), pitch 10 mm, centres z -12.8..87.2, valley r 79.4-79.6, tip r about 93-94 (lugs reach 100). Stator fit bore r 75.0 over z -6.3..60.2, shoulder at 60.2 (r 74.0 beyond, to z 91.2). Front end wall z 94.2..97.7, hub to z 126.7 (bore 16.9/19.8/25.5), 3 bosses r 12 at r 72.5 to z 117.7. Rear socket bore r 78.4 over z -25.8..-11.3. Bearing seat bores: front r 26.0 over z 77.56..97.5, rear r 17.5 over z -31.2..-20.5 (same as the bearing annuli in <code>u666_geo.py</code>). Rear cover: flange r 80.5 z -27.3..-39.5, floor z -36..-39.5, skirt r 66 to z -83.7 (thickness SOLVED = 7.56 mm to hit 269.6 cm3). Terminal box x -68.4..68.6, y -52.4..79.3, z -101..-83.8 (lid 2.0, wall 1.6 so volume = CAD 49.6 cm3).</li>
+<li>Comparison (CAD | simple | diff):</li>
+<ul>
+<li>volume of the 8 parts: 1064.2 | 1042.6 cm3 | -2.0 % (body 714.3 | 693.9 -2.9 %, cover 269.6 | 269.6, box 49.6 | 49.0, front seat 18.6 | 19.0, rear seat 4.15 | 4.11, gasket 3.7 | 3.65, O-ring 2.97 | 2.1, gland 1.23 | 1.19).</li>
+<li>fin band skin (z -6..94, r &gt; 78; CAD from <code>stl/skin.stl</code>): 1616 | 1635 cm2 | +1.1 % (the fin tip r 92.5 is tuned down from the measured 93-94 to match the area; the same profile with tip 94 gave +9 %).</li>
+<li>total outer skin (cavities filled): 2763 (skin.stl minus 26 cm2 shaft stub) | 2927 cm2 | +5.9 %. The excess is the terminal box: 273 cm2 vs 173 cm2 in skin.stl, which holds GEO&#x27;s fallback cap and not the real cap. Without the box: +2.5 %.</li>
+<li>fit/seat (exact by construction, read back from the BREP): bore r 75.00 z -6.3..60.2; seat r 26.00 z 77.56..97.5; seat r 17.50 z -31.2..-20.5; end wall 94.2/97.7.</li>
+</ul>
+<li>Mesh test: gmsh 2D + 3D, H 2.5, 1 thread, 8 solids after fragment: 0 errors, 429 k tets, 21 s (<code>scripts/_h_meshtest.py</code>, log <code>mesh/u666/_hs_mesh.log</code>).</li>
+<li>Assumptions: the rear cover is axisymmetric (the real one has flats and cable pockets; the skirt thickness absorbs the mass). Lugs, feet, the 3 boss holes and the screws are omitted. Fin tips are circular. The O-ring is a rectangular ring (r 76.6..78.4). The terminal box is a hollow box with an open interior.</li>
+<li>Swap-in (NOT done; <code>u666_geo.py</code> belongs to DEFEAT): in <code>u666_geo.py</code> replace <code>pick(&quot;housing&quot;,&quot;screws&quot;)</code> (line 167; also drop &quot;housing&quot; and &quot;screws&quot; from <code>keep</code> at line 122) with the 8 solids of <code>housing_simple.brep</code>, imported at the same place and in the same frame. Remove the cap/gasket/cover fallback at line 185 (tags 74, 114, 64) and the plug logic at line 195 (no screw holes are left). Check the cavity annuli at lines 226-232 against the new walls: cover inner r 72.4, spigot r 76.6, socket bore r 78.4. Proposed env flag: <code>U666_HOUSING=simple</code> (default <code>cad</code>) selects the swap.</li>
+</ul></details><details open><summary>S7 c Mesh, route B non-conformal (MESH2 agent, 2026-10-23 18:30-21:40)</summary><ul>
+<li>What failed: the conformal one-shot 3D (tetgen &quot;PLC: segment and facet intersect&quot;, no location; HXT fails too).</li>
+<ul>
+<li>Located with a surface-mesh check (<code>scripts/u666_surfcheck.py</code>: edge-triangle crossings on the 2D mesh).</li>
+<li>Cause 1: shaft r 15.03 vs rotor bore r 14.96 (press fit). The fragment leaves 0.07 mm shaft shells whose end arcs cross in the 1D mesh (z -2.2).</li>
+<li>Cause 2 (the one the PLC came from): rear bearing bore r 8.5 vs shaft r 8.47 at z -20.2. This leaves a 0.03 mm inair ring, and the 1.5 mm chords cut across the other circle (108 crossings).</li>
+</ul>
+<li>Dropped:</li>
+<ul>
+<li>fusing shaft pieces in the full model breaks conformity (131 faces lose their partner);</li>
+<li>cutting the rotor by the shaft in geo hangs the fragment (&gt;90 min; env CUT_ROTOR_BY_SHAFT, off);</li>
+<li>transfinite matched circles (the arcs have different spans).</li>
+</ul>
+<li>Fix / route: OpenFOAM CHT does not need conformal interfaces.</li>
+<ul>
+<li>Each final region is meshed alone (<code>u666_mesh.py --solids --group G</code>). Thin same-region pieces (2V/A &lt; 0.2 mm) are fused (shaft, endcaps, wedge, housing).</li>
+<li>Patches <code>&lt;G&gt;_to_&lt;nb&gt;</code> come from the conformal brep adjacency. Fused faces that span two neighbours are split per triangle by the nearest partner triangle.</li>
+<li>A 0.3 mm refinement box sits at the rear bearing bore.</li>
+<li>Assembly: <code>scripts/u666_assemble_nc.sh</code> gives mappedWall with <code>method intersection</code> (the OF12 AMI).</li>
+</ul>
+<li>Result: 10 regions, 4.17 M cells in total. 7 of them pass checkMesh. inair, wedge and rotor fail on skewness only (85 / 200 / 5 faces, max 9.2 / 5.5 / 5.6).</li>
+<li>Interface areas: 23 pairs. 21 are within 1.3 %; endcaps-shaft is 3.7 % and endcaps-magnets 4.9 % (about 40 mm2 each, from the per-triangle split).</li>
+<li>Assumptions:</li>
+<ul>
+<li>the 0.03 mm rear bearing-shaft air ring is kept as inair, so the shaft-bearing heat path goes through air there (KNOB: close it in geo by setting the bearing bore to the shaft radius);</li>
+<li>the non-conformal AMI couples are assumed conservative; the energy test must confirm this.</li>
+</ul>
+</ul></details><details open><summary>S8 - nc base case + energy test (BASE agent, 2026-10-23/24) - GATE NOT YET MET</summary><ul>
+<li>Case <code>~/cfd/u666_etest</code> from <code>~/cfd/u666_base_nc</code> via <code>u666_make_case.py</code> (dummy etest losses 128 W, adiabatic). Region names matched; no renaming needed.</li>
+<li>Schemes: laplacian/snGrad <code>Gauss linear limited corrected 0.33</code> (isotropic regions), <code>uncorrected</code> (anisotropic: stator, rotor, winding); nNonOrthCorr 1. Contact R unchanged (liner 1.67e-3, fit 2e-5/0.026, glue 1e-4/0.2, gap layers k_gap).</li>
+<li>Fixes needed (all in make_case / new lib):</li>
+</ul>
+<p>  1. mappedWall <code>intersection</code> aborts &quot;not geometrically similar&quot;: <code>matchTolerance 0.5</code> added to every mapped patch (also 0.5 only needed for endcaps-shaft, centre offset 1.9 mm).</p>
+<p>  2. coupledTemperature gives NaN on uncovered nc faces (coverage 0, 5 pairs). New lib <code>scripts/u666_build_ctnc.sh</code> -&gt; <code>libcoupledTemperatureNC</code> (copy; faces with sumKappaByDelta ~0 treated adiabatic). Type <code>coupledTemperatureNC</code>, <code>libs</code> in controlDict. Build once per machine.</p>
+<p>  3. Zonal Cv jump (rpocket air Cv 1007 vs rotor 460) blew up rotor (2000 K in 1 outer iter). RPOCKET now Cv = rotor Cv, rho scaled (rho*Cv of air kept).</p>
+<p>  4. Anisotropic winding (cylindrical, 1.12/185) DIVERGES in the outer coupling loop (T 1e6 within 20 outer its). <code>WIND_ISO=1</code> (k = 1.12 all directions) is stable. Laminations anisotropic are stable (N=60).</p>
+<p>  5. Tolerant solver: GAMG DICGaussSeidel fine once 1-3 fixed.</p>
+<ul>
+<li>Result so far (WIND_ISO=1, 10 s, 60 outer its, NOT converged: &quot;Not converged within 60 iterations&quot;): stored 1.390 kJ vs injected 1.280 kJ = +8.6 %. Gate (+-1.5 %) not met; cause unknown (unconverged coupling vs real interface non-conservation). Interface coverage averages are 0.97-1.01 except endcaps pairs (0.82-0.97).</li>
+<li>Timing: setup (decompose+coupling) ~90 s; ~7 s per outer iteration (4 procs, 4.17 M cells). 10 s step with 60-100 outers = 7-12 min =&gt; ~45-70 s wall per simulated second. duty1 (300 s, dt 10) would be ~4-6 h even with winding fix; needs fewer outers (e.g. 10-20) or coarser region coupling.</li>
+</ul></details><details open><summary>S8 b - prism meshes + energy test (BASE2 agent, 2026-10-24) - GATE NOT YET MET (-8.7 %, cause located)</summary><ul>
+<li>Mesh: <code>u666_mesh.py --solids --group G</code> z-PRISM route (env EXTRUDE, default winding,stator,rotor,magnets,wedge): mid-z section of each zone volume -&gt; per-(zone,z-band) union -&gt; 2D fragment -&gt; triangles x z-layers (DZ 2.5 mm; band ends closer than SNAPZ 0.5 mm merged, e.g. magnet/rotor 0.19 mm CAD steps). endw is an annular z-prism, so slot+endw stay one conformal winding mesh. Patch labels = nearest patch triangle of the old TET mesh (<code>mesh/u666/tet_bak/</code>, TETREF); CAD getClosestPoint/isInside mislabelled (untrimmed planes, holed cylinders). Patch areas vs CAD within 1 % (worst pair endcaps-magnets 5.2 %, unchanged tet side).</li>
+<li>Cells: winding 209 k, stator 143 k, rotor 286 k, magnets 22 k, wedge 74 k (prisms) + tet regions 686 k = 1.42 M (was 4.17 M). checkMesh: stator skew 5.1 (1728 faces), wedge aspect 2255, inair skew 9.2 (unchanged).</li>
+<li>Volumes: slot 220.6 (CAD 221.6) cm3, stator 478.2 (477.3), rotor 245.5 (244.8), rpocket 53.2, magnets 36.5, endw 108.0.</li>
+<li>Run: adiabatic duty1 losses (1201 W), dt 1 s, nOuter 3, anisotropic winding (WIND_ISO unset): STABLE, no divergence.</li>
+<li>Balance (stored - injected)/injected: dt1/N3: -2.6 % @5 s, -5.7 % @20 s, -8.7 % @60 s; dt1/N10: -1.9 % @20 s. Series: <code>results/u666/s8b/ts_dt1_N3_60s.csv</code>, <code>eb_dt1_N3_60s.json</code> (per-interface sums in iface_W).</li>
+<li>Diagnosis: interface pair sums are ~0 except wedge|winding (-9 W) and stator|wedge: with STATOR_ISO=28 the stator|wedge pair loses -88 W at 20 s (stator -73 W, wedge -15 W: both sides lose). With the anisotropic stator the same loss shows as a stator internal residual (-109 W @60 s; the anisotropic explicit-T split hides it from wallHeatFlux). Cause: sliver prisms in the wedge mesh, 2-5 um high, along r 43.53 (two CAD arcs 43.530/43.535: gap ring vs slot-opening pieces / tooth tips); kappa/delta there is huge and the AMI coupling is not conservative. Union per zone, fuzzy boolean (BOOLTOL 0.03) and 2D algorithms 1/5/6 did NOT remove them.</li>
+<li>rho*Cv: consistent (case_props rhocv = physicalProperties; rpocket keeps air rho*Cv with rotor Cv). Region order (winding first) made no difference.</li>
+<li>Timing: ~1.1 s per outer iteration (4 procs, 1.42 M), setup ~80 s. dt 1/N 3: 60 s simulated in 352 s wall (incl. setup) = ~4.5 s wall per s sim (~3.3 s excl. setup); N 10 = ~11 s/s.</li>
+<li>Assumptions: prism sections at mid-z of each volume (rpocket piece 469 is 6 % off a prism, rotor 345/rpocket 389 1 %); wedge SIZE changed to H*0.2.</li>
+</ul></details><details open><summary>S8 c - wedge tooth-tip fix + energy gate (BASE3 agent, 2026-10-24) - GATE MET (-1.14 % at 60 s)</summary><ul>
+<li>Cause (probe of the mid-z sections): the wedge ring piece was annulus 43.53..44.0 minus stator, i.e. a full circle at r 43.530 (rotor side) plus 36 tooth-tip arcs at r 43.535 (4.904 mm, tips at 10k +- 3.226838 deg). Under every tip that left a 5 um x 4.9 mm strip of wedge = the sliver prisms.</li>
+<li>Fix (<code>u666_mesh.py</code> prism route, env TIP=&quot;43.535,3.226838,10,43.53&quot;, TIP=0 = off): wedge section = CAD wedge + slot-opening sectors with the inner arc cut at the EXACT tip radius 43.535 (disk cut); flanks / r 44 arcs stay the conformal stator curves from geo. The strip was the only rotor-stator path, so the rotor arc (r 43.53) is now split at the 72 tip angles and the tip faces become a NEW pair rotor_to_stator / stator_to_rotor (10687.5 / 10688.4 mm2, 0.009 %); rotor_to_wedge / wedge_to_rotor 5873 / 5874 mm2. The rotor-tip and wedge-rotor couplings bridge the 5 um radial offset (43.530 vs 43.535) via mapped AMI, the same as before. Not merged into the slot.</li>
+<li>Also fixed: fragment of a single fused section (stator) returned an empty map -&gt; skipped when there is only 1 face.</li>
+<li>ASSUMPTION: wedge volume 9.61 -&gt; 9.52 cm3 (-0.9 %, the 5 um strips removed); seal unchanged 4.91 cm3. Rotor/stator gap contact now direct (no 5 um wedge k 0.2 layer in series; that layer had R ~ 2.5e-5 m2K/W, negligible).</li>
+<li>Remeshed wedge (97.1 k prisms, was 74.3 k), stator (148.1 k, sections now fused: 1 face), rotor (283.9 k). Old meshes in <code>mesh/u666/prism_s8b/</code>. Logs <code>mesh/u666/s8c_&lt;G&gt;.log</code>. Total 1.446 M cells.</li>
+<li>checkMesh: stator and wedge now Mesh OK (skew 5.1 and aspect 2255 gone); only inair skew 9.2 (unchanged, tet).</li>
+<li>Pair area mismatch: stator_to_wedge 6269 vs 6381 mm2 (1.8 %, labelling at the CAD-wedge / tooth corner r 44.5); worst overall still endcaps_to_magnets 5.2 % (unchanged).</li>
+<li>Energy test, adiabatic duty1 (1201 W), dt 1 s, nOuter 3, anisotropic winding + stator: -1.05 % @5 s, -1.11 % @20 s, -1.14 % @40-60 s (plateau). Series <code>results/u666/s8b/ts_s8c_dt1_N3_60s.csv</code>, <code>eb_s8c_dt1_N3_60s.json</code>; plot <code>results/u666/s8b/balance_s8c_dt1_N3.png</code> (S8b plot: <code>balance_s8b_dt1_N3.png</code>).</li>
+<li>Per-region rate residuals at 60 s: stator -0.7 W (was -109 W), rotor +0.6, winding -7.0 W, others ~0.</li>
+<li>Interface pair sums at 60 s: stator|wedge +0.03 W of 10.9 (0.3 %), rotor|stator 0.00 of 10.4, rotor|wedge 0.00 of 5.6, stator|winding -0.72 of 662 (0.11 %), housing|stator 0.05 of 190, housing|inair 0.08 of 79. FAIL the strict 1 %: wedge|winding -1.85 of 25 W (7 %), inair|winding -1.1 of 104 (1.06 %), and sub-watt pairs (endcaps|shaft, bearings|housing, magnets|rotor, inair|rotor, 0.3-0.6 W each). All winding pairs lose on the winding side -&gt; likely the anisotropic-winding wallHeatFlux / explicit split (as the stator showed before), together with the -7 W winding residual. Total missing ~14 W = 1.2 % of the loss.</li>
+<li>Gate met with N 3 at dt 1, so the dt 0.5 / more-outer test was not needed.</li>
+<li>Timing: 60 s sim in 352 s wall incl. ~80 s setup = 5.9 s wall per s sim (4.5 excl. setup). Note: the S8b line &quot;352 s = 4.5 s/s incl. setup&quot; was mis-computed (it is 5.9).</li>
+</ul></details><details open><summary>S9 - External-air CFD (h map) (AIR agent, 2026-10-24) - h MAP NOT YET PRODUCED (run in progress, U gate not yet passed)</summary><ul>
+<li>Domain: box x +-330, y -330..520 (y up), z -330..420 mm, around the SIMPLIFIED housing envelope (<code>scripts/u666_air_mesh.py</code>: housing parts + cavity fillers + fin-root fill r&lt;80.2 (0.2 mm root slots) + shaft stub r10 to z 148.85). Mounting unknown -&gt; ASSUMED suspended, no feet/plate (logged). Motor skin 0.2913 m2.</li>
+<li>Mesh: gmsh HXT, S_FIN 1.8 / S_SKIN 5 / S_FAR 60 mm -&gt; 1.229 M tets (<code>mesh/u666/air_hxt.msh</code>), min SICN 0.139, nonorth max 79 deg, 253 faces &gt; 70. Fin gap 2.8 mm (root) to 8.8 mm (tip) is only 1.5-5 cells wide: h on fin flanks is coarse. Slivers removed: 0.1 mm box-rim step (BOX z1 -83.7), 0.2 mm boss-base step (K[&#x27;BOSS_DZ&#x27;]=0, air script only; knob added to housing_simple.py, default unchanged); fills() axis radius 0.01 -&gt; 0 (axis void).</li>
+<li>BCs: motor T fixed 343.15 K (assumed ~70 C skin, dT 30 K, laminar), walls of the closed box at 313.15 K ambient (40 C), g (0 -9.81 0), gravity -y, shaft z horizontal. Radiation is NOT in the CFD; make_case adds eps 0.1 (bare Al) separately.</li>
+<li>Solver changes vs old air_case.sh (steady SIMPLE failed: T&lt;0, FPE; KNOWN_ISSUES 12): GAMG smoother GaussSeidel (DIC coarsest crashed), localEuler pseudo-transient (maxCo 3), upwind, nonOrth 2, limitTemperature 300..345 K, laplacian corrected 0.33. Cost 8-12 s/iteration on 4 procs.</li>
+<li>KEY FINDING: localEuler with maxDeltaT 5 s gives a non-physical flow (domain mean 10 m/s, U max 46-49 m/s, closed or open box; aircheck gate fails). maxDeltaT 0.02 s: U max 0.24 m/s, mean 0.054 at 1.2 s (physical). Current run MDT 0.1 (case ~/cfd/u666_air, tmux s9, chunks 300/600/..., gate in script).</li>
+<li>Prepared, untested: <code>scripts/u666_air_post.py</code> (h = |q|/(Tw-Ta) mapped to housing/shaft defaultFaces of the base case, area-weighted means fins/end walls/body, Churchill-Chu + Elenbaas check), format = <code>--h-file</code> json of u666_make_case.py.</li>
+<li>Open: no h values, no correlation check yet. Expect (to verify) h_conv 3-6 W/m2K. Fallback if the run cannot pass the gate: uniform H_NAT 5 W/m2K + eps 0.1 in make_case (already default).</li>
+</ul>
+<p>## S-report - live HTML report (REPORT agent, 2026-10-24)</p>
+<ul>
+<li><code>python scripts/u666_report.py</code> regenerates <code>Report/U666_report.html</code> (method S0-S11 from this log, geometry/mesh figures, per-duty blocks, feedback table). <code>--no-render</code> skips the WSL step.</li>
+<li>Render step <code>scripts/u666_report_render.sh</code> (WSL, <code>nice -n 19</code>, single thread, python3 vtk + matplotlib): <code>geo</code> (cached; foamToVTK of ~/cfd/u666_base_nc, cuts z = 30 mm and y = 0) and <code>duty &lt;case&gt; &lt;out&gt;</code> (curves, contours, GIFs &lt;= 3 MB from postProcessing; names matched by regex in <code>scripts/u666_report_duty.py</code> SURF/REGKEY).</li>
+<li>Duty case default <code>~/cfd/u666_&lt;duty&gt;</code>; override in <code>results/u666/report/sources.json</code>. Optional hand notes: <code>results/u666/report/observations_&lt;duty&gt;.md</code>.</li>
+<li>Duty path tested only on synthetic data (plane + volFieldValue names are a guess until the chain handoff names them).</li>
+</ul>
+<p>## S-report2 - multi-page site (REPORT2 agent, 2026-10-24)</p>
+<ul>
+<li><code>.venv\Scripts\python -I scripts/u666_site.py [--no-render]</code> regenerates <code>Report/U666_site/</code> (11 pages, assets/ as files, light/dark, phone width). Geometry render via <code>u666_report_render.sh geo</code> (cached, nice 19). Duty curves, peak tables and time-to-limit are read from <code>\wsl.localhost\...\&lt;case&gt;\postProcessing/&lt;region&gt;/&lt;fo&gt;/&lt;t&gt;/*.dat</code> (tested on u666_e2); case = <code>results/u666/report/sources.json</code> else <code>u666_&lt;duty&gt;</code>. Pending: contours, mp4, 3D viewer, air figures, per-region mesh pictures (see handoff/u666_report_handoff.md). Old single pages (u666_report*.py) are obsolete.</li>
+</ul></details><details open><summary>S9 (final) - External-air h map (AIR agent, 2026-10-24) - DONE</summary><ul>
+<li>Run: localEuler maxDeltaT 0.1, 450 iterations (stopped at 450 by endTime edit). U max 0.31 m/s (p99 0.26, mean 0.085) - gate (&lt;=5) met. Motor heat Q: 57 W @100, 35.9 @200, 32.4 @300, 35.4 @325, 34.8 @350, 34.7 @375-400, 34.5 @425, 34.6 @450 -&gt; flat to 0.3 % over the last 100 iterations; p_rgh residual ~3e-4. Converged; no extension needed.</li>
+<li>Post (<code>u666_air_post.py</code>, fixed): (1) base-case geometry is in m but class thresholds in mm -&gt; fin class was empty; now converted. (2) housing/shaft faces farther than 3 mm from the air skin (not external skin: housing 317 cm2, shaft stub 37 cm2) get h = 0 (map dist max was 23-33 mm), but they still receive radiation eps 0.1 in make_case (small error, noted). Output <code>~/cfd/u666_air_h.json</code> (+ <code>_summary.json</code>).</li>
+<li>Mean convective h (area-weighted, zeros included): fins 2.76 (1766 cm2), body 4.48 (858 cm2), end walls 5.44 (758 cm2), shaft stub 3.20, air-skin mean 3.95 W/m2K, total 34.6 W at dT 30 K (T_wall 70 C assumed, ambient 40 C).</li>
+<li>Correlation check: Churchill-Chu horizontal cylinder D159 4.64, D185 4.56; Elenbaas fin channel 4.41 (tip gap) / 0.27 (root gap). CFD air-skin mean 3.95 is -15 % vs CC; fins 2.76 is -40 % vs CC (-37 % vs Elenbaas tip) i.e. inside the 50 % limit, slightly outside 30 %; zero-h faces dilute the fin mean. Coarse fin mesh (1.5-5 cells per gap) is the likely cause.</li>
+<li>Dependence: h computed at dT 30 K fixed, not at the duty skin temperature (natural convection h ~ dT^0.25).</li>
+</ul></details><details open><summary>S10 - Duty chain setup (2026-10-24)</summary><ul>
+<li><code>scripts/u666_duty_chain.sh</code> (tmux <code>duty</code>): for duty1..5 builds the case <code>~/cfd/u666_&lt;duty&gt;</code> from <code>~/cfd/u666_base_nc</code> with <code>u666_make_case.py ... --h-file ~/cfd/u666_air_h.json</code> (losses from loadpoints_u666.json, eps 0.1, ambient/initial 40 C), dt 1 s, nOuter 3, end 300/900/1800/2700/2700 s, np 4, sequential; a failed duty does not stop the chain. Log <code>~/cfd/duty_chain.log</code>.</li>
+<li>Outputs per case in <code>postProcessing/&lt;region&gt;/</code>: T_&lt;region&gt; (max), Tmin_, Tavg_, Tint_ every 5 s; T_slot / T_endw / Tavgz_* (winding zones), T_magnets, T_housing; Qout_housing / Qout_shaft, Qif_*; vtk cut planes <code>S_&lt;plane&gt;_&lt;region&gt;/&lt;t&gt;/&lt;plane&gt;.vtk</code> every 10 s (T, cell values): axial_y0 (all regions), radial_stack z 29.9 mm, radial_ew_front z 75, radial_ew_rear z -15.3. Full T fields every 30 s (writeInterval 30, all durations).</li>
+<li>make_case edits: surfaces (OF12 syntax: type cutPlane, planeType pointAndNormal, function-level interpolationScheme cell), Tmin, 5 s probes.</li>
+<li>Smoke test duty1 20 s: rc 0, all outputs written (170 s wall incl. 80 s setup). Chain started 09:51:47 local (04:21:45 WSL). Estimate ~13-14 h.</li>
+<li>09:55 MAIN decision (S9): the 354 cm2 of housing/shaft outer faces more than 3 mm from the air skin (fin-root fill, terminal-box interior, front shaft bore) were h=0 (adiabatic). They are now set to h 2.5 W/m2K (enclosed-cavity natural convection; radiation eps 0.1 is unchanged). The original map is ~/cfd/u666_air_h.json.h0bak. This applies from duty2 onward; duty1 (5 min) used h=0 there, which has negligible effect on a 5 min transient. <mark>CALIBRATION KNOB</mark>. The fin h (2.76) is 40 % under the correlation (fin gap only 1.5-5 cells wide); also a knob.</li>
+</ul></details><p class="mut">Generated 2026-10-24 14:35 by scripts/u666_site.py from results/u666/steps_log.md and the case data.</p></main></body></html>

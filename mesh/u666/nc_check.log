@@ -1,0 +1,34 @@
+﻿bearings cells 20705 Mesh OK.  Max skewness = 0.79009811 OK. 
+endcaps cells 39094 Mesh OK.  Max skewness = 1.5703355 OK. 
+housing cells 331805 Mesh OK.  Max skewness = 1.5484971 OK. 
+inair cells 235633 Failed 1 mesh checks.  ***Max skewness = 9.2387839, 85 highly skew faces detected which may impair the quality of the results 
+magnets cells 74964 Mesh OK.  Max skewness = 2.1367735 OK. 
+rotor cells 1807635 Failed 1 mesh checks.  ***Max skewness = 5.5627197, 5 highly skew faces detected which may impair the quality of the results 
+shaft cells 58714 Mesh OK.  Max skewness = 3.5320668 OK. 
+stator cells 418712 Mesh OK.  Max skewness = 2.0003882 OK. 
+wedge cells 507797 Failed 1 mesh checks.  ***Max skewness = 5.4931813, 200 highly skew faces detected which may impair the quality of the results 
+winding cells 675089 Mesh OK.  Max skewness = 1.3662678 OK. 
+bearings_to_housing              3553.7 mm2  partner     3552.7  mismatch 0.028 %
+bearings_to_inair                4011.0 mm2  partner     4005.8  mismatch 0.129 %
+bearings_to_shaft                1755.3 mm2  partner     1770.5  mismatch 0.866 %
+endcaps_to_inair                14626.1 mm2  partner    14625.8  mismatch 0.002 %
+endcaps_to_shaft                 1181.9 mm2  partner     1226.1  mismatch 3.737 %
+endcaps_to_magnets                651.1 mm2  partner      682.7  mismatch 4.859 %
+endcaps_to_rotor                 6033.5 mm2  partner     6012.5  mismatch 0.348 %
+housing_to_inair                80207.7 mm2  partner    80207.7  mismatch 0.000 %
+housing_to_wedge                 1080.2 mm2  partner     1080.7  mismatch 0.043 %
+housing_to_stator               28262.6 mm2  partner    28263.2  mismatch 0.002 %
+inair_to_winding                50773.1 mm2  partner    50774.8  mismatch 0.003 %
+inair_to_shaft                   5568.0 mm2  partner     5498.8  mismatch 1.244 %
+inair_to_wedge                    799.5 mm2  partner      801.4  mismatch 0.229 %
+inair_to_stator                 14653.5 mm2  partner    14731.6  mismatch 0.533 %
+inair_to_rotor                   4046.9 mm2  partner     4046.3  mismatch 0.015 %
+inair_to_magnets                  486.9 mm2  partner      488.3  mismatch 0.286 %
+magnets_to_rotor                33926.7 mm2  partner    33962.6  mismatch 0.106 %
+rotor_to_shaft                   8078.3 mm2  partner     8096.8  mismatch 0.230 %
+rotor_to_wedge                  16560.2 mm2  partner    16560.6  mismatch 0.002 %
+shaft_to_wedge                    658.0 mm2  partner      659.1  mismatch 0.153 %
+stator_to_winding              104747.3 mm2  partner   104747.5  mismatch 0.000 %
+stator_to_wedge                 16930.2 mm2  partner    17035.7  mismatch 0.623 %
+wedge_to_winding                37015.7 mm2  partner    36898.5  mismatch 0.317 %
+worst mismatch 4.859 %

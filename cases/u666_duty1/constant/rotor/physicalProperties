@@ -1,0 +1,37 @@
+FoamFile
+{
+    format      ascii;
+    class       dictionary;
+    object      physicalProperties;
+}
+thermoType constAnisoSolidThermo;
+rho
+{
+    type zonal;
+    value 7650;
+    zones
+    {
+        rotor 7650;
+        rpocket 2.62696;
+    }
+}
+Cv
+{
+    type zonal;
+    value 460;
+    zones
+    {
+        rotor 460;
+        rpocket 460;
+    }
+}
+Kappa
+{
+    type zonal;
+    value (28 28 1.5);
+    zones
+    {
+        rotor (28 28 1.5);
+        rpocket (0.03 0.03 0.03);
+    }
+}

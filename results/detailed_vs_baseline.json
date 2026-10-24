@@ -1,0 +1,290 @@
+{
+ "duty1": {
+  "baseline": {
+   "winding": {
+    "T_end_C": 190.2,
+    "T_max_C": 190.2,
+    "T_avg_end_C": 150.7
+   },
+   "magnets": {
+    "T_end_C": 77.5,
+    "T_max_C": 77.5
+   },
+   "housing": {
+    "T_end_C": 86.4,
+    "T_max_C": 86.4
+   },
+   "stator": {
+    "T_end_C": 113.4,
+    "T_max_C": 113.4
+   },
+   "rotor": {
+    "T_end_C": 89.7,
+    "T_max_C": 89.7
+   },
+   "t_end_s": 477.0,
+   "t_winding_155C_s": 316,
+   "t_magnet_100C_s": null,
+   "heatflow_time_s": 420.0,
+   "heat_W": {
+    "bearings:defaultFaces": 0.0,
+    "bearings:bearings_to_inair": -0.8,
+    "bearings:bearings_to_shaft": -29.1,
+    "bearings:bearings_to_housing": 30.7,
+    "housing:defaultFaces": -75.0,
+    "housing:housing_to_stator": 167.3,
+    "housing:housing_to_inair": 133.4,
+    "housing:housing_to_bearings": -30.8,
+    "inair:defaultFaces": 0.0,
+    "inair:inair_to_winding": 277.3,
+    "inair:inair_to_shaft": -0.7,
+    "inair:inair_to_stator": -56.0,
+    "inair:inair_to_bearings": 0.8,
+    "inair:inair_to_housing": -133.4,
+    "inair:inair_to_rotor": -92.6,
+    "magnets:magnets_to_rotor": 72.6,
+    "shaft:defaultFaces": -1.0,
+    "shaft:shaft_to_inair": 0.7,
+    "shaft:shaft_to_bearings": 29.1,
+    "shaft:shaft_to_rotor": -5.4,
+    "winding:winding_to_inair": -277.3,
+    "winding:winding_to_stator": -276.7
+   }
+  },
+  "detailed": {
+   "coil": {
+    "T_end_C": 171.2,
+    "T_max_C": 171.2,
+    "T_avg_end_C": 159.1
+   },
+   "magnets": {
+    "T_end_C": 74.4,
+    "T_max_C": 74.4
+   },
+   "housing": {
+    "T_end_C": 88.6,
+    "T_max_C": 88.6
+   },
+   "stator": {
+    "T_end_C": 109.2,
+    "T_max_C": 109.2
+   },
+   "rotor": {
+    "T_end_C": 85.2,
+    "T_max_C": 85.2
+   },
+   "busbar": {
+    "T_end_C": 148.6,
+    "T_max_C": 148.6
+   },
+   "strap": {
+    "T_end_C": 138.4,
+    "T_max_C": 138.4
+   },
+   "tbar": {
+    "T_end_C": 147.4,
+    "T_max_C": 147.4
+   },
+   "bobbin": {
+    "T_end_C": 151.4,
+    "T_max_C": 151.4
+   },
+   "resin": {
+    "T_end_C": 170.8,
+    "T_max_C": 170.8
+   },
+   "t_end_s": 477.0,
+   "t_winding_155C_s": 388,
+   "t_magnet_100C_s": null,
+   "heatflow_time_s": 420.0,
+   "heat_W": {
+    "bearings:defaultFaces": 0.0,
+    "bearings:bearings_to_shaft": -31.6,
+    "bearings:bearings_to_inair": -0.9,
+    "bearings:bearings_to_housing": 33.8,
+    "bobbin:bobbin_to_resin": 243.6,
+    "bobbin:bobbin_to_stator": -228.2,
+    "copper:copper_to_inair": -53.3,
+    "copper:copper_to_resin": -607.0,
+    "housing:defaultFaces": -78.1,
+    "housing:housing_to_stator": 190.2,
+    "housing:housing_to_inair": 127.2,
+    "housing:housing_to_bearings": -33.9,
+    "inair:defaultFaces": 0.0,
+    "inair:inair_to_copper": 53.0,
+    "inair:inair_to_resin": 126.2,
+    "inair:inair_to_bearings": 0.9,
+    "inair:inair_to_stator": 25.0,
+    "inair:inair_to_shaft": -0.7,
+    "inair:inair_to_housing": -127.2,
+    "inair:inair_to_rotor": -81.9,
+    "magnets:magnets_to_rotor": 71.1,
+    "resin:resin_to_bobbin": -243.6,
+    "resin:resin_to_copper": 605.0,
+    "resin:resin_to_inair": -126.3,
+    "resin:resin_to_stator": -170.1,
+    "shaft:defaultFaces": -1.0,
+    "shaft:shaft_to_bearings": 31.6,
+    "shaft:shaft_to_inair": 0.7,
+    "shaft:shaft_to_rotor": -7.9
+   },
+   "energy_balance": {
+    "t_end_s": 420.0,
+    "storage_kJ": 302.5907655679501,
+    "outflow_kJ": 13.398062715318298,
+    "generation_kJ_range": [
+     315.0483236139749,
+     318.4829372336342
+    ],
+    "error_pct_range": [
+     -0.7831216868413052,
+     0.2985271143501961
+    ]
+   }
+  }
+ },
+ "duty4": {
+  "baseline": {
+   "winding": {
+    "T_end_C": 223.8,
+    "T_max_C": 223.8,
+    "T_avg_end_C": 209.4
+   },
+   "magnets": {
+    "T_end_C": 197.9,
+    "T_max_C": 197.9
+   },
+   "housing": {
+    "T_end_C": 197.0,
+    "T_max_C": 197.0
+   },
+   "stator": {
+    "T_end_C": 201.6,
+    "T_max_C": 201.6
+   },
+   "rotor": {
+    "T_end_C": 202.1,
+    "T_max_C": 202.1
+   },
+   "t_end_s": 2700.0,
+   "t_winding_155C_s": 1224,
+   "t_magnet_100C_s": 800,
+   "heatflow_time_s": 2700.0,
+   "heat_W": {
+    "bearings:defaultFaces": 0.0,
+    "bearings:bearings_to_inair": -4.8,
+    "bearings:bearings_to_shaft": -26.0,
+    "bearings:bearings_to_housing": -73.7,
+    "housing:defaultFaces": -390.7,
+    "housing:housing_to_stator": 190.5,
+    "housing:housing_to_inair": 178.0,
+    "housing:housing_to_bearings": 73.2,
+    "inair:defaultFaces": 0.0,
+    "inair:inair_to_winding": 149.2,
+    "inair:inair_to_shaft": -0.6,
+    "inair:inair_to_stator": 13.1,
+    "inair:inair_to_bearings": 4.8,
+    "inair:inair_to_housing": -178.7,
+    "inair:inair_to_rotor": -34.3,
+    "magnets:magnets_to_rotor": 38.2,
+    "shaft:defaultFaces": -11.2,
+    "shaft:shaft_to_inair": 0.6,
+    "shaft:shaft_to_bearings": 25.8,
+    "shaft:shaft_to_rotor": -4.7,
+    "winding:winding_to_inair": -149.3,
+    "winding:winding_to_stator": -108.2
+   }
+  },
+  "detailed": {
+   "coil": {
+    "T_end_C": 218.8,
+    "T_max_C": 218.8,
+    "T_avg_end_C": 212.9
+   },
+   "magnets": {
+    "T_end_C": 194.0,
+    "T_max_C": 194.0
+   },
+   "housing": {
+    "T_end_C": 195.6,
+    "T_max_C": 195.6
+   },
+   "stator": {
+    "T_end_C": 197.4,
+    "T_max_C": 197.4
+   },
+   "rotor": {
+    "T_end_C": 197.2,
+    "T_max_C": 197.2
+   },
+   "busbar": {
+    "T_end_C": 204.6,
+    "T_max_C": 204.6
+   },
+   "strap": {
+    "T_end_C": 198.0,
+    "T_max_C": 198.0
+   },
+   "tbar": {
+    "T_end_C": 202.2,
+    "T_max_C": 202.2
+   },
+   "bobbin": {
+    "T_end_C": 211.7,
+    "T_max_C": 211.7
+   },
+   "resin": {
+    "T_end_C": 218.7,
+    "T_max_C": 218.7
+   },
+   "t_end_s": 2700.0,
+   "t_winding_155C_s": 1300,
+   "t_magnet_100C_s": 851,
+   "heatflow_time_s": 2700.0,
+   "heat_W": {
+    "bearings:defaultFaces": 0.0,
+    "bearings:bearings_to_shaft": -26.9,
+    "bearings:bearings_to_inair": -5.0,
+    "bearings:bearings_to_housing": -72.6,
+    "bobbin:bobbin_to_resin": 95.8,
+    "bobbin:bobbin_to_stator": -92.3,
+    "copper:copper_to_inair": -27.6,
+    "copper:copper_to_resin": -249.4,
+    "housing:defaultFaces": -384.8,
+    "housing:housing_to_stator": 199.6,
+    "housing:housing_to_inair": 164.7,
+    "housing:housing_to_bearings": 72.1,
+    "inair:defaultFaces": 0.0,
+    "inair:inair_to_copper": 26.5,
+    "inair:inair_to_resin": 65.8,
+    "inair:inair_to_bearings": 4.9,
+    "inair:inair_to_stator": 52.7,
+    "inair:inair_to_shaft": -0.9,
+    "inair:inair_to_housing": -165.6,
+    "inair:inair_to_rotor": -30.1,
+    "magnets:magnets_to_rotor": 38.6,
+    "resin:resin_to_bobbin": -96.0,
+    "resin:resin_to_copper": 245.1,
+    "resin:resin_to_inair": -66.0,
+    "resin:resin_to_stator": -69.9,
+    "shaft:defaultFaces": -10.9,
+    "shaft:shaft_to_bearings": 26.7,
+    "shaft:shaft_to_inair": 0.8,
+    "shaft:shaft_to_rotor": -6.0
+   },
+   "energy_balance": {
+    "t_end_s": 2700.0,
+    "storage_kJ": 1047.4777997615,
+    "outflow_kJ": 571.7125983420001,
+    "generation_kJ_range": [
+     1647.8857249232685,
+     1653.7535106422658
+    ],
+    "error_pct_range": [
+     -2.0899796926412897,
+     -1.7413420351768947
+    ]
+   }
+  }
+ }
+}

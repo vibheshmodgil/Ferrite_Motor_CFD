@@ -1,0 +1,21 @@
+FoamFile
+{
+    format      ascii;
+    class       dictionary;
+    object      fvModels;
+}
+
+windingJoule
+{
+    type            coded;
+    select          all;
+    field           e;
+    codeAddRhoSup
+    #{
+        const volScalarField& T = mesh().lookupObject<volScalarField>("T");
+        const scalarField& V = mesh().V();
+        const scalar qref = 579.5503/gSum(V);
+        const scalar qac = 30.2351/gSum(V);
+        eqn.source() -= V*(qac + qref*(1.0 + 0.00393*(T.primitiveField() - 373.15)));
+    #};
+}

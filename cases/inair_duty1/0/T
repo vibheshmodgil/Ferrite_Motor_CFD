@@ -1,0 +1,12 @@
+FoamFile { format ascii; class volScalarField; object T; }
+dimensions [0 0 0 1 0 0 0]; internalField uniform 375.79;
+boundaryField
+{
+    defaultFaces { type zeroGradient; }
+    inair_to_winding { type fixedValue; value uniform 405.4; }
+    inair_to_stator { type fixedValue; value uniform 360.304; }
+    inair_to_housing { type fixedValue; value uniform 346.184; }
+    inair_to_rotor { type fixedValue; value uniform 338.177; }
+    inair_to_shaft { type fixedValue; value uniform 331.643; }
+    inair_to_bearings { type fixedValue; value uniform 337.611; }
+}

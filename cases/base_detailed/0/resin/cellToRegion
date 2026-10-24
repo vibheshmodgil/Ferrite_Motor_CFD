@@ -1,0 +1,46 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  12
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    format      ascii;
+    class       volScalarField;
+    location    "0/resin";
+    object      cellToRegion;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [];
+
+internalField   uniform 7;
+
+boundaryField
+{
+    resin_to_bobbin
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    resin_to_copper
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    resin_to_inair
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    resin_to_stator
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+}
+
+
+// ************************************************************************* //

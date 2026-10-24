@@ -1,0 +1,26 @@
+brep loaded 3 s
+stack data                        3 s
+magnet section 1                  3 s
+magnet section 2                  4 s
+magnet section 3                  4 s
+magnet section 4                  4 s
+magnet section 5                  4 s
+magnet section 6                  4 s
+magnet section 7                  4 s
+magnet section 8                  5 s
+magnet section 9                  5 s
+magnet section 10                 5 s
+magnet section 11                 5 s
+magnet section 12                 5 s
+magnet section 13                 5 s
+magnet section 14                 5 s
+magnet section 15                 6 s
+magnet section 16                 6 s
+magnet section 17                 6 s
+magnet section 18                 6 s
+start remove                      6 s
+removed                         252 s
+stacks/drops removed            255 s
+extrusions                      255 s
+slot area                       262 s
+parts built {'shaft': 1, 'housing': 8, 'bearings': 2, 'endcaps': 3, 'magnets': 18, 'rotor': 1, 'stator': 1, 'wedge': 37, 'slot': 1, 'endw': 2, 'seal': 1, 'rpocket': 1, 'cavity': 0} stray 0    304 s

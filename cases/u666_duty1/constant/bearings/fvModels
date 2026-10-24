@@ -1,0 +1,22 @@
+FoamFile
+{
+    format      ascii;
+    class       dictionary;
+    object      fvModels;
+}
+
+loss_bearing_f
+{
+    type    heatSource;
+    select  cellZone;
+    cellZone bearing_f;
+    Q       4.9640;
+}
+
+loss_bearing_r
+{
+    type    heatSource;
+    select  cellZone;
+    cellZone bearing_r;
+    Q       4.9640;
+}

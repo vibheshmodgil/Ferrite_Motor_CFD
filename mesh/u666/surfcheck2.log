@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "C:\Users\vibhe\Downloads\OUTPUT\CFD\scripts\u666_surfcheck.py", line 11, in <module>
+    gmsh.open(sys.argv[1])
+  File "C:\Users\vibhe\Downloads\OUTPUT\CFD\.venv\lib\site-packages\gmsh.py", line 346, in open
+    raise Exception(logger.getLastError())
+Exception: Unable to open file 'mesh/u666/u666_2d.msh'

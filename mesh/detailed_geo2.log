@@ -1,0 +1,283 @@
+Info    :  - Label 'Shapes/Open CASCADE STEP translator 7.8 19' (3D)
+Info    : Healing shapes (tolerance: 1e-08)
+Info    :  - Fixing degenerated edges and faces
+Info    :  - Fixing small edges
+Info    :  - Fixing spot and strip faces
+Info    : Done healing shapes (Wall 0.370722s, CPU 0.34375s):
+Info    :  - Compounds          : 0 (0)
+Info    :  - Composite solids   : 0 (0)
+Info    :  - Solids             : 1 (1)
+Info    :  - Shells             : 1 (1)
+Info    :  - Wires              : 162 (162)
+Info    :  - Faces              : 107 (107)
+Info    :  - Edges              : 204 (204)
+Info    :  - Vertices           : 134 (134)
+Info    :  - Total surface area : 283093 (283093)
+Info    :  - Label 'Shapes/Open CASCADE STEP translator 7.8 20' (3D)
+Info    : Healing shapes (tolerance: 1e-08)
+Info    :  - Fixing degenerated edges and faces
+Info    :  - Fixing small edges
+Info    :  - Fixing spot and strip faces
+Info    : Done healing shapes (Wall 0.036876s, CPU 0.03125s):
+Info    :  - Compounds          : 0 (0)
+Info    :  - Composite solids   : 0 (0)
+Info    :  - Solids             : 1 (1)
+Info    :  - Shells             : 1 (1)
+Info    :  - Wires              : 51 (51)
+Info    :  - Faces              : 30 (30)
+Info    :  - Edges              : 51 (51)
+Info    :  - Vertices           : 34 (34)
+Info    :  - Total surface area : 74361.1 (74361.1)
+Info    :  - Label 'Shapes/Open CASCADE STEP translator 7.8 4' (3D)
+Info    : Healing shapes (tolerance: 1e-08)
+Info    :  - Fixing degenerated edges and faces
+Info    :  - Fixing small edges
+Info    :  - Fixing spot and strip faces
+Info    : Done healing shapes (Wall 0.0891597s, CPU 0.078125s):
+Info    :  - Compounds          : 0 (0)
+Info    :  - Composite solids   : 0 (0)
+Info    :  - Solids             : 1 (1)
+Info    :  - Shells             : 1 (1)
+Info    :  - Wires              : 39 (39)
+Info    :  - Faces              : 31 (31)
+Info    :  - Edges              : 61 (61)
+Info    :  - Vertices           : 40 (40)
+Info    :  - Total surface area : 21976.1 (21976.1)
+Info    :  - Label 'Shapes/Open CASCADE STEP translator 7.8 2' (3D)
+Info    : Healing shapes (tolerance: 1e-08)
+Info    :  - Fixing degenerated edges and faces
+Info    :  - Fixing small edges
+Info    :  - Fixing spot and strip faces
+Info    : Done healing shapes (Wall 0.00886774s, CPU 0s):
+Info    :  - Compounds          : 0 (0)
+Info    :  - Composite solids   : 0 (0)
+Info    :  - Solids             : 1 (1)
+Info    :  - Shells             : 1 (1)
+Info    :  - Wires              : 8 (8)
+Info    :  - Faces              : 8 (8)
+Info    :  - Edges              : 18 (18)
+Info    :  - Vertices           : 12 (12)
+Info    :  - Total surface area : 3490.28 (3490.28)
+Info    :  - Label 'Shapes/Open CASCADE STEP translator 7.8 1' (3D)
+Info    : Healing shapes (tolerance: 1e-08)
+Info    :  - Fixing degenerated edges and faces
+Info    :  - Fixing small edges
+Info    :  - Fixing spot and strip faces
+Info    : Done healing shapes (Wall 0.0587049s, CPU 0.0625s):
+Info    :  - Compounds          : 0 (0)
+Info    :  - Composite solids   : 0 (0)
+Info    :  - Solids             : 1 (1)
+Info    :  - Shells             : 1 (1)
+Info    :  - Wires              : 33 (33)
+Info    :  - Faces              : 33 (33)
+Info    :  - Edges              : 93 (93)
+Info    :  - Vertices           : 62 (62)
+Info    :  - Total surface area : 11826.5 (11826.5)
+Info    : Snapping geometry point 57 to curve (distance = 1.33428e-08)
+Info    : Snapping geometry point 57 to curve (distance = 1.33428e-08)
+Info    : Snapping geometry point 60 to curve (distance = 1.33428e-08)
+Info    : Snapping geometry point 60 to curve (distance = 1.33428e-08)
+Info    : Snapping geometry point 61 to curve (distance = 1.33566e-08)
+Info    : Snapping geometry point 61 to curve (distance = 1.4118e-08)
+Info    : Snapping geometry point 64 to curve (distance = 1.3343e-08)
+Info    : Snapping geometry point 64 to curve (distance = 1.3343e-08)
+Info    : Snapping geometry point 65 to curve (distance = 1.33425e-08)
+Info    : Snapping geometry point 65 to curve (distance = 1.42189e-08)
+Info    : Snapping geometry point 68 to curve (distance = 1.33565e-08)
+Info    : Snapping geometry point 68 to curve (distance = 1.33565e-08)
+Info    :  - Label 'Shapes/Open CASCADE STEP translator 7.8 4' (3D)
+Info    : Healing shapes (tolerance: 1e-08)
+Info    :  - Fixing degenerated edges and faces
+Info    :  - Fixing small edges
+Info    :  - Fixing spot and strip faces
+Info    : Done healing shapes (Wall 0.10629s, CPU 0.109375s):
+Info    :  - Compounds          : 0 (0)
+Info    :  - Composite solids   : 0 (0)
+Info    :  - Solids             : 1 (1)
+Info    :  - Shells             : 1 (1)
+Info    :  - Wires              : 56 (56)
+Info    :  - Faces              : 48 (48)
+Info    :  - Edges              : 138 (138)
+Info    :  - Vertices           : 92 (92)
+Info    :  - Total surface area : 5949.64 (5949.64)
+Info    :  - Label 'Shapes/Open CASCADE STEP translator 7.8 5' (3D)
+Info    : Healing shapes (tolerance: 1e-08)
+Info    :  - Fixing degenerated edges and faces
+Info    :  - Fixing small edges
+Info    :  - Fixing spot and strip faces
+Info    : Done healing shapes (Wall 0.203245s, CPU 0.1875s):
+Info    :  - Compounds          : 0 (0)
+Info    :  - Composite solids   : 0 (0)
+Info    :  - Solids             : 1 (1)
+Info    :  - Shells             : 1 (1)
+Info    :  - Wires              : 56 (56)
+Info    :  - Faces              : 48 (48)
+Info    :  - Edges              : 138 (138)
+Info    :  - Vertices           : 92 (92)
+Info    :  - Total surface area : 5607.66 (5607.66)
+Info    :  - Label 'Shapes/Open CASCADE STEP translator 7.8 6' (3D)
+Info    : Healing shapes (tolerance: 1e-08)
+Info    :  - Fixing degenerated edges and faces
+Info    :  - Fixing small edges
+Info    :  - Fixing spot and strip faces
+Info    : Done healing shapes (Wall 0.201242s, CPU 0.1875s):
+Info    :  - Compounds          : 0 (0)
+Info    :  - Composite solids   : 0 (0)
+Info    :  - Solids             : 1 (1)
+Info    :  - Shells             : 1 (1)
+Info    :  - Wires              : 62 (62)
+Info    :  - Faces              : 54 (54)
+Info    :  - Edges              : 156 (156)
+Info    :  - Vertices           : 104 (104)
+Info    :  - Total surface area : 6616.9 (6616.9)
+Info    :  - Label 'Shapes/Open CASCADE STEP translator 7.8 7' (3D)
+Info    : Healing shapes (tolerance: 1e-08)
+Info    :  - Fixing degenerated edges and faces
+Info    :  - Fixing small edges
+Info    :  - Fixing spot and strip faces
+Info    : Done healing shapes (Wall 0.0144908s, CPU 0.015625s):
+Info    :  - Compounds          : 0 (0)
+Info    :  - Composite solids   : 0 (0)
+Info    :  - Solids             : 1 (1)
+Info    :  - Shells             : 1 (1)
+Info    :  - Wires              : 12 (12)
+Info    :  - Faces              : 8 (8)
+Info    :  - Edges              : 18 (18)
+Info    :  - Vertices           : 12 (12)
+Info    :  - Total surface area : 571.827 (571.827)
+Info    :  - Label 'Shapes/Open CASCADE STEP translator 7.8 16' (3D)
+Info    : Healing shapes (tolerance: 1e-08)
+Info    :  - Fixing degenerated edges and faces
+Info    :  - Fixing small edges
+Info    :  - Fixing spot and strip faces
+Info    : Done healing shapes (Wall 0.0351439s, CPU 0.03125s):
+Info    :  - Compounds          : 0 (0)
+Info    :  - Composite solids   : 0 (0)
+Info    :  - Solids             : 1 (1)
+Info    :  - Shells             : 1 (1)
+Info    :  - Wires              : 17 (17)
+Info    :  - Faces              : 16 (16)
+Info    :  - Edges              : 45 (45)
+Info    :  - Vertices           : 30 (30)
+Info    :  - Total surface area : 519.783 (519.783)
+Info    :  - Label 'Shapes/Open CASCADE STEP translator 7.8 17' (3D)
+Info    : Healing shapes (tolerance: 1e-08)
+Info    :  - Fixing degenerated edges and faces
+Info    :  - Fixing small edges
+Info    :  - Fixing spot and strip faces
+Info    : Done healing shapes (Wall 0.0535603s, CPU 0.03125s):
+Info    :  - Compounds          : 0 (0)
+Info    :  - Composite solids   : 0 (0)
+Info    :  - Solids             : 1 (1)
+Info    :  - Shells             : 1 (1)
+Info    :  - Wires              : 17 (17)
+Info    :  - Faces              : 15 (15)
+Info    :  - Edges              : 39 (39)
+Info    :  - Vertices           : 26 (26)
+Info    :  - Total surface area : 2268.58 (2268.58)
+Info    :  - Label 'Shapes/Open CASCADE STEP translator 7.8 18' (3D)
+Info    : Healing shapes (tolerance: 1e-08)
+Info    :  - Fixing degenerated edges and faces
+Info    :  - Fixing small edges
+Info    :  - Fixing spot and strip faces
+Info    : Done healing shapes (Wall 0.0320129s, CPU 0.03125s):
+Info    :  - Compounds          : 0 (0)
+Info    :  - Composite solids   : 0 (0)
+Info    :  - Solids             : 1 (1)
+Info    :  - Shells             : 1 (1)
+Info    :  - Wires              : 17 (17)
+Info    :  - Faces              : 16 (16)
+Info    :  - Edges              : 45 (45)
+Info    :  - Vertices           : 30 (30)
+Info    :  - Total surface area : 519.783 (519.783)
+Info    : Cannot bind existing OpenCASCADE volume 107 to second tag 108
+Info    : Could not preserve tag of 3D object 108 (->107)
+Info    : Cannot bind existing OpenCASCADE volume 108 to second tag 109
+Info    : Could not preserve tag of 3D object 109 (->108)
+Info    : Cannot bind existing OpenCASCADE volume 109 to second tag 110
+Info    : Could not preserve tag of 3D object 110 (->109)
+Info    : Cannot bind existing OpenCASCADE volume 110 to second tag 111
+Info    : Could not preserve tag of 3D object 111 (->110)
+Info    : Cannot bind existing OpenCASCADE volume 111 to second tag 112
+Info    : Could not preserve tag of 3D object 112 (->111)
+Info    : Cannot bind existing OpenCASCADE volume 112 to second tag 113
+Info    : Could not preserve tag of 3D object 113 (->112)
+Info    : Cannot bind existing OpenCASCADE volume 113 to second tag 114
+Info    : Could not preserve tag of 3D object 114 (->113)
+Info    : Cannot bind existing OpenCASCADE volume 114 to second tag 115
+Info    : Could not preserve tag of 3D object 115 (->114)
+Info    : Cannot bind existing OpenCASCADE volume 115 to second tag 116
+Info    : Could not preserve tag of 3D object 116 (->115)
+Info    : Cannot bind existing OpenCASCADE volume 116 to second tag 117
+Info    : Could not preserve tag of 3D object 117 (->116)
+Info    : Cannot bind existing OpenCASCADE volume 117 to second tag 118
+Info    : Could not preserve tag of 3D object 118 (->117)
+Info    : Cannot bind existing OpenCASCADE volume 118 to second tag 119
+Info    : Could not preserve tag of 3D object 119 (->118)
+Info    : Snapping geometry point 57 to curve (distance = 1.33428e-08)
+Info    : Snapping geometry point 57 to curve (distance = 1.33428e-08)
+Info    : Snapping geometry point 60 to curve (distance = 1.33428e-08)
+Info    : Snapping geometry point 60 to curve (distance = 1.33428e-08)
+Info    : Snapping geometry point 61 to curve (distance = 1.4118e-08)
+Info    : Snapping geometry point 61 to curve (distance = 1.4118e-08)
+Info    : Snapping geometry point 64 to curve (distance = 1.3343e-08)
+Info    : Snapping geometry point 64 to curve (distance = 1.3343e-08)
+Info    : Snapping geometry point 65 to curve (distance = 1.42189e-08)
+Info    : Snapping geometry point 65 to curve (distance = 1.42189e-08)
+Info    : Snapping geometry point 68 to curve (distance = 1.33565e-08)
+Info    : Snapping geometry point 68 to curve (distance = 1.33565e-08)
+resin cut 7885 s
+Info    : Snapping geometry point 57 to curve (distance = 1.33428e-08)
+Info    : Snapping geometry point 57 to curve (distance = 1.33428e-08)
+Info    : Snapping geometry point 60 to curve (distance = 1.33428e-08)
+Info    : Snapping geometry point 60 to curve (distance = 1.33428e-08)
+Info    : Snapping geometry point 61 to curve (distance = 1.4118e-08)
+Info    : Snapping geometry point 61 to curve (distance = 1.4118e-08)
+Info    : Snapping geometry point 64 to curve (distance = 1.3343e-08)
+Info    : Snapping geometry point 64 to curve (distance = 1.3343e-08)
+Info    : Snapping geometry point 65 to curve (distance = 1.42189e-08)
+Info    : Snapping geometry point 65 to curve (distance = 1.42189e-08)
+Info    : Snapping geometry point 68 to curve (distance = 1.33565e-08)
+Info    : Snapping geometry point 68 to curve (distance = 1.33565e-08)
+{'housing': 1, 'shaft': 1, 'bearings': 2, 'magnets': 20, 'stator': 1, 'coil': 12, 'bobbin': 12, 'busbar': 3, 'strap': 6, 'tbar': 3, 'rotor': 1, 'resin': 12, 'inair': 12} 8290 s
+fragment done 8952 s
+Info    : Snapping geometry point 57 to curve (distance = 1.33428e-08)
+Info    : Snapping geometry point 57 to curve (distance = 1.33428e-08)
+Info    : Snapping geometry point 60 to curve (distance = 1.33428e-08)
+Info    : Snapping geometry point 60 to curve (distance = 1.33428e-08)
+Info    : Snapping geometry point 61 to curve (distance = 1.4118e-08)
+Info    : Snapping geometry point 61 to curve (distance = 1.4118e-08)
+Info    : Snapping geometry point 64 to curve (distance = 1.3343e-08)
+Info    : Snapping geometry point 64 to curve (distance = 1.3343e-08)
+Info    : Snapping geometry point 65 to curve (distance = 1.42189e-08)
+Info    : Snapping geometry point 65 to curve (distance = 1.42189e-08)
+Info    : Snapping geometry point 68 to curve (distance = 1.33565e-08)
+Info    : Snapping geometry point 68 to curve (distance = 1.33565e-08)
+Info    : Snapping geometry point 57 to curve (distance = 1.33428e-08)
+Info    : Snapping geometry point 57 to curve (distance = 1.33428e-08)
+Info    : Snapping geometry point 60 to curve (distance = 1.33428e-08)
+Info    : Snapping geometry point 60 to curve (distance = 1.33428e-08)
+Info    : Snapping geometry point 61 to curve (distance = 1.4118e-08)
+Info    : Snapping geometry point 61 to curve (distance = 1.4118e-08)
+Info    : Snapping geometry point 64 to curve (distance = 1.3343e-08)
+Info    : Snapping geometry point 64 to curve (distance = 1.3343e-08)
+Info    : Snapping geometry point 65 to curve (distance = 1.42189e-08)
+Info    : Snapping geometry point 65 to curve (distance = 1.42189e-08)
+Info    : Snapping geometry point 68 to curve (distance = 1.33565e-08)
+Info    : Snapping geometry point 68 to curve (distance = 1.33565e-08)
+Info    : Writing 'C:\Users\vibhe\Downloads\OUTPUT\CFD\scripts\..\mesh\motor_detailed.brep'...
+Info    : Done writing 'C:\Users\vibhe\Downloads\OUTPUT\CFD\scripts\..\mesh\motor_detailed.brep'
+orphan volumes (outside every group): 0
+housing   pieces    1  volume    753.41 cm3
+shaft     pieces    1  volume     89.03 cm3
+bearings  pieces    2  volume     42.51 cm3
+magnets   pieces   20  volume    268.40 cm3
+stator    pieces    1  volume    463.17 cm3
+coil      pieces   36  volume    156.20 cm3
+bobbin    pieces   12  volume     53.48 cm3
+busbar    pieces    3  volume     21.04 cm3
+strap     pieces    6  volume      2.13 cm3
+tbar      pieces    3  volume      3.20 cm3
+rotor     pieces    1  volume    278.42 cm3
+resin     pieces   12  volume    214.55 cm3
+inair     pieces   12  volume    878.31 cm3

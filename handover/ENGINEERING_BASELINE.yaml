@@ -1,0 +1,101 @@
+# Engineering baseline, Design9795_1 duty thermal CFD. Audited 2026-10-21 from files and session logs.
+# reuse class: A = reuse as-is | B = reuse after verification | C = recompute for new CAD | D = do not reuse | U = unknown
+# Paths: W = C:\Users\vibhe\Downloads\OUTPUT  (WSL: /mnt/c/Users/vibhe/Downloads/OUTPUT), L = WSL ~/cfd
+
+environment:
+  host: {os: "Windows 11 Home 10.0.26300", cores_logical: 8, ram_GB: 15.8, disk: "C: 454 GB, 55-71 GB free at end of session"}
+  wsl: {distro: Ubuntu-24.04, user: cfd, wsl_version: 2.7.3.0, kernel: 6.6.114.1-1, vm_ram_GB: 9.9,
+        notes: ["default WSL distro is docker-desktop: always pass -d Ubuntu-24.04 -u cfd",
+                "from Git Bash prefix MSYS_NO_PATHCONV=1",
+                "long jobs only inside tmux (nohup jobs die when the wsl.exe session exits)",
+                "vhdx made sparse 2026-10-20: free space returns to C: after `wsl -u root fstrim /`"]}
+  openfoam: {version: "OpenFOAM-12 (openfoam.org)", path: /opt/openfoam12, apps: [foamMultiRun, foamRun, foamPostProcess, gmshToFoam, splitMeshRegions, decomposePar, reconstructPar, checkMesh, foamToVTK]}
+  meshing: {tool: gmsh (OCC kernel), windows_python: "W/CFD/.venv/Scripts/python -I", wsl_python: "~/venv/bin/python", wsl_cli: /usr/bin/gmsh}
+  em: {tool: "FEMM 4.2 + pyfemm", python: "Windows Python 3.10 (outside the venv)", scripts: "W/CFD/scripts/femm_duty_*.py"}
+  post: {python: "W/CFD/.venv (numpy, matplotlib, pyvista/pvpython for 3D)", video: ffmpeg (winget), viewer: "three.js r147 vendored"}
+  agents_used: "Claude Code main session + background subagents (FEMM, CFD, DETAIL, VISUALS, LOSS)"
+
+sources:
+  losses: {class: A, repo: "github.com/mishravipul361-blip/Ferrite-motor-design", branch: spoke-v2-aluminium-and-design9795,
+           clone: W/ferrite_repo/repo, design: Design9795_1, files: [lab_100C.json, mcad_lab/Map_1.xlsx, motorcad_losses.json],
+           generator: W/CFD/scripts/loadpoints_9795.py, output: W/CFD/loadpoints.json,
+           caveat: "bearings/windage are Motor-CAD scaling (n/2600)^1.3, not measured"}
+  old_cad: {class: D, path: W/OUTPUT/cad/motor_65, format: "STEP (+SLDPRT)", note: "v7 geometry: stack 65 mm vs 9795's 64, shaft 30 vs 25"}
+
+geometry_regions:            # class C: rebuild from the new CAD
+  baseline: [housing (housing + rear cover), stator (12 tooth segments), winding (12 homogenised blocks), rotor, magnets (20), shaft, bearings, inair (end-space air)]
+  detailed_extra: [copper (cellZones coil/strap/busbar/tbar), resin, bobbin]
+  external_air: "box -300..300 x -300..500 x -350..300 mm, gravity -y, patches motor / ambient"
+  axis: "motor axis = z; gravity -y (horizontal shaft)"
+
+mesh:
+  baseline: {class: C, script: build_mesh.py, cmd: ".venv/Scripts/python -I scripts/build_mesh.py --solids-only [--size 3]",
+             cells: 2391137, checkMesh: "Mesh OK, max skewness 3.19", base_case: L/base_solids}
+  detailed: {class: C, script: build_mesh_detailed.py, opts: "--from-brep --wire 1.2, NTHREADS=1, Delaunay 3D (HXT failed)",
+             cells: 4653773, checkMesh: "non-orth max 88.8 OK, skew 3.1 OK, 2 cells AR 1225 (accepted)",
+             base_case: "L/base_detailed (MERGE_CU=1 prep_base.sh)", peak_RAM_GB: 5.1, boolean_time_min: 63}
+  external_air: {class: C, script: "build_mesh.py --air-only", file: W/CFD/mesh/air.msh, cells: U}
+  pipeline: "gmsh .msh v2.2 -> prep_base.sh (gmshToFoam, transformPoints mm->m, splitMeshRegions -cellZones) -> base dir"
+  mesh_independence: "NOT performed (gap)"
+
+solid_solver:                # class A unless noted
+  app: foamMultiRun, region_solver: solid, generator: scripts/make_case.py, runner: "scripts/run_case.sh <lp> [endTime] (env NP, WRITE, BASE, HFILE, SUFFIX)"
+  time: {transient: true, adjustTimeStep: no, dt_s: {duty1: 3, duty2: 10, duty3: 20, duty4: 60, duty5: 60}}
+  pimple: {nOuterCorrectors: 100, outerCorrectorResidualControl_e: "1e-3 (housing 2e-2)", nNonOrthogonalCorrectors: 0}
+  linear: {e: "GAMG DICGaussSeidel tol 1e-7 relTol 0.1", eFinal: "relTol 0"}
+  decomposition: {method: scotch, np: "3-4 (one heavy job at a time)"}
+  initial_T_K: 313.15
+  ambient_T_K: 313.15
+  write_rule: "writeInterval must be a multiple of dt and endTime on the write grid, otherwise fields are missing"
+
+materials:                   # class A (verify for the new CAD's material call-outs: class B)
+  housing: {rho: 2680, cv: 900, k: 150, mat: AlSi10Mg}
+  stator: {rho: 7650, cv: 460, k: [28, 28, 1.5], mat: "M235-35A stack (in-plane / axial)"}
+  rotor: {rho: 7650, cv: 460, k: [28, 28, 1.5]}
+  magnets: {rho: 4900, cv: 800, k: 4.0, mat: "sintered ferrite DM4654"}
+  shaft: {rho: 7850, cv: 460, k: 45}
+  bearings: {rho: 7850, cv: 460, k: 15, note: "solid ring with reduced k"}
+  winding_homogenised: {rho: "0.51*8933+0.49*1200", k: 1.0, class: D, why: "isotropic k = 1 gives non-physical 50/50 stator/air split; anisotropic 0.77/200 diverged on tets. Use the detailed coil instead"}
+  inair: {rho: 10.0 (x10 for coupling stability), cv: 718, k: "k_inair = h_endspace * 0.01 m"}
+  coil_copper_busbar_strap_tbar: {rho: 8933, cv: 385, k: 390}
+  bobbin: {rho: 1350, cv: 1500, k: 0.35, mat: PA66-GF30}
+  resin: {rho: 1200, cv: 1500, k: 0.25}
+
+interfaces:                  # coupledTemperature with thicknessLayers/kappaLayers; class B (geometry-dependent values)
+  winding_stator: {t_m: 1.7e-3, k: 0.30, note: "bobbin wall + resin gap; baseline only"}
+  stator_housing: {t_m: 2.0e-5, k: 0.026, note: "shrink fit ~1300 W/m2K"}
+  magnets_rotor: {t_m: 1.0e-4, k: 0.20, note: glue}
+  rotor_stator_airgap: {t_m: 5.0e-4, k: "k_gap per load point (Taylor-Couette)"}
+
+boundary_conditions:
+  outer_skin: {class: B, type: "coded per-face h + radiation (externalTemperature for uniform h)", Ta_K: 313.15,
+               h: "per-face map from external-air CFD (map_h.py -> h_cfd.json; mean ~4 W/m2K on the old housing)",
+               emissivity: "0.7 used in duty1-5 (WRONG for bare Al); USE 0.1 (env EMISSIVITY); fin_eps.py scales eps to the fin envelope"}
+  adiabatic_test_switches: "ADIABATIC=1 JOULE_TC=0 (energy_test.sh)"
+
+sources_terms:               # class A
+  copper: "q = q_ref*(1+0.00393*(T-T_ref)); winding_100C at T_ref 373.15 K; winding_ac constant; busbar/strap/tbar from rho20*J^2 at 293.15 K"
+  iron_bearings_windage: "uniform in region (stator, rotor, bearings, inair)"
+  detailed_copper: "one codedFvModel looping over the coil/strap/busbar/tbar cellZones (per-zone coded models crashed in parallel)"
+
+external_air_cfd:            # class A settings, class C mesh/result
+  script: air_case.sh, app: "foamRun -solver fluid", regime: "steady SIMPLE, laminar, buoyant, perfectGas (heRhoThermo)",
+  wall_T_K: 373.15, ambient_K: 313.15, endTime_iter: 3000,
+  schemes: "div limitedLinear 0.2 (U, h, K); laplacian limited corrected 0.5",
+  relax: {p_rgh: 0.7, U: 0.3, h: 0.3}, residualControl: {p_rgh: 1e-4, U: 1e-4, h: 1e-5},
+  sanity_check: "aircheck.sh: fail if U p99 > 0.8 m/s (buoyancy scale ~0.57 m/s)",
+  known_failure: "ring_h16_p11.5 fin variant: U max 225 m/s, NOT PHYSICAL (2026-10-21 09:27 UTC), unresolved"
+
+internal_air_cfd:            # class B
+  script: "inair_cfd.sh <thermal_case> <time> <rpm>", duty1: ok (~52 min), duty4: "needed upwind U, URF p_rgh 0.15 / others 0.3, 3000 it; residuals ~1e-3, approximate",
+  note: "air gap not meshed; it stays on Taylor-Couette"
+
+verification:                # class A
+  adiabatic_energy_test: {script: energy_test.sh, expected_kJ: 89.93, pass_abs_pct: 1.0, results: {before: -48.7, outer10: -3.6, tol1e-3: -0.2, production: -0.4, detailed_merged_Cu: -0.9, detailed_split_Cu: -1.3 (fail)}}
+  global_balance_per_run: {script: energy_balance.py / energy_balance_detailed.py, target_abs_pct: 1.0}
+  checkMesh: required
+  air_sanity: aircheck.sh
+
+post:                        # class B (planes/z ranges are geometry-dependent)
+  scripts: [slices.sh, heatpaths.sh, export3d.sh, energy_check.sh, post.py, heat_budget.py, endwinding_asym.py, export_viewer.py, make_report_duty.py (--site)]
+  report_rules: ["cut temperature-time charts at winding max = 180 C", "mark m100 and w155 events with the other part's temperature", "detailed results are primary where they exist", "multi-page site + 3D viewer"]

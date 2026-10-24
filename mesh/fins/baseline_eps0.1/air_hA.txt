@@ -1,0 +1,1 @@
+TOTAL A 2277.4 cm2  hA 0.799 W/K  h_mean 3.51 (air case ~/cfd/air, CAD fins)

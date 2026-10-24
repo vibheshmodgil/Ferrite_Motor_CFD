@@ -1,0 +1,33 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  12
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 12-86e126a7bc4d
+Exec   : checkMesh
+Date   : Oct 15 2026
+Time   : 07:10:29
+Host   : "Bhivesh"
+PID    : 22560
+I/O    : uncollated
+Case   : /mnt/c/Users/vibhe/Downloads/OUTPUT/CFD/scripts
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+
+
+--> FOAM FATAL ERROR: 
+cannot find file "/mnt/c/Users/vibhe/Downloads/OUTPUT/CFD/scripts/system/controlDict"
+
+    From function virtual Foam::autoPtr<Foam::ISstream> Foam::fileOperations::uncollatedFileOperation::readStream(Foam::regIOobject&, const Foam::fileName&, const Foam::word&, bool) const
+    in file global/fileOperations/uncollatedFileOperation/uncollatedFileOperation.C at line 539.
+
+FOAM exiting
+

@@ -1,0 +1,4 @@
+degenerate skin faces: []
+prism route magnets volumes 18 section faces 18 bands [-2.1375, 60.7978]
+patch area mm2 (prism | CAD): {'magnets_to_inair': (474, 490), 'magnets_to_rotor': (34055, 34116), 'magnets_to_endcaps': (685, 684)}
+prisms: 21750 volumes cm3 {'magnets': np.float64(36.49)} patches {np.str_('magnets_to_endcaps'): 1117, np.str_('magnets_to_rotor'): 11700, np.str_('magnets_to_inair'): 623}

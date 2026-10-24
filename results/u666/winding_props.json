@@ -1,0 +1,19 @@
+{
+  "area_per_turn_m2": 1.9795960708432687e-06,
+  "rows": [
+    {
+      "Kf": 0.555,
+      "Kc_conductor_fraction": 0.6359214441579052,
+      "f_copper": 0.555,
+      "f_enamel": 0.08092144415790514,
+      "f_varnish": 0.3640785558420948,
+      "k_strand_bundle_HS": 4.26591982718129,
+      "k_transverse_HS_lower": 1.115850658457324,
+      "k_transverse_layered_check": 0.5369575761522141,
+      "k_axial_ROM": 216.5572039277921,
+      "rho_homog": 5509.617717714739,
+      "cp_homog": 472.4684635593972,
+      "R_liner_m2K_per_W": 0.0016666666666666668
+    }
+  ]
+}

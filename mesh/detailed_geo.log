@@ -1,0 +1,255 @@
+Info    :  - Label 'Shapes/Open CASCADE STEP translator 7.8 19' (3D)
+Info    : Healing shapes (tolerance: 1e-08)
+Info    :  - Fixing degenerated edges and faces
+Info    :  - Fixing small edges
+Info    :  - Fixing spot and strip faces
+Info    : Done healing shapes (Wall 0.34821s, CPU 0.28125s):
+Info    :  - Compounds          : 0 (0)
+Info    :  - Composite solids   : 0 (0)
+Info    :  - Solids             : 1 (1)
+Info    :  - Shells             : 1 (1)
+Info    :  - Wires              : 162 (162)
+Info    :  - Faces              : 107 (107)
+Info    :  - Edges              : 204 (204)
+Info    :  - Vertices           : 134 (134)
+Info    :  - Total surface area : 283093 (283093)
+Info    :  - Label 'Shapes/Open CASCADE STEP translator 7.8 20' (3D)
+Info    : Healing shapes (tolerance: 1e-08)
+Info    :  - Fixing degenerated edges and faces
+Info    :  - Fixing small edges
+Info    :  - Fixing spot and strip faces
+Info    : Done healing shapes (Wall 0.055788s, CPU 0.046875s):
+Info    :  - Compounds          : 0 (0)
+Info    :  - Composite solids   : 0 (0)
+Info    :  - Solids             : 1 (1)
+Info    :  - Shells             : 1 (1)
+Info    :  - Wires              : 51 (51)
+Info    :  - Faces              : 30 (30)
+Info    :  - Edges              : 51 (51)
+Info    :  - Vertices           : 34 (34)
+Info    :  - Total surface area : 74361.1 (74361.1)
+Info    :  - Label 'Shapes/Open CASCADE STEP translator 7.8 4' (3D)
+Info    : Healing shapes (tolerance: 1e-08)
+Info    :  - Fixing degenerated edges and faces
+Info    :  - Fixing small edges
+Info    :  - Fixing spot and strip faces
+Info    : Done healing shapes (Wall 0.0566039s, CPU 0.046875s):
+Info    :  - Compounds          : 0 (0)
+Info    :  - Composite solids   : 0 (0)
+Info    :  - Solids             : 1 (1)
+Info    :  - Shells             : 1 (1)
+Info    :  - Wires              : 39 (39)
+Info    :  - Faces              : 31 (31)
+Info    :  - Edges              : 61 (61)
+Info    :  - Vertices           : 40 (40)
+Info    :  - Total surface area : 21976.1 (21976.1)
+Info    :  - Label 'Shapes/Open CASCADE STEP translator 7.8 2' (3D)
+Info    : Healing shapes (tolerance: 1e-08)
+Info    :  - Fixing degenerated edges and faces
+Info    :  - Fixing small edges
+Info    :  - Fixing spot and strip faces
+Info    : Done healing shapes (Wall 0.0133529s, CPU 0s):
+Info    :  - Compounds          : 0 (0)
+Info    :  - Composite solids   : 0 (0)
+Info    :  - Solids             : 1 (1)
+Info    :  - Shells             : 1 (1)
+Info    :  - Wires              : 8 (8)
+Info    :  - Faces              : 8 (8)
+Info    :  - Edges              : 18 (18)
+Info    :  - Vertices           : 12 (12)
+Info    :  - Total surface area : 3490.28 (3490.28)
+Info    :  - Label 'Shapes/Open CASCADE STEP translator 7.8 1' (3D)
+Info    : Healing shapes (tolerance: 1e-08)
+Info    :  - Fixing degenerated edges and faces
+Info    :  - Fixing small edges
+Info    :  - Fixing spot and strip faces
+Info    : Done healing shapes (Wall 0.0687189s, CPU 0.0625s):
+Info    :  - Compounds          : 0 (0)
+Info    :  - Composite solids   : 0 (0)
+Info    :  - Solids             : 1 (1)
+Info    :  - Shells             : 1 (1)
+Info    :  - Wires              : 33 (33)
+Info    :  - Faces              : 33 (33)
+Info    :  - Edges              : 93 (93)
+Info    :  - Vertices           : 62 (62)
+Info    :  - Total surface area : 11826.5 (11826.5)
+Info    :  - Label 'Shapes/04_coil_65' (3D)
+Info    : Healing shapes (tolerance: 1e-08)
+Info    :  - Fixing degenerated edges and faces
+Info    :  - Fixing small edges
+Info    :  - Fixing spot and strip faces
+Info    : Done healing shapes (Wall 0.0861742s, CPU 0.046875s):
+Info    :  - Compounds          : 0 (0)
+Info    :  - Composite solids   : 0 (0)
+Info    :  - Solids             : 1 (1)
+Info    :  - Shells             : 1 (1)
+Info    :  - Wires              : 4 (4)
+Info    :  - Faces              : 4 (4)
+Info    :  - Edges              : 6 (6)
+Info    :  - Vertices           : 4 (4)
+Info    :  - Total surface area : 18586.6 (18586.6)
+Info    :  - Label 'Shapes/Open CASCADE STEP translator 7.8 2' (3D)
+Info    : Healing shapes (tolerance: 1e-08)
+Info    :  - Fixing degenerated edges and faces
+Info    :  - Fixing small edges
+Info    :  - Fixing wire gaps
+Info    :  . Some 2D gaps fixed
+Info    :  . Some 3D gaps fixed
+Info    :  - Fixing spot and strip faces
+Info    : Done healing shapes (Wall 0.898655s, CPU 0.765625s):
+Info    :  - Compounds          : 0 (0)
+Info    :  - Composite solids   : 0 (0)
+Info    :  - Solids             : 1 (1)
+Info    :  - Shells             : 1 (1)
+Info    :  - Wires              : 318 (318)
+Info    :  - Faces              : 318 (318)
+Info    :  - Edges              : 852 (846)
+Info    :  - Vertices           : 534 (530)
+Info    :  - Total surface area : 3021.26 (3021.26)
+Info    :  - Label 'Shapes/Open CASCADE STEP translator 7.8 3' (3D)
+Info    : Healing shapes (tolerance: 1e-08)
+Info    :  - Fixing degenerated edges and faces
+Info    :  - Fixing small edges
+Info    :  - Fixing wire gaps
+Info    :  . Some 2D gaps fixed
+Info    :  . Some 3D gaps fixed
+Info    :  - Fixing spot and strip faces
+Info    : Done healing shapes (Wall 1.1586s, CPU 1.04688s):
+Info    :  - Compounds          : 0 (0)
+Info    :  - Composite solids   : 0 (0)
+Info    :  - Solids             : 1 (1)
+Info    :  - Shells             : 1 (1)
+Info    :  - Wires              : 580 (580)
+Info    :  - Faces              : 580 (580)
+Info    :  - Edges              : 1286 (1280)
+Info    :  - Vertices           : 706 (702)
+Info    :  - Total surface area : 3113.89 (3113.89)
+Info    :  - Label 'Shapes/Open CASCADE STEP translator 7.8 4' (3D)
+Info    : Healing shapes (tolerance: 1e-08)
+Info    :  - Fixing degenerated edges and faces
+Info    :  - Fixing small edges
+Info    :  - Fixing spot and strip faces
+Info    : Done healing shapes (Wall 0.0980222s, CPU 0.09375s):
+Info    :  - Compounds          : 0 (0)
+Info    :  - Composite solids   : 0 (0)
+Info    :  - Solids             : 1 (1)
+Info    :  - Shells             : 1 (1)
+Info    :  - Wires              : 56 (56)
+Info    :  - Faces              : 48 (48)
+Info    :  - Edges              : 138 (138)
+Info    :  - Vertices           : 92 (92)
+Info    :  - Total surface area : 5949.64 (5949.64)
+Info    :  - Label 'Shapes/Open CASCADE STEP translator 7.8 5' (3D)
+Info    : Healing shapes (tolerance: 1e-08)
+Info    :  - Fixing degenerated edges and faces
+Info    :  - Fixing small edges
+Info    :  - Fixing spot and strip faces
+Info    : Done healing shapes (Wall 0.120226s, CPU 0.09375s):
+Info    :  - Compounds          : 0 (0)
+Info    :  - Composite solids   : 0 (0)
+Info    :  - Solids             : 1 (1)
+Info    :  - Shells             : 1 (1)
+Info    :  - Wires              : 56 (56)
+Info    :  - Faces              : 48 (48)
+Info    :  - Edges              : 138 (138)
+Info    :  - Vertices           : 92 (92)
+Info    :  - Total surface area : 5607.66 (5607.66)
+Info    :  - Label 'Shapes/Open CASCADE STEP translator 7.8 6' (3D)
+Info    : Healing shapes (tolerance: 1e-08)
+Info    :  - Fixing degenerated edges and faces
+Info    :  - Fixing small edges
+Info    :  - Fixing spot and strip faces
+Info    : Done healing shapes (Wall 0.125938s, CPU 0.125s):
+Info    :  - Compounds          : 0 (0)
+Info    :  - Composite solids   : 0 (0)
+Info    :  - Solids             : 1 (1)
+Info    :  - Shells             : 1 (1)
+Info    :  - Wires              : 62 (62)
+Info    :  - Faces              : 54 (54)
+Info    :  - Edges              : 156 (156)
+Info    :  - Vertices           : 104 (104)
+Info    :  - Total surface area : 6616.9 (6616.9)
+Info    :  - Label 'Shapes/Open CASCADE STEP translator 7.8 7' (3D)
+Info    : Healing shapes (tolerance: 1e-08)
+Info    :  - Fixing degenerated edges and faces
+Info    :  - Fixing small edges
+Info    :  - Fixing spot and strip faces
+Info    : Done healing shapes (Wall 0.014374s, CPU 0s):
+Info    :  - Compounds          : 0 (0)
+Info    :  - Composite solids   : 0 (0)
+Info    :  - Solids             : 1 (1)
+Info    :  - Shells             : 1 (1)
+Info    :  - Wires              : 12 (12)
+Info    :  - Faces              : 8 (8)
+Info    :  - Edges              : 18 (18)
+Info    :  - Vertices           : 12 (12)
+Info    :  - Total surface area : 571.827 (571.827)
+Info    :  - Label 'Shapes/Open CASCADE STEP translator 7.8 16' (3D)
+Info    : Healing shapes (tolerance: 1e-08)
+Info    :  - Fixing degenerated edges and faces
+Info    :  - Fixing small edges
+Info    :  - Fixing spot and strip faces
+Info    : Done healing shapes (Wall 0.0327551s, CPU 0.03125s):
+Info    :  - Compounds          : 0 (0)
+Info    :  - Composite solids   : 0 (0)
+Info    :  - Solids             : 1 (1)
+Info    :  - Shells             : 1 (1)
+Info    :  - Wires              : 17 (17)
+Info    :  - Faces              : 16 (16)
+Info    :  - Edges              : 45 (45)
+Info    :  - Vertices           : 30 (30)
+Info    :  - Total surface area : 519.783 (519.783)
+Info    :  - Label 'Shapes/Open CASCADE STEP translator 7.8 17' (3D)
+Info    : Healing shapes (tolerance: 1e-08)
+Info    :  - Fixing degenerated edges and faces
+Info    :  - Fixing small edges
+Info    :  - Fixing spot and strip faces
+Info    : Done healing shapes (Wall 0.0292542s, CPU 0.03125s):
+Info    :  - Compounds          : 0 (0)
+Info    :  - Composite solids   : 0 (0)
+Info    :  - Solids             : 1 (1)
+Info    :  - Shells             : 1 (1)
+Info    :  - Wires              : 17 (17)
+Info    :  - Faces              : 15 (15)
+Info    :  - Edges              : 39 (39)
+Info    :  - Vertices           : 26 (26)
+Info    :  - Total surface area : 2268.58 (2268.58)
+Info    :  - Label 'Shapes/Open CASCADE STEP translator 7.8 18' (3D)
+Info    : Healing shapes (tolerance: 1e-08)
+Info    :  - Fixing degenerated edges and faces
+Info    :  - Fixing small edges
+Info    :  - Fixing spot and strip faces
+Info    : Done healing shapes (Wall 0.0416977s, CPU 0.046875s):
+Info    :  - Compounds          : 0 (0)
+Info    :  - Composite solids   : 0 (0)
+Info    :  - Solids             : 1 (1)
+Info    :  - Shells             : 1 (1)
+Info    :  - Wires              : 17 (17)
+Info    :  - Faces              : 16 (16)
+Info    :  - Edges              : 45 (45)
+Info    :  - Vertices           : 30 (30)
+Info    :  - Total surface area : 519.783 (519.783)
+Info    : Cannot bind existing OpenCASCADE volume 110 to second tag 111
+Info    : Could not preserve tag of 3D object 111 (->110)
+Info    : Cannot bind existing OpenCASCADE volume 111 to second tag 112
+Info    : Could not preserve tag of 3D object 112 (->111)
+Info    : Cannot bind existing OpenCASCADE volume 112 to second tag 113
+Info    : Could not preserve tag of 3D object 113 (->112)
+Info    : Cannot bind existing OpenCASCADE volume 113 to second tag 114
+Info    : Could not preserve tag of 3D object 114 (->113)
+Info    : Cannot bind existing OpenCASCADE volume 114 to second tag 115
+Info    : Could not preserve tag of 3D object 115 (->114)
+Info    : Cannot bind existing OpenCASCADE volume 115 to second tag 116
+Info    : Could not preserve tag of 3D object 116 (->115)
+Info    : Cannot bind existing OpenCASCADE volume 116 to second tag 117
+Info    : Could not preserve tag of 3D object 117 (->116)
+Info    : Cannot bind existing OpenCASCADE volume 117 to second tag 118
+Info    : Could not preserve tag of 3D object 118 (->117)
+Info    : Cannot bind existing OpenCASCADE volume 118 to second tag 119
+Info    : Could not preserve tag of 3D object 119 (->118)
+Info    : Cannot bind existing OpenCASCADE volume 119 to second tag 120
+Info    : Could not preserve tag of 3D object 120 (->119)
+Info    : Cannot bind existing OpenCASCADE volume 120 to second tag 121
+Info    : Could not preserve tag of 3D object 121 (->120)
+Info    : Cannot bind existing OpenCASCADE volume 121 to second tag 122
+Info    : Could not preserve tag of 3D object 122 (->121)

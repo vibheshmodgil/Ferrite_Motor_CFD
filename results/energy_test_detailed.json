@@ -1,0 +1,13 @@
+{
+ "case": "detailed mesh (mesh/motor_detailed.msh, 4,653,773 cells), continuous load point, ADIABATIC=1 JOULE_TC=0, 300 s at dt 10 s, production residual control (scripts/energy_test.sh, BASE=~/cfd/base_detailed)",
+ "Q_W": 309.80,
+ "Q_breakdown_W": {"winding_100C (coil)": 213.539, "stator": 65.677, "rotor": 6.568, "bearings": 12.0, "inair": 1.98,
+                   "busbar_20C": 6.903, "strap rho20 J^2 V": 1.196, "tbar rho20 J^2 V": 1.941},
+ "split_copper_regions": {"t_s": 300, "expected_kJ": 92.94, "stored_kJ": 91.72, "error_pct": -1.3,
+                          "note": "coil/strap/busbar/tbar as separate regions: segregated Cu-Cu coupling stalls, every step hit 100 outer correctors (FAIL)"},
+ "merged_copper_60s": {"t_s": 60, "expected_kJ": 18.59, "stored_kJ": 18.51, "error_pct": -0.4},
+ "merged_copper": {"t_s": 300, "expected_kJ": 92.94, "stored_kJ": 92.14, "error_pct": -0.9, "outer_correctors_per_step": "25-31",
+                   "note": "coil+strap+busbar+tbar merged into one region 'copper' (prep_base.sh MERGE_CU=1); parts kept as cellZones with one Joule source each (PASS, < 1 %)"},
+ "stored_kJ_by_region": {"bearings": 1.33, "bobbin": 2.24, "copper": 18.14, "housing": 22.00, "inair": 0.09, "magnets": 4.90,
+                         "resin": 10.78, "rotor": 5.11, "shaft": 1.73, "stator": 25.82}
+}

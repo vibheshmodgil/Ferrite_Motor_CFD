@@ -1,0 +1,56 @@
+FoamFile
+{
+    format      ascii;
+    class       volScalarField;
+    object      T;
+}
+dimensions [0 0 0 1 0 0 0];
+internalField uniform 313.15;
+boundaryField
+{
+    inair_to_endcaps
+    {
+        type coupledTemperatureNC;
+        value $internalField;
+    }
+    inair_to_housing
+    {
+        type coupledTemperatureNC;
+        value $internalField;
+    }
+    inair_to_bearings
+    {
+        type coupledTemperatureNC;
+        value $internalField;
+    }
+    inair_to_winding
+    {
+        type coupledTemperatureNC;
+        value $internalField;
+    }
+    inair_to_shaft
+    {
+        type coupledTemperatureNC;
+        value $internalField;
+    }
+    inair_to_wedge
+    {
+        type coupledTemperatureNC;
+        value $internalField;
+    }
+    inair_to_stator
+    {
+        type coupledTemperatureNC;
+        value $internalField;
+    }
+    inair_to_rotor
+    {
+        type coupledTemperatureNC;
+        value $internalField;
+    }
+    inair_to_magnets
+    {
+        type coupledTemperatureNC;
+        value $internalField;
+    }
+}

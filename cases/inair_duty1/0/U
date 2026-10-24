@@ -1,0 +1,8 @@
+FoamFile { format ascii; class volVectorField; object U; }
+dimensions [0 1 -1 0 0 0 0]; internalField uniform (0 0 0);
+boundaryField
+{
+    ".*" { type noSlip; }
+    inair_to_rotor { type rotatingWallVelocity; origin (0 0 0); axis (0 0 1); omega 186.6106; value uniform (0 0 0); }
+    inair_to_shaft { type rotatingWallVelocity; origin (0 0 0); axis (0 0 1); omega 186.6106; value uniform (0 0 0); }
+}

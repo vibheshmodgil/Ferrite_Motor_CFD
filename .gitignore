@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.pyc
+S
+U666 CAD.zip
+.claude/
+# regenerable heavy outputs (see README "Excluded files")
+*.msh
+*.stl
+*.vtk
+*.vtu
+processor*/
+postProcessing/
+# OpenFOAM time dirs and mesh
+polyMesh/

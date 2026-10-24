@@ -1,0 +1,470 @@
+{
+ "duty1": {
+  "femm_lab": {
+   "cu_dc": 579.55,
+   "cu_ac": 30.24,
+   "stator": 63.29,
+   "rotor": 17.5,
+   "bearings": 12.69,
+   "windage": 5.44,
+   "magnet": 0.0,
+   "total": 708.71
+  },
+  "mcad_map": {
+   "cu_dc": 584.17,
+   "cu_ac": 32.83,
+   "stator": 69.5,
+   "rotor": 20.69,
+   "bearings": 12.74,
+   "windage": 5.46,
+   "magnet": 0.0,
+   "total": 725.39
+  },
+  "v7_old": {
+   "cu_dc": 532.56,
+   "cu_ac": 0.0,
+   "stator": 43.31,
+   "rotor": 4.33,
+   "bearings": 7.13,
+   "windage": 0.7,
+   "magnet": 0.0,
+   "total": 588.03
+  }
+ },
+ "operating": {
+  "duty1": {
+   "femm_lab": {
+    "I_line": 293.24,
+    "id_phase_pk": -69.81,
+    "iq_phase_pk": 229.03,
+    "V_ph_pk": 28.08
+   },
+   "mcad_map": {
+    "I_line": 294.34,
+    "id_phase_pk": -63.04,
+    "iq_phase_pk": 231.92,
+    "V_ph_pk": 28.75
+   },
+   "v7_old": {
+    "I_line": 281.26
+   }
+  },
+  "duty2": {
+   "femm_lab": {
+    "I_line": 205.58,
+    "id_phase_pk": -34.05,
+    "iq_phase_pk": 164.36,
+    "V_ph_pk": 36.25
+   },
+   "mcad_map": {
+    "I_line": 206.64,
+    "id_phase_pk": -36.87,
+    "iq_phase_pk": 164.64,
+    "V_ph_pk": 36.5
+   },
+   "v7_old": {
+    "I_line": 194.03
+   }
+  },
+  "duty3": {
+   "femm_lab": {
+    "I_line": 157.11,
+    "id_phase_pk": -23.27,
+    "iq_phase_pk": 126.15,
+    "V_ph_pk": 47.61
+   },
+   "mcad_map": {
+    "I_line": 159.22,
+    "id_phase_pk": -29.18,
+    "iq_phase_pk": 126.39,
+    "V_ph_pk": 47.24
+   },
+   "v7_old": {
+    "I_line": 149.37
+   }
+  },
+  "duty4": {
+   "femm_lab": {
+    "I_line": 120.02,
+    "id_phase_pk": -95.76,
+    "iq_phase_pk": 20.77,
+    "V_ph_pk": 49.2
+   },
+   "mcad_map": {
+    "I_line": 121.65,
+    "id_phase_pk": -96.99,
+    "iq_phase_pk": 21.41,
+    "V_ph_pk": 49.4
+   },
+   "v7_old": {
+    "I_line": 131.68
+   }
+  },
+  "duty5": {
+   "femm_lab": {
+    "I_line": 98.86,
+    "id_phase_pk": -7.86,
+    "iq_phase_pk": 80.32,
+    "V_ph_pk": 19.69
+   },
+   "mcad_map": {
+    "I_line": 100.4,
+    "id_phase_pk": -11.71,
+    "iq_phase_pk": 81.13,
+    "V_ph_pk": 19.61
+   },
+   "v7_old": {
+    "I_line": 89.81
+   }
+  }
+ },
+ "duty2": {
+  "femm_lab": {
+   "cu_dc": 284.87,
+   "cu_ac": 32.02,
+   "stator": 84.1,
+   "rotor": 21.79,
+   "bearings": 20.22,
+   "windage": 8.67,
+   "magnet": 0.0,
+   "total": 451.67
+  },
+  "mcad_map": {
+   "cu_dc": 287.88,
+   "cu_ac": 34.53,
+   "stator": 90.37,
+   "rotor": 24.62,
+   "bearings": 20.24,
+   "windage": 8.67,
+   "magnet": 0.0,
+   "total": 466.31
+  },
+  "v7_old": {
+   "cu_dc": 253.5,
+   "cu_ac": 0.0,
+   "stator": 57.61,
+   "rotor": 5.76,
+   "bearings": 10.2,
+   "windage": 1.43,
+   "magnet": 0.0,
+   "total": 328.5
+  }
+ },
+ "duty3": {
+  "femm_lab": {
+   "cu_dc": 166.35,
+   "cu_ac": 39.09,
+   "stator": 114.92,
+   "rotor": 28.03,
+   "bearings": 32.09,
+   "windage": 13.75,
+   "magnet": 0.0,
+   "total": 394.23
+  },
+  "mcad_map": {
+   "cu_dc": 170.93,
+   "cu_ac": 42.45,
+   "stator": 119.8,
+   "rotor": 30.79,
+   "bearings": 32.11,
+   "windage": 13.76,
+   "magnet": 0.0,
+   "total": 409.84
+  },
+  "v7_old": {
+   "cu_dc": 150.2,
+   "cu_ac": 0.0,
+   "stator": 78.0,
+   "rotor": 7.8,
+   "bearings": 14.55,
+   "windage": 2.91,
+   "magnet": 0.0,
+   "total": 253.46
+  }
+ },
+ "duty4": {
+  "femm_lab": {
+   "cu_dc": 97.08,
+   "cu_ac": 148.68,
+   "stator": 154.0,
+   "rotor": 31.42,
+   "bearings": 109.33,
+   "windage": 46.86,
+   "magnet": 0.0,
+   "total": 587.37
+  },
+  "mcad_map": {
+   "cu_dc": 99.81,
+   "cu_ac": 135.75,
+   "stator": 166.67,
+   "rotor": 40.14,
+   "bearings": 109.34,
+   "windage": 46.87,
+   "magnet": 0.0,
+   "total": 598.58
+  },
+  "v7_old": {
+   "cu_dc": 116.77,
+   "cu_ac": 0.0,
+   "stator": 73.67,
+   "rotor": 7.37,
+   "bearings": 37.36,
+   "windage": 19.19,
+   "magnet": 0.0,
+   "total": 254.36
+  }
+ },
+ "duty5": {
+  "femm_lab": {
+   "cu_dc": 65.88,
+   "cu_ac": 3.18,
+   "stator": 32.42,
+   "rotor": 5.61,
+   "bearings": 11.14,
+   "windage": 4.78,
+   "magnet": 0.0,
+   "total": 123.01
+  },
+  "mcad_map": {
+   "cu_dc": 67.97,
+   "cu_ac": 3.41,
+   "stator": 33.44,
+   "rotor": 7.32,
+   "bearings": 11.18,
+   "windage": 4.79,
+   "magnet": 0.0,
+   "total": 128.11
+  },
+  "v7_old": {
+   "cu_dc": 54.4,
+   "cu_ac": 0.0,
+   "stator": 23.85,
+   "rotor": 2.38,
+   "bearings": 6.45,
+   "windage": 0.57,
+   "magnet": 0.0,
+   "total": 87.65
+  }
+ },
+ "materials": [
+  {
+   "item": "Stack length",
+   "v7": "65 mm",
+   "design9795_1": "64 mm",
+   "effect": "-1.5 % flux/torque/iron mass; slightly shorter MLT"
+  },
+  {
+   "item": "Stator",
+   "v7": "v7 segmented CAD profile (fieldlab_v7), bore 107",
+   "design9795_1": "Motor-CAD Parallel Tooth, OD 160, bore 107, tooth 15.54, slot depth 17.65, opening 5.58",
+   "effect": "different tooth/yoke B, so different iron"
+  },
+  {
+   "item": "Rotor",
+   "v7": "opening 10, X 18, Y 8.5, Z 6, glue 0.1, bridge 2, offset 3.5",
+   "design9795_1": "opening 7.05, X 18.86, Y 9.17, Z 7.11, glue 0.0625, bridge 1.0, offset 5.0",
+   "effect": "thinner bridges: less leakage, more flux"
+  },
+  {
+   "item": "Shaft",
+   "v7": "30 mm, non-magnetic (air)",
+   "design9795_1": "25 mm, magnetic SCM420",
+   "effect": "extra flux path; flux map fitted to Motor-CAD"
+  },
+  {
+   "item": "Magnet",
+   "v7": "Y40-class ferrite, Br20 0.45 T, -0.20 %/K, mu_r 1.10, solved at 35 C (calibrated to 45 N.m)",
+   "design9795_1": "DMEGC DM4654, Br20 0.46 T, -0.1797 %/K, mu_r 1.08, solved at 100 C (Br 0.394 T)",
+   "effect": "v7 had 11 % more Br than a 100 C magnet: less current per N.m, so v7 copper is too low"
+  },
+  {
+   "item": "Steel B-H / stacking",
+   "v7": "catalogue M235-35A, stacking 0.95",
+   "design9795_1": "Motor-CAD M235-35A curve, FEA fill 1.0 (mass 0.97)",
+   "effect": "q-axis flux +3-8 %"
+  },
+  {
+   "item": "Iron loss coefficients",
+   "v7": "KH 0.0177 f B^2 + KE 6.2e-5 f^2 B^2",
+   "design9795_1": "Kh 0.02533 f B^2.07 + 2 pi^2 x 2.199e-6 (n f)^2 B_n^2 per harmonic, minor loops Kc 0.65",
+   "effect": "higher hysteresis, harmonic eddy"
+  },
+  {
+   "item": "Iron field",
+   "v7": "no-load snapshot scaled by |psi|/psi_m",
+   "design9795_1": "full-cycle FEA Fourier per element, on-load",
+   "effect": "captures armature reaction and slot harmonics"
+  },
+  {
+   "item": "Build factor",
+   "v7": "1.5",
+   "design9795_1": "1.6 stator and rotor",
+   "effect": "+7 %"
+  },
+  {
+   "item": "Rotor iron",
+   "v7": "10 % of stator",
+   "design9795_1": "own FEA (about 18-28 % of stator)",
+   "effect": "rotor 2-4x v7"
+  },
+  {
+   "item": "AC copper",
+   "v7": "none",
+   "design9795_1": "strand eddy from slot B^2, Motor-CAD hybrid adjustment 2",
+   "effect": "+30 W at duty1, +149 W at duty4"
+  },
+  {
+   "item": "Resistance",
+   "v7": "2.90 mm wire, 6.732 mOhm/coil at 100 C",
+   "design9795_1": "SWG 11 2.9464 mm, MLT 203.6 mm, 6.740 mOhm/coil at 100 C (alpha 0.003862)",
+   "effect": "about equal"
+  },
+  {
+   "item": "End winding",
+   "v7": "not modelled",
+   "design9795_1": "1.954 uH/phase",
+   "effect": "small extra voltage"
+  },
+  {
+   "item": "Mechanical",
+   "v7": "4e-3 n + 2.2e-7 n^2 (56 W at 9339)",
+   "design9795_1": "(11.85+8.89)(n/2600)^1.3 bearings + 8.89 (n/2600)^1.3 windage (156 W at 9339)",
+   "effect": "2.8x at top speed"
+  },
+  {
+   "item": "Skew",
+   "v7": "none",
+   "design9795_1": "3 slices, -2/0/+2 mech deg",
+   "effect": "torque ripple/harmonics down; slightly less torque"
+  },
+  {
+   "item": "Limits/control",
+   "v7": "52 V, MI 0.95, 360 A rms, 11 kW DC, inverter eff 0.97; minimum loss",
+   "design9795_1": "52 V, MI 0.95, 360 A rms, 280 A DC (14.56 kW), converter 0; MTPA (least current)",
+   "effect": "different d-q choice at part load"
+  },
+  {
+   "item": "Magnet loss",
+   "v7": "none",
+   "design9795_1": "~0 (ferrite 100 ohm.m; Motor-CAD 0 W)",
+   "effect": "none"
+  }
+ ],
+ "sensitivity": {
+  "duty1_52V": {
+   "V_dc": 52.0,
+   "V_max": 49.4,
+   "reachable": true,
+   "T_max_at_speed": 44.03475862505663,
+   "I_line": 294.24479604574145,
+   "id_phase_pk": -68.58571279792898,
+   "iq_phase_pk": 230.25203582161876,
+   "V_ph_pk": 28.195102663966274,
+   "I_dc": 146.04277406609444,
+   "cu_dc": 583.5233207037338,
+   "cu_ac": 30.376358455042027,
+   "stator": 63.65207160573816,
+   "rotor": 17.686422759414345,
+   "mech": 18.132024981097473,
+   "total": 713.3701985050259,
+   "eff": 90.60641120296062
+  },
+  "duty1_48V": {
+   "V_dc": 48.0,
+   "V_max": 45.599999999999994,
+   "reachable": true,
+   "T_max_at_speed": 44.03475862505663,
+   "I_line": 294.24479604574145,
+   "id_phase_pk": -68.58571279792898,
+   "iq_phase_pk": 230.25203582161876,
+   "V_ph_pk": 28.195102663966274,
+   "I_dc": 158.21300523826898,
+   "cu_dc": 583.5233207037338,
+   "cu_ac": 30.376358455042027,
+   "stator": 63.65207160573816,
+   "rotor": 17.686422759414345,
+   "mech": 18.132024981097473,
+   "total": 713.3701985050259,
+   "eff": 90.60641120296062
+  },
+  "duty1_44V": {
+   "V_dc": 44.0,
+   "V_max": 41.8,
+   "reachable": true,
+   "T_max_at_speed": 44.03475862505663,
+   "I_line": 294.24479604574145,
+   "id_phase_pk": -68.58571279792898,
+   "iq_phase_pk": 230.25203582161876,
+   "V_ph_pk": 28.195102663966274,
+   "I_dc": 172.59600571447524,
+   "cu_dc": 583.5233207037338,
+   "cu_ac": 30.376358455042027,
+   "stator": 63.65207160573816,
+   "rotor": 17.686422759414345,
+   "mech": 18.132024981097473,
+   "total": 713.3701985050259,
+   "eff": 90.60641120296062
+  },
+  "duty4_52V": {
+   "V_dc": 52.0,
+   "V_max": 49.4,
+   "reachable": true,
+   "T_max_at_speed": 13.370291255422476,
+   "I_line": 119.7466074676022,
+   "id_phase_pk": -95.53009996854396,
+   "iq_phase_pk": 20.820662813657016,
+   "V_ph_pk": 49.31173883266288,
+   "I_dc": 69.75511157772713,
+   "cu_dc": 96.64225890969065,
+   "cu_ac": 148.0470308869053,
+   "stator": 154.12507514984574,
+   "rotor": 31.370810721407963,
+   "mech": 156.19128112968065,
+   "total": 586.3764567975303,
+   "eff": 83.83420215669182
+  },
+  "duty4_48V": {
+   "V_dc": 48.0,
+   "V_max": 45.599999999999994,
+   "reachable": true,
+   "T_max_at_speed": 12.313946172372429,
+   "I_line": 130.024997596616,
+   "id_phase_pk": -104.10331406828507,
+   "iq_phase_pk": 20.820662813657016,
+   "V_ph_pk": 45.35798001778607,
+   "I_dc": 76.77029005533653,
+   "cu_dc": 113.9447565428237,
+   "cu_ac": 172.446525477836,
+   "stator": 148.8856365044033,
+   "rotor": 32.969511329635345,
+   "mech": 156.19128112968065,
+   "total": 624.437710984379,
+   "eff": 83.054487654711
+  },
+  "duty4_44V": {
+   "V_dc": 44.0,
+   "V_max": 41.8,
+   "reachable": true,
+   "T_max_at_speed": 11.05488217857708,
+   "I_line": 140.33620345441872,
+   "id_phase_pk": -112.67652816802621,
+   "iq_phase_pk": 20.820662813657016,
+   "V_ph_pk": 41.47552894882269,
+   "I_dc": 85.10287065535687,
+   "cu_dc": 132.73335826714614,
+   "cu_ac": 198.85317983466413,
+   "stator": 144.73320889134328,
+   "rotor": 35.10466621633077,
+   "mech": 156.19128112968065,
+   "total": 667.615694339165,
+   "eff": 82.17089054057818
+  },
+  "n_max_3.24Nm_52V": 12000,
+  "n_max_3.24Nm_48V": 12000,
+  "n_max_3.24Nm_44V": 12000
+ },
+ "factors": {
+  "source": "Design9795_1/lab_100C.json (lab_model v3, 3 skew slices, flux torque), 52 V, winding and magnet 100 C",
+  "cfd_input": "femm_lab (v7_old shown for comparison only)"
+ }
+}

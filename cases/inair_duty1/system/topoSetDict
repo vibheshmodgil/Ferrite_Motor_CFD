@@ -1,0 +1,2 @@
+FoamFile { format ascii; class dictionary; object topoSetDict; }
+actions ( { name main; type cellSet; action new; source regionToCell; insidePoints ((0.045 0 -0.040)); } );

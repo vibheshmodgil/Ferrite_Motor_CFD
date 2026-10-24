@@ -1,0 +1,30 @@
+rotor_lamination_stack     lam          1662.7 g  solids 1
+magnet_ferrite             ferrite        65.8 g  solids 1
+rotor_end_plate            Al             41.9 g  solids 1
+shaft                      steel         698.9 g  solids 1
+key_8x7x56                 steel          24.6 g  solids 1
+key_8x7x28                 steel          11.9 g  solids 1
+spacer_sleeve              steel           8.5 g  solids 1
+bearing_52x30x15           steel         107.5 g  solids 1
+shaft_seal_30x47x7         NBR             7.5 g  solids 1
+circlip_DIN471_30          steel           4.1 g  solids 1
+circlip_DIN472_52          steel           8.6 g  solids 1
+wave_spring_52             steel           1.8 g  solids 1
+encoder_magnet_holder      PEEK            2.1 g  solids 1
+encoder_magnet_8x2         NdFeB           0.8 g  solids 1
+encoder_pcb                FR4             4.3 g  solids 1
+terminal_bar_L1            Cu              3.4 g  solids 1
+terminal_bar_L2            Cu             21.9 g  solids 1
+terminal_bar_L3            Cu              3.4 g  solids 1
+housing                    Al           1698.0 g  solids 1
+rear_cover                 Al            327.7 g  solids 1
+oring_cover_2.5            NBR             3.3 g  solids 1
+stud_M8_press_in           steel           5.2 g  solids 1
+nut_M8_thin                steel           3.0 g  solids 1
+washer_M8                  steel           1.8 g  solids 1
+cable_lug_35mm2_M8         Cu             16.3 g  solids 1
+cable_35mm2_stub           NBR             5.9 g  solids 1
+cable_gland_M20_IP68       PA66GF30       10.4 g  solids 1
+cable_gland_M16_IP68       PA66GF30        6.4 g  solids 1
+new-part mass by material (all instances): {'lam': 1663, 'ferrite': 1315, 'Al': 2110, 'steel': 1007, 'NBR': 28, 'PEEK': 2, 'NdFeB': 1, 'FR4': 4, 'Cu': 78, 'PA66GF30': 38}
+instances: 119

@@ -1,0 +1,285 @@
+FoamFile
+{
+    format      ascii;
+    class       dictionary;
+    object      controlDict;
+}
+
+application     foamMultiRun;
+regionSolvers
+{
+    bearings   solid;
+    bobbin     solid;
+    copper     solid;
+    housing    solid;
+    inair      solid;
+    magnets    solid;
+    resin      solid;
+    rotor      solid;
+    shaft      solid;
+    stator     solid;
+}
+startFrom       startTime;
+startTime       0;
+stopAt          endTime;
+endTime         477;
+deltaT          3;
+adjustTimeStep  no;          // implicit conduction: fixed step, stable at any diffusion number
+writeControl    adjustableRunTime;
+writeInterval   60;
+purgeWrite      0;
+writeFormat     binary;
+timeFormat      general;
+timePrecision   8;
+runTimeModifiable yes;
+functions
+{
+    T_bearings
+    {
+        type            volFieldValue;
+        libs            ("libfieldFunctionObjects.so");
+        region          bearings;
+        select          all;
+        fields          (T);
+        operation       max;
+        writeFields     false;
+        writeControl    timeStep;
+        writeInterval   1;
+        log             false;
+    }
+    T_bobbin
+    {
+        type            volFieldValue;
+        libs            ("libfieldFunctionObjects.so");
+        region          bobbin;
+        select          all;
+        fields          (T);
+        operation       max;
+        writeFields     false;
+        writeControl    timeStep;
+        writeInterval   1;
+        log             false;
+    }
+    T_copper
+    {
+        type            volFieldValue;
+        libs            ("libfieldFunctionObjects.so");
+        region          copper;
+        select          all;
+        fields          (T);
+        operation       max;
+        writeFields     false;
+        writeControl    timeStep;
+        writeInterval   1;
+        log             false;
+    }
+    T_housing
+    {
+        type            volFieldValue;
+        libs            ("libfieldFunctionObjects.so");
+        region          housing;
+        select          all;
+        fields          (T);
+        operation       max;
+        writeFields     false;
+        writeControl    timeStep;
+        writeInterval   1;
+        log             false;
+    }
+    T_inair
+    {
+        type            volFieldValue;
+        libs            ("libfieldFunctionObjects.so");
+        region          inair;
+        select          all;
+        fields          (T);
+        operation       max;
+        writeFields     false;
+        writeControl    timeStep;
+        writeInterval   1;
+        log             false;
+    }
+    T_magnets
+    {
+        type            volFieldValue;
+        libs            ("libfieldFunctionObjects.so");
+        region          magnets;
+        select          all;
+        fields          (T);
+        operation       max;
+        writeFields     false;
+        writeControl    timeStep;
+        writeInterval   1;
+        log             false;
+    }
+    T_resin
+    {
+        type            volFieldValue;
+        libs            ("libfieldFunctionObjects.so");
+        region          resin;
+        select          all;
+        fields          (T);
+        operation       max;
+        writeFields     false;
+        writeControl    timeStep;
+        writeInterval   1;
+        log             false;
+    }
+    T_rotor
+    {
+        type            volFieldValue;
+        libs            ("libfieldFunctionObjects.so");
+        region          rotor;
+        select          all;
+        fields          (T);
+        operation       max;
+        writeFields     false;
+        writeControl    timeStep;
+        writeInterval   1;
+        log             false;
+    }
+    T_shaft
+    {
+        type            volFieldValue;
+        libs            ("libfieldFunctionObjects.so");
+        region          shaft;
+        select          all;
+        fields          (T);
+        operation       max;
+        writeFields     false;
+        writeControl    timeStep;
+        writeInterval   1;
+        log             false;
+    }
+    T_stator
+    {
+        type            volFieldValue;
+        libs            ("libfieldFunctionObjects.so");
+        region          stator;
+        select          all;
+        fields          (T);
+        operation       max;
+        writeFields     false;
+        writeControl    timeStep;
+        writeInterval   1;
+        log             false;
+    }
+    T_coil
+    {
+        type            volFieldValue;
+        libs            ("libfieldFunctionObjects.so");
+        region          copper;
+        select          cellZone;
+        cellZone        coil;
+        fields          (T);
+        operation       max;
+        writeFields     false;
+        writeControl    timeStep;
+        writeInterval   1;
+        log             false;
+    }
+    T_strap
+    {
+        type            volFieldValue;
+        libs            ("libfieldFunctionObjects.so");
+        region          copper;
+        select          cellZone;
+        cellZone        strap;
+        fields          (T);
+        operation       max;
+        writeFields     false;
+        writeControl    timeStep;
+        writeInterval   1;
+        log             false;
+    }
+    T_busbar
+    {
+        type            volFieldValue;
+        libs            ("libfieldFunctionObjects.so");
+        region          copper;
+        select          cellZone;
+        cellZone        busbar;
+        fields          (T);
+        operation       max;
+        writeFields     false;
+        writeControl    timeStep;
+        writeInterval   1;
+        log             false;
+    }
+    T_tbar
+    {
+        type            volFieldValue;
+        libs            ("libfieldFunctionObjects.so");
+        region          copper;
+        select          cellZone;
+        cellZone        tbar;
+        fields          (T);
+        operation       max;
+        writeFields     false;
+        writeControl    timeStep;
+        writeInterval   1;
+        log             false;
+    }
+    Tavg_coil
+    {
+        type            volFieldValue;
+        libs            ("libfieldFunctionObjects.so");
+        region          copper;
+        select          cellZone;
+        cellZone        coil;
+        fields          (T);
+        operation       volAverage;
+        writeFields     false;
+        writeControl    timeStep;
+        writeInterval   1;
+        log             false;
+    }
+    Tavg_magnets
+    {
+        type            volFieldValue;
+        libs            ("libfieldFunctionObjects.so");
+        region          magnets;
+        select          all;
+        fields          (T);
+        operation       volAverage;
+        writeFields     false;
+        writeControl    timeStep;
+        writeInterval   1;
+        log             false;
+    }
+    Tavg_housing
+    {
+        type            volFieldValue;
+        libs            ("libfieldFunctionObjects.so");
+        region          housing;
+        select          all;
+        fields          (T);
+        operation       volAverage;
+        writeFields     false;
+        writeControl    timeStep;
+        writeInterval   1;
+        log             false;
+    }
+    Qout_housing
+    {
+        type            wallHeatFlux;     // heat through the outer skin every step, for the global energy balance
+        libs            ("libfieldFunctionObjects.so");
+        region          housing;
+        patches         (defaultFaces);
+        objects         ();               // only the .dat log: the default also writes the field every step
+        writeControl    timeStep;
+        writeInterval   1;
+        log             false;
+    }
+    Qout_shaft
+    {
+        type            wallHeatFlux;     // heat through the outer skin every step, for the global energy balance
+        libs            ("libfieldFunctionObjects.so");
+        region          shaft;
+        patches         (defaultFaces);
+        objects         ();               // only the .dat log: the default also writes the field every step
+        writeControl    timeStep;
+        writeInterval   1;
+        log             false;
+    }
+}

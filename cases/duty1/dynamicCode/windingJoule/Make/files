@@ -1,0 +1,6 @@
+# dynamicCode:
+# SHA1 = 8e8f48a4bd1ea010440a0ca8cc1fd41d478b6dee
+
+codedFvModelTemplate.C
+
+LIB = $(PWD)/../platforms/$(WM_OPTIONS)/lib/libwindingJoule_8e8f48a4bd1ea010440a0ca8cc1fd41d478b6dee

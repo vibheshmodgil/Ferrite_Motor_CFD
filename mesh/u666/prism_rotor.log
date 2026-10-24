@@ -1,0 +1,7 @@
+degenerate skin faces: []
+WARN non-prism volume rotor 345 A*L/V-1 = 0.0106
+WARN non-prism volume rpocket 389 A*L/V-1 = -0.0102
+WARN non-prism volume rpocket 469 A*L/V-1 = 0.0645
+prism route rotor volumes 29 section faces 30 bands [-2.1532, -0.35, 52.798, 60.2, 60.7983]
+patch area mm2 (prism | CAD): {'outside': (78, 79), 'rotor_to_inair': (3957, 4051), 'rotor_to_endcaps': (6044, 6006), 'rotor_to_shaft': (8194, 8082), 'rotor_to_magnets': (34076, 34116), 'rotor_to_wedge': (16560, 16561)}
+prisms: 286060 volumes cm3 {'rotor': np.float64(245.5), 'rpocket': np.float64(53.23)} patches {np.str_('rotor_to_endcaps'): 13623, np.str_('rotor_to_inair'): 8014, np.str_('rotor_to_shaft'): 3033, np.str_('rotor_to_wedge'): 4392, np.str_('rotor_to_magnets'): 17268, np.str_('outside'): 206}
